@@ -8,50 +8,105 @@
 </head>
 <body>
   <div class="whole_wrapper">
-    <header class="main_header">
-      <div class="logo_box">
-        <h1>
-          <a href="/">BARBER101</a>
-        </h1>
-      </div>
-      <nav class="gnb_box">
-        <ul>
-          <li>
-            <a href="#">구인·구직</a>
-          </li>
-          <li>
-            <a href="#">커뮤니티</a>
-          </li>
-          <li>
-            <a href="#">정보</a>
-          </li>
-          <li>
-            <a href="#">쇼핑</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="auth_box">
-        <section class="login_box">
-          <span class="profile_img">프로필 사진</span>
-          <strong class="nick_name">바버문화좋아요</strong>
-          <span class="grade">(사업자)</span>
+    <div class="whole_wrapper_inner">
+      <header class="main_header">
+        <div class="logo_box">
+          <h1>
+            <a href="/">BARBER101</a>
+          </h1>
+        </div>
+        <nav class="gnb_box">
+          <ul>
+            <li>
+              <a href="#">구인·구직</a>
+            </li>
+            <li>
+              <a href="#">커뮤니티</a>
+            </li>
+            <li>
+              <a href="#">정보</a>
+            </li>
+            <li>
+              <a href="#">쇼핑</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="auth_box">
+          <section style="display: none;" class="login_box">
+            <div class="profile_img">프로필 사진</div>
+            <strong class="nick_name">바버문화좋아요</strong>
+            <span class="grade">(사업자)</span>
+          </section>
+          <ul>
+            <li style="display: none;">
+              <a href="#">회원가입</a>
+            </li>
+            <li class="log_in">
+              <a href="#">로그인</a>
+            </li>
+            <li>
+              <a href="#">마이페이지</a>
+            </li>
+            <li style="display: none;" class="log_out">
+              <button>로그아웃</button>
+            </li>
+          </ul>
+        </div>
+      </header>
+      <main class="main_body">
+        <section class="main_banner">
+          <figure>
+            <figcaption class="hide">summer event</figcaption>
+            <img src="./resource/images/banner/main_banner.png" alt="">
+          </figure>
         </section>
-        <ul>
-          <li>
-            <a href="#">회원가입</a>
-          </li>
-          <li>
-            <a href="#">로그인</a>
-          </li>
-          <li>
-            <a href="#">마이페이지</a>
-          </li>
-          <li>
-            <button>로그아웃</button>
-          </li>
-        </ul>
-      </div>
-    </header>
+        <section class="notice">
+          <h2 class="title">공지사항</h2>
+          <ul class="description_box">
+            <li>
+              <a href="#">&middot; 대한민국 대표 바버 커뮤니티 BARBER101의 준수사항을 확인해주세요 대한민국 대표 바버 커뮤니티 BA...</a>
+            </li>
+            <li>
+              <a href="#">&middot; 대한민국 대표 바버 커뮤니티 BARBER101의 준수사항을 확인해주세요 대한민국 대표 바버 커뮤니티 BA...</a>
+            </li>
+            <li>
+              <a href="#">&middot; 대한민국 대표 바버 커뮤니티 BARBER101의 준수사항을 확인해주세요 대한민국 대표 바버 커뮤니티 BA...</a>
+            </li>
+          </ul>
+          <a href="#" class="tab_plus">더보기</a>
+        </section>
+        <section class="recent_community">
+          <header>
+            <h2>커뮤니티 최신글</h2>
+            <p>커뮤니티에 업로드된 최근 내용들을 확인해보세요. </p>
+            <a href="#" class="tab_plus">더보기</a>
+          </header>
+          <main class="list_wrap">
+            <ul>
+              <li>
+                <a href="#">
+                  <div class="primary_info">
+                    <span>고민</span>
+                    <p>방금 민머리 손님이 파마를 요청했습니다. </p>
+                    <b>(12)</b>
+                  </div>
+                  <div class="sub_info">
+                    <span>바버왕</span>
+                    <span>&middot; 38분 전</span>
+                    <span>&middot; 추천1</span>
+                    <span>&middot; 조회13</span>
+                  </div>
+                  <figure>
+                    <figcaption class="hide">커뮤니티 글 이미지</figcaption>
+                    <img src="./resource/images/community/community_dummy_img.png">
+                  </figure>
+                </a>
+              </li>
+            </ul>
+          </main>
+        </section>
+      </main>
+    </div>
   </div>
 </body>
 </html>

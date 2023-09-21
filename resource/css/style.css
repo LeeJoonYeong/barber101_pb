@@ -1,5 +1,5 @@
 html { font-size: 10px; }
-body { background-color: #fff; font-size: 1rem; overflow-x: hidden; }
+body { background-color: #fff; font-size: 1rem; overflow-x: hidden; font-family: 'Pretendard'; }
 body.hidden { position: fixed; overflow-y: hidden; touch-action: none; }
 
 a, button { color: #666; }
@@ -38,3 +38,8 @@ input:autofill:active {
     transition: background-color 5000s ease-in-out 0s;
 }
 /* //인풋 자동완성 스타일*/
+
+/* 글 더보기 스타일*/
+.tab_plus { position: relative; height: 2.8rem; line-height: 2.8rem; padding-left: 1.9rem; font-size: 2rem; font-weight: 400; color: #8e8e8e; }
+.tab_plus::before { content: ''; position: absolute; top: 50%; left: 0; transform: translateY(-50%); width: 1.3rem; height: 1.3rem; background: url('../images/icons/article_plus_icon.png') center / 100% no-repeat; }
+/* //글 더보기 스타일*/
