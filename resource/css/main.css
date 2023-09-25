@@ -29,11 +29,11 @@
 .main_header .auth_box ul li { position: relative; display: flex; height: 4rem; background-color: #f3f3f3; border-radius: 0.6rem; }
 .main_header .auth_box ul li ~ li { margin-left: 1.4rem; }
 .main_header .auth_box ul li.log_in { background-color: #313131; }
-.main_header .auth_box ul li.log_out { background-color: #18191F; }
+.main_header .auth_box ul li.log_out { background-color: var(--color-gray18); }
 .main_header .auth_box ul li a,
 .main_header .auth_box ul li button { height: 100%; padding: 1rem 2rem; background: none; font-size: 1.4rem; font-weight: 600; color: #313131; }
 .main_header .auth_box ul li.log_in a,
-.main_header .auth_box ul li.log_out button { color: #fff; }
+.main_header .auth_box ul li.log_out button { color: var(--color-white); }
 
 /* ================== 메인 바디 ================== */
 .main_body { position: relative; width: 100%; padding: 4rem 0 12rem; }
@@ -45,9 +45,57 @@
 .main_banner figure img { width: 100%; height: 100%; border-radius: 1.2rem; } 
 
 /* ================== 메인 - 공지사항 ================== */
-.notice { display: flex; justify-content: space-between; align-items: center; width: 100%; height: 9.2rem; padding: 0 3.2rem; border: 0.1rem solid #e8e8e8; margin-top: 4rem; background-color: #fff; }
-.notice .title { position: relative; height: 3.2rem; line-height: 3.2rem; padding-left: 5.8rem; font-size: 2.4rem; font-weight: 700; color: #18191f; }
+.notice { display: flex; justify-content: space-between; align-items: center; width: 100%; height: 9.2rem; padding: 0 3.2rem; border: 0.1rem solid #e8e8e8; margin-top: 4rem; background-color: var(--color-white); }
+.notice .title { position: relative; height: 3.2rem; line-height: 3.2rem; padding-left: 5.8rem; font-size: 2.4rem; font-weight: 700; color: var(--color-gray18); }
 .notice .title::before { content: ''; position: absolute; top: 50%; left: 0; transform: translateY(-50%); width: 4.2rem; height: 4.2rem; background: url('../images/icons/notice_icon.png') center / 100% no-repeat; }
 .notice .description_box { position: absolute; left: 20.3rem; width: 86.2rem; height: 2.8rem; line-height: 2.8rem; overflow-y: hidden; }
 .notice .description_box li { width: 100%; height: 100%; }
-.notice .description_box li a { display: inline-block; width: 100%; font-size: 2rem; font-weight: 400; color: #18191F; }
+.notice .description_box li a { display: inline-block; width: 100%; font-size: 2rem; font-weight: 400; color: var(--color-gray18); }
+
+/* ================== 메인 - 커뮤니티 최신글 ================== */
+.recent_community .list_wrap ul { border: 0.1rem solid var(--color-graye8); margin-top: 2.4rem; }
+.recent_community .list_wrap ul li ~ li { border-top: 0.1rem solid var(--color-graye8); }
+.recent_community .list_wrap a { position: relative; display: flex; align-items: center; height: 13.8rem; padding-left: 3.2rem; background-color: var(--color-white); }
+.recent_community .list_wrap a .info_box .primary_info { display: flex; align-items: center; gap: 1rem; }
+.recent_community .list_wrap a .info_box .primary_info span { display: flex; justify-content: center; align-items: center; height: 2.5rem; padding: 0 0.8rem; border: 0.1rem solid #313131; border-radius: 0.4rem; font-size: 1.4rem; font-weight: 600; color: #313131; box-sizing: border-box; }
+.recent_community .list_wrap a .info_box .primary_info p { font-size: 2.4rem; font-weight: 500; color: var(--color-gray18); }
+.recent_community .list_wrap a .info_box .primary_info b { font-size: 2.4rem; font-weight: 500; color: var(--color-grayb5); }
+.recent_community .list_wrap a .info_box .sub_info { margin-top: 2.1rem; }
+.recent_community .list_wrap a figure { position: absolute; top: 50%; right: 3.4rem; transform: translateY(-50%); width: 16rem; height: 9rem; }
+
+/* ================== 메인 - 정보 인기글 ================== */
+.infomation_popular .h2_header p { left: 16.2rem; }
+.infomation_popular .list_wrap a figure { width: 28.1rem; height: 17.8rem; }
+.infomation_popular .list_wrap { margin-top: 4rem; }
+.infomation_popular .list_wrap ul { display: flex; flex-wrap: wrap; gap: 2.4rem; }
+.infomation_popular .list_wrap a .info_box { margin-top: 1.5rem; }
+.infomation_popular .list_wrap a .info_box .primary_info { display: flex; align-items: center; gap: 0.6rem; }
+.infomation_popular .list_wrap a .info_box .primary_info span { display: flex; justify-content: center; align-items: center; height: 2.5rem; padding: 0 0.8rem; background-color: var(--color-redf9); border-radius: 0.4rem; font-size: 1.4rem; font-weight: 600; color: var(--color-white); box-sizing: border-box; }
+.infomation_popular .list_wrap a .info_box .primary_info p { font-size: 2.4rem; font-weight: 600; color: var(--color-gray18);  }
+.infomation_popular .list_wrap a .info_box .primary_info b { font-size: 2.4rem; font-weight: 500; color: var(--color-grayb5); }
+.infomation_popular .list_wrap a .info_box .sub_info { margin-top: 0.8rem; }
+
+/* ================== 메인 - 구인 / 구직 wrap ================== */
+.job_wrap { display: flex; gap: 3rem; }
+
+/* ================== 메인 - 구인 글 ================== */
+.job_wrap .recruit { width: 58.5rem; }
+.job_wrap .recruit .list_wrap ul { border: 0.1rem solid var(--color-graye8); margin-top: 2.4rem; }
+.job_wrap .recruit .list_wrap ul li ~ li { border-top: 0.1rem solid var(--color-graye8); }
+.job_wrap .recruit .list_wrap a { display: flex; gap: 2rem; height: 12.8rem; padding: 1.6rem 2rem; background-color: var(--color-white); }
+.job_wrap .recruit .list_wrap a figure { width: 9.6rem; height: 9.6rem; }
+.job_wrap .recruit .list_wrap a .info_box { display: flex; flex-direction: column; justify-content: center; }
+.job_wrap .recruit .list_wrap a .info_box .primary_info p { font-size: 2.4rem; font-weight: 500; color: var(--color-gray18); }
+.job_wrap .recruit .list_wrap a .info_box .sub_info { display: flex; gap: 0.8rem; margin-top: 1.6rem; }
+.job_wrap .recruit .list_wrap a .info_box .sub_info span { display: block; max-width: 40.3rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+/* ================== 메인 - 구직 글 ================== */
+.job_wrap .job_hunting { width: 58.5rem; }
+.job_wrap .job_hunting .list_wrap ul { border: 0.1rem solid var(--color-graye8); margin-top: 2.4rem; }
+.job_wrap .job_hunting .list_wrap ul li ~ li { border-top: 0.1rem solid var(--color-graye8); }
+.job_wrap .job_hunting .list_wrap a { display: flex; align-items: center; gap: 1rem; height: 12.8rem; padding: 2rem 3.2rem; background-color: var(--color-white); }
+.job_wrap .job_hunting .list_wrap a figure { width: 6.4rem; height: 6.4rem; }
+.job_wrap .job_hunting .list_wrap a .info_box { display: flex; flex-direction: column; justify-content: center; max-width: 43.5rem; white-space: nowrap; overflow: hidden; }
+.job_wrap .job_hunting .list_wrap a .info_box .primary_info p { max-width: 46.4rem; font-size: 2.4rem; font-weight: 500; color: var(--color-gray18); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.job_wrap .job_hunting .list_wrap a .info_box .sub_info { display: flex; margin-top: 1.6rem; }
+.job_wrap .job_hunting .list_wrap a .info_box .sub_info b { max-width: 29rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
