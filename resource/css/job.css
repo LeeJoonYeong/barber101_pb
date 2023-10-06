@@ -1,0 +1,34 @@
+/* ================== 구인 & 구직 헤더 ================== */
+.job_wrapper .h2_header { display: flex; flex-direction: column; justify-content: initial; align-items: initial; gap: 2.4rem; }
+.job_wrapper .h2_header h2 { font-size: 4.8rem; letter-spacing: -0.05rem; }
+.job_wrapper .h2_header p { position: initial; color: var(--color-gray18); }
+
+/* ================== 구인 & 구직 탭 리스트 ================== */
+.job_tab_box { margin-top: 2.4rem; }
+.job_tab_box .job_tab { display: flex; gap: 1.2rem; }
+.job_tab_box .job_tab li { border: 0.15rem solid var(--color-gray31); border-radius: 0.6rem; color: var(--color-gray31); }
+.job_tab_box .job_tab li.active { color: var(--color-white); background-color: var(--color-gray31); }
+.job_tab_box .job_tab li a { display: block; height: 4rem; line-height: 4rem; padding: 0 2.8rem; font-size: 1.8rem; font-weight: 600; color: inherit; }
+
+/* ================== 지역 탭 리스트 ================== */
+.region_tab_box { display: flex; gap: 1.5rem; margin-top: 3.2rem; }
+.region_tab_box button { width: 3.2rem; height: 3.2rem; border-radius: 0.8rem; border: 0.1rem solid var(--color-gray31); }
+.region_tab_box .btn_prev { background: url('../images/icons/arrow_left_black_icon.png') center / 1.6rem no-repeat; }
+.region_tab_box .btn_prev:hover { transform: rotate(180deg); border-color: var(--color-grayf1); background-color: var(--color-gray31); background-image: url('../images/icons/arrow_right_white_icon.png'); }
+.region_tab_box .btn_next { transform: rotate(180deg); background: url('../images/icons/arrow_left_black_icon.png') center / 1.6rem no-repeat; }
+.region_tab_box .btn_next:hover { transform: initial; border-color: var(--color-grayf1); background-color: var(--color-gray31); background-image: url('../images/icons/arrow_right_white_icon.png'); }
+.region_tab_box .region_tab { display: flex; gap: 0.6rem; width: 110rem; overflow: auto; }
+.region_tab_box .region_tab::-webkit-scrollbar { display: none; }
+.region_tab_box .region_tab li .region_tag { height: 3.4rem; line-height: 3.4rem; padding: 0 2.36rem; background-color: transparent; border-color: var(--color-grayb5); font-size: 1.4rem; color: var(--color-grayb5); }
+.region_tab_box .region_tab li.active .region_tag { color: var(--color-white); background-color: var(--color-gray31); border-color: var(--color-gray31); }
+
+/* ================== 구인 리스트 ================== */
+.recruit_list_wrapper ul { border: 0.1rem solid var(--color-graye8); }
+.recruit_list_wrapper ul li ~ li { border-top: 0.1rem solid var(--color-graye8); }
+.recruit_list_wrapper ul li a { display: flex; gap: 2rem; height: 12.8rem; padding: 1.6rem 2rem; background-color: var(--color-white); }
+.recruit_list_wrapper ul li a figure { width: 9.6rem; height: 9.6rem; }
+.recruit_list_wrapper ul li a .info_box { display: flex; flex-direction: column; justify-content: center; }
+.recruit_list_wrapper ul li a .info_box .primary_info { display: flex; align-items: center; }
+.recruit_list_wrapper ul li a .info_box .primary_info i { margin-right: 0.8rem; }
+.recruit_list_wrapper ul li a .info_box .primary_info p { font-size: 2.4rem; font-weight: 500; color: var(--color-gray18); }
+.recruit_list_wrapper ul li a .info_box .sub_info { display: flex; gap: 0.8rem; margin-top: 1.1rem; }

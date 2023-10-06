@@ -1,12 +1,16 @@
 :root {
     --color-white: #fff;
     --color-gray18: #18191f;
-    --color-grayb5: #B5B5B5;
-    --color-gray8e: #8E8E8E;
-    --color-graye8: #E8E8E8;
+    --color-gray1e: #1e1e1e;
     --color-gray31: #313131;
-    --color-redf9: #F96F6F;
-    --color-blue5f: #5FBBEF;
+    --color-gray8e: #8e8e8e;
+    --color-grayb5: #b5b5b5;
+    --color-graye8: #e8e8e8;
+    --color-grayf1: #f1f1f1;
+    --color-grayf3: #f3f3f3;
+    --color-grayf8: #f8fafd;
+    --color-redf9: #f96f6f;
+    --color-blue5f: #5fbbef;
 }
 
 html { font-size: 10px; }
@@ -56,14 +60,14 @@ input:autofill:active {
 /* //로고 스타일*/
 
 /* tab 더보기 스타일*/
-.tab_more { position: relative; height: 2.8rem; line-height: 2.8rem; padding-left: 1.9rem; font-size: 2rem; font-weight: 400; color: #8e8e8e; }
+.tab_more { position: relative; height: 2.8rem; line-height: 2.8rem; padding-left: 1.9rem; font-size: 2rem; font-weight: 400; color: var(--color-gray8e); }
 .tab_more::before { content: ''; position: absolute; top: 50%; left: 0; transform: translateY(-50%); width: 1.3rem; height: 1.3rem; background: url('../images/icons/article_plus_icon.png') center / 100% no-repeat; }
 /* //tab 더보기  스타일*/
 
 /* h2 header 스타일*/
 .h2_header { position: relative; display: flex; align-items: center; justify-content: space-between; margin-top: 7rem; }
-.h2_header h2 { font-size: 3.2rem; font-weight: 700; color: #18191f; }
-.h2_header p { position: absolute; left: 21.7rem; font-size: 2rem; font-weight: 400; color: #8E8E8E; }
+.h2_header h2 { font-size: 3.2rem; font-weight: 700; color: var(--color-gray18); }
+.h2_header p { position: absolute; left: 21.7rem; font-size: 2rem; font-weight: 400; color: var(--color-gray8e); }
 .h2_header .tab_more { align-self: flex-end; }
 /* //h2 header 스타일*/
 
