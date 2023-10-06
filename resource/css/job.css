@@ -19,10 +19,11 @@
 .region_tab_box .btn_next:hover { transform: initial; border-color: var(--color-grayf1); background-color: var(--color-gray31); background-image: url('../images/icons/arrow_right_white_icon.png'); }
 .region_tab_box .region_tab { display: flex; gap: 0.6rem; width: 110rem; overflow: auto; }
 .region_tab_box .region_tab::-webkit-scrollbar { display: none; }
-.region_tab_box .region_tab li .region_tag { height: 3.4rem; line-height: 3.4rem; padding: 0 2.36rem; background-color: transparent; border-color: var(--color-grayb5); font-size: 1.4rem; color: var(--color-grayb5); }
+.region_tab_box .region_tab li .region_tag { height: 3.4rem; line-height: 3.4rem; padding: 0 2.3rem; background-color: transparent; border-color: var(--color-grayb5); font-size: 1.4rem; color: var(--color-grayb5); }
 .region_tab_box .region_tab li.active .region_tag { color: var(--color-white); background-color: var(--color-gray31); border-color: var(--color-gray31); }
 
 /* ================== 구인 리스트 ================== */
+.recruit_list_wrapper { position: relative; padding-top: 5.6rem; margin-top: 7rem; }
 .recruit_list_wrapper ul { border: 0.1rem solid var(--color-graye8); }
 .recruit_list_wrapper ul li ~ li { border-top: 0.1rem solid var(--color-graye8); }
 .recruit_list_wrapper ul li a { display: flex; gap: 2rem; height: 12.8rem; padding: 1.6rem 2rem; background-color: var(--color-white); }
@@ -32,3 +33,5 @@
 .recruit_list_wrapper ul li a .info_box .primary_info i { margin-right: 0.8rem; }
 .recruit_list_wrapper ul li a .info_box .primary_info p { font-size: 2.4rem; font-weight: 500; color: var(--color-gray18); }
 .recruit_list_wrapper ul li a .info_box .sub_info { display: flex; gap: 0.8rem; margin-top: 1.1rem; }
+.recruit_list_wrapper .amount { position: absolute; top: 2.4rem; left: 0; font-size: 2rem; color: var(--color-gray8e); }
+.recruit_list_wrapper .article_write_btn { position: absolute; top: 0; right: 0; display: inline-block; height: 4rem; line-height: 4rem; padding: 0 1.4rem 0 3.8rem; background: url('../images/icons/article_write_icon.png') left 1rem center / 2.2rem var(--color-gray31) no-repeat; border-radius: 0.6rem; font-size: 1.4rem; font-weight: 600; color: var(--color-white); }
