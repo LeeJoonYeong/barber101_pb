@@ -9,16 +9,16 @@
 
 /* ================== 전체 wrapper ================== */
 .whole_wrapper { display: flex; justify-content: center; }
-.whole_wrapper_inner { position: relative; display: flex; flex-direction: column; align-items: center; min-width: 144rem; padding: 0 12rem; }
+.whole_wrapper_inner { position: relative; display: flex; flex-direction: column; align-items: center; min-width: 144rem; width: 144rem; padding: 0 12rem; }
 
 /* ================== 공통 헤더 ================== */
 .main_header { position: relative; display: flex; justify-content: space-between; align-items: center; width: 100%; height: 8.4rem; }
 .main_header .logo_box h1 { position: relative; height: 2.4rem; }
-.main_header .logo_box h1 a { display: block; height: 100%; line-height: 3.5rem; font-family: 'Jomhuria', cursive; font-size: 4.8rem; font-weight: 400; color: #313131; }
+.main_header .logo_box h1 a { height: 100%; line-height: 3.5rem; }
 .main_header .gnb_box { position: absolute; left: 20.7rem; }
 .main_header .gnb_box ul { display: flex; }
 .main_header .gnb_box ul li ~ li { margin-left: 5rem; }
-.main_header .gnb_box ul li a { font-size: 1.8rem; font-weight: 600; color: #313131; }
+.main_header .gnb_box ul li a { font-size: 1.8rem; font-weight: 600; color: var(--color-gray31); }
 .main_header .auth_box { display: flex; align-items: center; }
 .main_header .auth_box .login_box { display: flex; align-items: center; margin-right: 2rem; }
 .main_header .auth_box .login_box .profile_img { width: 3.2rem; height: 3.2rem; background: url('../images/icons/main_header_profile_empty_icon.png') center / 100% no-repeat; margin-right: 0.8rem; text-indent: -9999rem; }
@@ -28,10 +28,10 @@
 .main_header .auth_box ul { display: flex; align-items: center; }
 .main_header .auth_box ul li { position: relative; display: flex; height: 4rem; background-color: #f3f3f3; border-radius: 0.6rem; }
 .main_header .auth_box ul li ~ li { margin-left: 1.4rem; }
-.main_header .auth_box ul li.log_in { background-color: #313131; }
+.main_header .auth_box ul li.log_in { background-color: var(--color-gray31); }
 .main_header .auth_box ul li.log_out { background-color: var(--color-gray18); }
 .main_header .auth_box ul li a,
-.main_header .auth_box ul li button { height: 100%; padding: 1rem 2rem; background: none; font-size: 1.4rem; font-weight: 600; color: #313131; }
+.main_header .auth_box ul li button { height: 100%; padding: 1rem 2rem; background: none; font-size: 1.4rem; font-weight: 600; color: var(--color-gray31); }
 .main_header .auth_box ul li.log_in a,
 .main_header .auth_box ul li.log_out button { color: var(--color-white); }
 
@@ -57,7 +57,7 @@
 .recent_community .list_wrap ul li ~ li { border-top: 0.1rem solid var(--color-graye8); }
 .recent_community .list_wrap a { position: relative; display: flex; align-items: center; height: 13.8rem; padding-left: 3.2rem; background-color: var(--color-white); }
 .recent_community .list_wrap a .info_box .primary_info { display: flex; align-items: center; gap: 1rem; }
-.recent_community .list_wrap a .info_box .primary_info span { display: flex; justify-content: center; align-items: center; height: 2.5rem; padding: 0 0.8rem; border: 0.1rem solid #313131; border-radius: 0.4rem; font-size: 1.4rem; font-weight: 600; color: #313131; box-sizing: border-box; }
+.recent_community .list_wrap a .info_box .primary_info span { display: flex; justify-content: center; align-items: center; height: 2.5rem; padding: 0 0.8rem; border: 0.1rem solid #313131; border-radius: 0.4rem; font-size: 1.4rem; font-weight: 600; color: var(--color-gray31); box-sizing: border-box; }
 .recent_community .list_wrap a .info_box .primary_info p { font-size: 2.4rem; font-weight: 500; color: var(--color-gray18); }
 .recent_community .list_wrap a .info_box .primary_info b { font-size: 2.4rem; font-weight: 500; color: var(--color-grayb5); }
 .recent_community .list_wrap a .info_box .sub_info { margin-top: 2.1rem; }
@@ -85,6 +85,8 @@
 .job_wrap .recruit .list_wrap a { display: flex; gap: 2rem; height: 12.8rem; padding: 1.6rem 2rem; background-color: var(--color-white); }
 .job_wrap .recruit .list_wrap a figure { width: 9.6rem; height: 9.6rem; }
 .job_wrap .recruit .list_wrap a .info_box { display: flex; flex-direction: column; justify-content: center; }
+.job_wrap .recruit .list_wrap a .info_box .primary_info { display: flex; align-items: center; }
+.job_wrap .recruit .list_wrap a .info_box .primary_info i { margin-right: 0.8rem; }
 .job_wrap .recruit .list_wrap a .info_box .primary_info p { font-size: 2.4rem; font-weight: 500; color: var(--color-gray18); }
 .job_wrap .recruit .list_wrap a .info_box .sub_info { display: flex; gap: 0.8rem; margin-top: 1.6rem; }
 .job_wrap .recruit .list_wrap a .info_box .sub_info span { display: block; max-width: 40.3rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
@@ -99,3 +101,14 @@
 .job_wrap .job_hunting .list_wrap a .info_box .primary_info p { max-width: 46.4rem; font-size: 2.4rem; font-weight: 500; color: var(--color-gray18); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .job_wrap .job_hunting .list_wrap a .info_box .sub_info { display: flex; margin-top: 1.6rem; }
 .job_wrap .job_hunting .list_wrap a .info_box .sub_info b { max-width: 29rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+/* ================== 메인 - 푸터 ================== */
+.main_footer { position: relative; width: 100%; padding: 6rem 0; }
+.main_footer ul { display: flex; }
+.main_footer ul li a { color: var(--color-gray8e); font-size: 2rem; font-weight: 400; }
+.main_footer > div { display: flex; flex-direction: column; justify-content: center; gap: 1rem; margin-top: 4rem; }
+.main_footer > div > div { display: flex; align-items: center; gap: 4rem; }
+.main_footer > div > div address,
+.main_footer > div > div span,
+.main_footer > div p { color: var(--color-gray8e); font-size: 2rem; font-weight: 400; }
+.main_footer > .logo_box { position: absolute; right: 0; bottom: 5.5rem; }
