@@ -30,6 +30,8 @@
 
 /* ================== 메인 바디 ================== */
 .main_body { position: relative; width: 100%; padding-bottom: 12rem; }
+.main_body.recruit_view,
+.main_body.job_hunting_view { padding-bottom: 17.4rem; }
 .main_body::before { content: ''; position: absolute; top: 0; right: -999rem; left: -999rem; height: 100%; background-color: var(--color-grayf8); z-index: -10; }
 
 /* ================== 메인 - 배너 ================== */
