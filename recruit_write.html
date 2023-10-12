@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>구인 글쓰기</title>
+  <link rel="stylesheet" href="./resource/css/root.css">
+</head>
+<body>
+  <div class="whole_wrapper">
+    <div class="whole_wrapper_inner">
+      <header class="main_header">
+        <div class="logo_box">
+          <h1>
+            <a href="/" class="main_logo">BARBER101</a>
+          </h1>
+        </div>
+        <nav class="gnb_box">
+          <ul>
+            <li class="active">
+              <a href="#">구인·구직</a>
+            </li>
+            <li>
+              <a href="#">커뮤니티</a>
+            </li>
+            <li>
+              <a href="#">정보</a>
+            </li>
+            <li>
+              <a href="#">쇼핑</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="auth_box">
+          <section style="display: none;" class="login_box">
+            <div class="profile_img">프로필 사진</div>
+            <strong class="nick_name">바버문화좋아요</strong>
+            <span class="grade">(사업자)</span>
+          </section>
+          <ul>
+            <li>
+              <a href="#">회원가입</a>
+            </li>
+            <li class="log_in">
+              <a href="#">로그인</a>
+            </li>
+            <li>
+              <a href="#" style="display: none;">마이페이지</a>
+            </li>
+            <li style="display: none;" class="log_out">
+              <button>로그아웃</button>
+            </li>
+          </ul>
+        </div>
+      </header>
+      <main class="main_body">
+        <section class="recruit_write_wrapper">
+
+          <header>
+            <a href="#" class="link_back">이전</a>
+            <h2>구인글 작성</h2>
+          </header>
+
+          <form action="#" method="post" enctype="multipart/form-data">
+
+            <section class="vendor_info_wrap">
+              <strong>업체정보</strong>
+              <div class="info_wrap">
+                <section class="top">
+                  <div>
+                    <div class="input_label_box">
+                      <label for="dropdown_region" class="input_label">지역</label>
+                      <i class="essential_text">*</i>
+                    </div>
+                    <div class="input_select_box">
+                      <select name="dropdown_region" id="dropdown_region" class="input_select">
+                        <option value="empty">시/도</option>
+                        <option value="seoul">서울</option>
+                        <option value="seoul">인천</option>
+                        <option value="seoul">대전</option>
+                        <option value="seoul">대구</option>
+                        <option value="seoul">광주</option>
+                        <option value="seoul">울산</option>
+                        <option value="seoul">부산</option>
+                        <option value="seoul">세종</option>
+                        <option value="seoul">제주</option>
+                        <option value="seoul">강원</option>
+                        <option value="seoul">경기</option>
+                        <option value="seoul">충북</option>
+                        <option value="seoul">충남</option>
+                        <option value="seoul">전북</option>
+                        <option value="seoul">전남</option>
+                        <option value="seoul">경북</option>
+                        <option value="seoul">경남</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="input_label_box">
+                      <label for="vendor_name" class="input_label">상호명</label>
+                      <i class="essential_text">*</i>
+                    </div>
+                    <input type="text" name="vendor_name" id="vendor_name" class="input_text">
+                  </div>
+                </section>
+                <section class="middle_top">
+                  <div>
+                    <div class="input_label_box">
+                      <label for="address" class="input_label">주소</label>
+                      <i class="essential_text">*</i>
+                    </div>
+                    <div>
+                      <div class="input_address_search_box">
+                        <input type="text" name="address" id="address" class="input_text" readonly>
+                      </div>
+                      <input type="text" name="address_detail" id="address_detail" class="input_text"readonly>
+                    </div>
+                  </div>
+                </section>
+                <section class="middle_bottom">
+                  <div>
+                    <div class="input_label_box">
+                      <label for="director" class="input_label">담당자</label>
+                      <i class="essential_text">*</i>
+                    </div>
+                    <input type="text" name="director" id="director" class="input_text">
+                  </div>
+                  <div>
+                    <div class="input_label_box">
+                      <label for="contact" class="input_label">연락처</label>
+                      <i class="essential_text">*</i>
+                    </div>
+                    <input type="tel" name="contact" id="contact" class="input_tel">
+                  </div>
+                </section>
+                <section class="bottom">
+                  <div>
+                    <strong>사진</strong>
+                    <div>
+                      <div>
+                        <label for="file_thumbnail" class="input_file_label">+ 첨부하기</label>
+                        <input type="file" name="file_thumbnail" id="file_thumbnail" class="hide" multiple>
+                        <div class="input_file_info_box">
+                          <em>0MB (0개)</em>
+                          <b>/</b>
+                          <span>6MB</span>
+                        </div>
+                      </div>
+                      <div class="input_file_name_box">
+                        <div class="file_name_row">
+                          <button></button>
+                          <span>이미지1.png</span>
+                        </div>
+                        <div class="file_name_row">
+                          <button></button>
+                          <span>이미지2.png</span>
+                        </div>
+                      </div>
+                      <p class="input_file_caution">
+                        &middot; 파일은 <span>최대 3개</span>까지 첨부 가능하며, 개당 최대 <span>2MB</span>까지 업로드할 수 있습니다.
+                        <br>
+                        &middot; 가로, 세로 각각의 최댓값에 맞춰 자동 리사이징 됩니다.(가로 000px / 세로 000px)
+                        <br>
+                        &middot; 이미지는 그림파일만 업로드 가능합니다.(jpg, jpeg, png)
+                        <br>
+                        &middot; 첫번째 사진이 썸네일로 등록됩니다.
+                      </p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </section>
+            
+            <section class="recruit_info_wrap">
+              <strong>채용정보</strong>
+              <div class="info_wrap">
+                <section class="top">
+                  <div class="deadline_box">
+                    <strong>마감일자</strong>
+                    <span>상시 채용</span>
+                  </div>
+                  <div class="business_hours_box">
+                    <strong>영업시간</strong>
+                    <span>상시 채용</span>
+                  </div>
+                  <div class="working_hours_box">
+                    <strong>근무시간</strong>
+                    <span>협의 후 결정</span>
+                  </div>
+                </section>
+                <section class="bottom">
+                  <div class="holidays_box">
+                    <strong>휴무일</strong>
+                    <span>주 2회</span>
+                  </div>
+                  <div class="pay_box">
+                    <strong>급여</strong>
+                    <span>협의 후 결정</span>
+                  </div>
+                </section>
+              </div>
+            </section>
+
+            <section class="description_wrap">
+              <strong>상세내용</strong>
+              <article class="article_box">
+                <p class="text">
+                  헌법에 의하여 체결·공포된 조약과 일반적으로 승인된 국제법규는 국내법과 같은 효력을 가진다.
+                  <br>
+                  탄핵소추의 의결을 받은 자는 탄핵심판이 있을 때까지 그 권한행사가 정지된다.
+                  <br>
+                  제3항의 승인을 얻지 못한 때에는 그 처분 또는 명령은 그때부터 효력을 상실한다. 이 경우 그 명령에 의하여 개정 또는 폐지되었던 법률은 그 명령이 승인을 얻지 못한 때부터 당연히 효력을 회복한다.대법원과 각급법원의 조직은 법률로 정한다. 모든 국민은 신체의 자유를 가진다. 누구든지 법률에 의하지 아니하고는 체포·구속·압수·수색 또는 심문을 받지 아니하며, 법률과 적법한 절차에 의하지 아니하고는 처벌·보안처분 또는 강제노역을 받지 아니한다.
+                  <br>
+                  국군의 조직과 편성은 법률로 정한다. 헌법재판소 재판관은 탄핵 또는 금고 이상의 형의 선고에 의하지 아니하고는 파면되지 아니한다. 헌법개정안은 국회가 의결한 후 30일 이내에 국민투표에 붙여 국회의원선거권자 과반수의 투표와 투표자 과반수의 찬성을 얻어야 한다.
+                  <br>
+                  <br>
+                  헌법에 의하여 체결·공포된 조약과 일반적으로 승인된 국제법규는 국내법과 같은 효력을 가진다. 
+                  <br>
+                  탄핵소추의 의결을 받은 자는 탄핵심판이 있을 때까지 그 권한행사가 정지된다.
+                  <br>
+                  제3항의 승인을 얻지 못한 때에는 그 처분 또는 명령은 그때부터 효력을 상실한다. 이 경우 그 명령에 의하여 개정 또는 폐지되었던 법률은 그 명령이 승인을 얻지 못한 때부터 당연히 효력을 회복한다.대법원과 각급법원의 조직은 법률로 정한다. 모든 국민은 신체의 자유를 가진다. 누구든지 법률에 의하지 아니하고는 체포·구속·압수·수색 또는 심문을 받지 아니하며, 법률과 적법한 절차에 의하지 아니하고는 처벌·보안처분 또는 강제노역을 받지 아니한다.
+                  <br>
+                  국군의 조직과 편성은 법률로 정한다. 헌법재판소 재판관은 탄핵 또는 금고 이상의 형의 선고에 의하지 아니하고는 파면되지 아니한다. 헌법개정안은 국회가 의결한 후 30일 이내에 국민투표에 붙여 국회의원선거권자 과반수의 투표와 투표자 과반수의 찬성을 얻어야 한다.
+                  <br>
+                  <br>
+                  헌법에 의하여 체결·공포된 조약과 일반적으로 승인된 국제법규는 국내법과 같은 효력을 가진다. 
+                  <br>
+                  탄핵소추의 의결을 받은 자는 탄핵심판이 있을 때까지 그 권한행사가 정지된다.
+                  <br>
+                  제3항의 승인을 얻지 못한 때에는 그 처분 또는 명령은 그때부터 효력을 상실한다. 이 경우 그 명령에 의하여 개정 또는 폐지되었던 법률은 그 명령이 승인을 얻지 못한 때부터 당연히 효력을 회복한다.대법원과 각급법원의 조직은 법률로 정한다. 모든 국민은 신체의 자유를 가진다. 누구든지 법률에 의하지 아니하고는 체포·구속·압수·수색 또는 심문을 받지 아니하며, 법률과 적법한 절차에 의하지 아니하고는 처벌·보안처분 또는 강제노역을 받지 아니한다.
+                  <br>
+                  국군의 조직과 편성은 법률로 정한다. 헌법재판소 재판관은 탄핵 또는 금고 이상의 형의 선고에 의하지 아니하고는 파면되지 아니한다. 헌법개정안은 국회가 의결한 후 30일 이내에 국민투표에 붙여 국회의원선거권자 과반수의 투표와 투표자 과반수의 찬성을 얻어야 한다.
+                  <ul>
+                    <li>
+                      <figure>
+                        <figcaption class="hide">구인 글 이미지</figcaption>
+                        <img src="./resource/images/recruit/recruit_thumbnail_dummy_img.png">
+                      </figure>
+                    </li>
+                    <li>
+                      <figure>
+                        <figcaption class="hide">구인 글 이미지</figcaption>
+                        <img src="./resource/images/recruit/recruit_thumbnail_dummy_img.png">
+                      </figure>
+                    </li>
+                    <li>
+                      <figure>
+                        <figcaption class="hide">구인 글 이미지</figcaption>
+                        <img src="./resource/images/recruit/recruit_thumbnail_dummy_img.png">
+                      </figure>
+                    </li>
+                  </ul>
+                </p>
+              </article>
+            </section>
+
+            <section class="note_wrap">
+              <p>
+                ※ 마감기한 없이 상시채용, 채용시까지로 선택된 게시물은 등록일 기준 100일 후 자동 마감 처리(첨부이미지 삭제)됩니다.
+                <br>
+                ※ 본 게시글은 구인목적으로만 이용가능하며, 무단수집, 임의유포를 금지합니다. 위반 시 관련법령에 의거 처벌을 받을 수 있습니다.
+                <br>
+                ※ 본 게시글의 기재오류, 하자, 허위 등에 대한 책임은 작성자에게 있습니다.
+                <br>
+                ※ 본 사이트는 기재된 내용에 대한 오류와 사용자가 이를 신뢰하여 취한 조치에 대해 책임을 지지 않습니다.
+              </p>
+            </section>
+
+            <section class="control_wrap">
+              <form action="#" class="clipping">
+                <input type="button" value="스크랩" class="btn_submit">
+              </form>
+              <button class="btn_call">연락하기</button>
+            </section>
+
+          </form>
+
+          
+        </section>
+      </main>
+
+
+      <footer class="main_footer">
+        <ul>
+          <li>
+            <a href="#">BARBER101소개 |&nbsp;</a>
+          </li>
+          <li>
+            <a href="#">이용약관 |&nbsp;</a>
+          </li>
+          <li>
+            <a href="#">개인정보처리방침 |&nbsp;</a>
+          </li>
+          <li>
+            <a href="#">이메일 무단수집거부 |&nbsp;</a>
+          </li>
+          <li>
+            <a href="#">책임의 한계와 법적고지 |&nbsp;</a>
+          </li>
+          <li>
+            <a href="#">공지</a>
+          </li>
+        </ul>
+        <div>
+          <div>
+            <address>상호 : BARBER101</address>
+            <span>사업자등록번호 : 000-00-00000</span>
+          </div>
+          <p>BARBER101 &copy; All rights reserver.</p>
+        </div>
+        <div class="logo_box">
+          <a href="/" class="main_logo">BARBER101</a>
+        </div>
+      </footer>
+    </div>
+  </div>
+</body>
+</html>
