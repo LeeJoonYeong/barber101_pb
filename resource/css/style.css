@@ -12,7 +12,8 @@
     --color-graye8: #e8e8e8;
     --color-grayf1: #f1f1f1;
     --color-grayf3: #f3f3f3;
-    --color-grayf8: #f8fafd;
+    --color-grayf8fa: #f8fafd;
+    --color-grayf8f8: #f8f8f8;
     --color-redec: #ec1212;
     --color-redf9: #f96f6f;
     --color-blue5f: #5fbbef;
@@ -106,6 +107,23 @@ input:autofill:active {
 /* 인풋 텔 스타일 */
 .input_tel { height: 4rem; padding: 0.8rem; border: 0.1rem solid var(--color-gray75); border-radius: 0.4rem; }
 /* //인풋 텔 스타일 */
+
+/* 인풋 라이오 스타일 */
+.input_radio_box { display: flex; align-items: center; gap: 1rem; }
+.input_radio_box input { width: 2rem; height: 2rem; }
+.input_radio_box label { font-size: 2rem; color: var(--color-black); }
+/* //인풋 라이오 스타일 */
+
+/* 인풋 데이트 스타일 */
+.input_date_box input { width: 34.9rem; height: 4rem; padding: 0.8rem; border: 0.1rem solid var(--color-gray75); border-radius: 0.4rem; }
+.input_date_box input:disabled { background-color: var(--color-grayf1); }
+/* //인풋 데이트 스타일 */
+
+/* 인풋 체크박스 스타일 */
+.input_checkbox_box { display: flex; align-items: center; gap: 0.8rem; }
+.input_checkbox_box input { width: 2rem; height: 2rem; }
+.input_checkbox_box label { font-size: 2rem; color: var(--color-black); }
+/* //인풋 체크박스 스타일 */
 
 /* 셀렉트 박스 스타일 */
 .input_select_box { position: relative; }

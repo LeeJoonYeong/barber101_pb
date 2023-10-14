@@ -175,27 +175,363 @@
               <strong>채용정보</strong>
               <div class="info_wrap">
                 <section class="top">
-                  <div class="deadline_box">
-                    <strong>마감일자</strong>
-                    <span>상시 채용</span>
+                  <div>
+                    <div class="input_label_box">
+                      <label for="deadline" class="input_label">마감일자</label>
+                      <i class="essential_text">*</i>
+                    </div>
+                    <div class="input_radio_box">
+                      <input type="radio" name="deadline" id="regular_employment" checked>
+                      <label for="regular_employment">상시모집</label>
+                    </div>
+                    <div class="input_radio_box">
+                      <input type="radio" name="deadline" id="referral">
+                      <label for="referral">채용시까지</label>
+                    </div>
+                    <div class="input_radio_box">
+                      <input type="radio" name="deadline" id="select_deadline_check">
+                      <label for="select_deadline_check">마감일 지정</label>
+                    </div>
+                    <div class="input_date_box">
+                      <input type="date" name="select_deadline" id="select_deadline">
+                    </div>
                   </div>
-                  <div class="business_hours_box">
-                    <strong>영업시간</strong>
-                    <span>상시 채용</span>
+                </section>
+                <section class="middle_top">
+                  <div>
+                    <div class="input_label_box">
+                      <label for="dropdown_business_hours_start" class="input_label">영업시간</label>
+                      <i class="essential_text">*</i>
+                    </div>
+                    <div class="input_select_box">
+                      <select name="dropdown_business_hours_start" id="dropdown_business_hours_start" class="input_select">
+                        <option value="empty">선택</option>
+                        <option value="00:00">00:00</option>
+                        <option value="00:00">00:30</option>
+                        <option value="00:00">01:00</option>
+                        <option value="00:00">01:30</option>
+                        <option value="00:00">02:30</option>
+                        <option value="00:00">02:30</option>
+                        <option value="00:00">03:00</option>
+                        <option value="00:00">03:30</option>
+                        <option value="00:00">04:00</option>
+                        <option value="00:00">04:30</option>
+                        <option value="00:00">05:00</option>
+                        <option value="00:00">05:30</option>
+                        <option value="00:00">06:00</option>
+                        <option value="00:00">06:30</option>
+                        <option value="00:00">07:00</option>
+                        <option value="00:00">07:30</option>
+                        <option value="00:00">08:00</option>
+                        <option value="00:00">08:30</option>
+                        <option value="00:00">09:00</option>
+                        <option value="00:00">09:30</option>
+                        <option value="00:00">10:00</option>
+                        <option value="00:00">10:30</option>
+                        <option value="00:00">11:00</option>
+                        <option value="00:00">11:30</option>
+                        <option value="00:00">12:00</option>
+                        <option value="00:00">12:30</option>
+                        <option value="00:00">13:00</option>
+                        <option value="00:00">13:30</option>
+                        <option value="00:00">14:00</option>
+                        <option value="00:00">14:30</option>
+                        <option value="00:00">15:00</option>
+                        <option value="00:00">15:30</option>
+                        <option value="00:00">16:00</option>
+                        <option value="00:00">16:30</option>
+                        <option value="00:00">17:00</option>
+                        <option value="00:00">17:30</option>
+                        <option value="00:00">18:00</option>
+                        <option value="00:00">18:30</option>
+                        <option value="00:00">19:00</option>
+                        <option value="00:00">19:30</option>
+                        <option value="00:00">20:00</option>
+                        <option value="00:00">20:30</option>
+                        <option value="00:00">21:00</option>
+                        <option value="00:00">21:30</option>
+                        <option value="00:00">22:00</option>
+                        <option value="00:00">22:30</option>
+                        <option value="00:00">23:00</option>
+                        <option value="00:00">23:30</option>
+                      </select>
+                    </div>
+                    <span class="dropdown_side_text">부터</span>
+                    <div class="input_select_box">
+                      <select name="dropdown_business_hours_end" id="dropdown_business_hours_end" class="input_select">
+                        <option value="empty">선택</option>
+                        <option value="00:00">00:00</option>
+                        <option value="00:00">00:30</option>
+                        <option value="00:00">01:00</option>
+                        <option value="00:00">01:30</option>
+                        <option value="00:00">02:30</option>
+                        <option value="00:00">02:30</option>
+                        <option value="00:00">03:00</option>
+                        <option value="00:00">03:30</option>
+                        <option value="00:00">04:00</option>
+                        <option value="00:00">04:30</option>
+                        <option value="00:00">05:00</option>
+                        <option value="00:00">05:30</option>
+                        <option value="00:00">06:00</option>
+                        <option value="00:00">06:30</option>
+                        <option value="00:00">07:00</option>
+                        <option value="00:00">07:30</option>
+                        <option value="00:00">08:00</option>
+                        <option value="00:00">08:30</option>
+                        <option value="00:00">09:00</option>
+                        <option value="00:00">09:30</option>
+                        <option value="00:00">10:00</option>
+                        <option value="00:00">10:30</option>
+                        <option value="00:00">11:00</option>
+                        <option value="00:00">11:30</option>
+                        <option value="00:00">12:00</option>
+                        <option value="00:00">12:30</option>
+                        <option value="00:00">13:00</option>
+                        <option value="00:00">13:30</option>
+                        <option value="00:00">14:00</option>
+                        <option value="00:00">14:30</option>
+                        <option value="00:00">15:00</option>
+                        <option value="00:00">15:30</option>
+                        <option value="00:00">16:00</option>
+                        <option value="00:00">16:30</option>
+                        <option value="00:00">17:00</option>
+                        <option value="00:00">17:30</option>
+                        <option value="00:00">18:00</option>
+                        <option value="00:00">18:30</option>
+                        <option value="00:00">19:00</option>
+                        <option value="00:00">19:30</option>
+                        <option value="00:00">20:00</option>
+                        <option value="00:00">20:30</option>
+                        <option value="00:00">21:00</option>
+                        <option value="00:00">21:30</option>
+                        <option value="00:00">22:00</option>
+                        <option value="00:00">22:30</option>
+                        <option value="00:00">23:00</option>
+                        <option value="00:00">23:30</option>
+                      </select>
+                    </div>
+                    <span class="dropdown_side_text">까지</span>
                   </div>
-                  <div class="working_hours_box">
-                    <strong>근무시간</strong>
-                    <span>협의 후 결정</span>
+                </section>
+                <section class="middle_middle">
+                  <div>
+                    <div class="input_label_box">
+                      <label for="dropdown_working_hours_start" class="input_label">근무시간</label>
+                      <i class="essential_text">*</i>
+                    </div>
+                    <div class="input_select_box">
+                      <select name="dropdown_working_hours_start" id="dropdown_working_hours_start" class="input_select">
+                        <option value="empty">선택</option>
+                        <option value="00:00">00:00</option>
+                        <option value="00:00">00:30</option>
+                        <option value="00:00">01:00</option>
+                        <option value="00:00">01:30</option>
+                        <option value="00:00">02:30</option>
+                        <option value="00:00">02:30</option>
+                        <option value="00:00">03:00</option>
+                        <option value="00:00">03:30</option>
+                        <option value="00:00">04:00</option>
+                        <option value="00:00">04:30</option>
+                        <option value="00:00">05:00</option>
+                        <option value="00:00">05:30</option>
+                        <option value="00:00">06:00</option>
+                        <option value="00:00">06:30</option>
+                        <option value="00:00">07:00</option>
+                        <option value="00:00">07:30</option>
+                        <option value="00:00">08:00</option>
+                        <option value="00:00">08:30</option>
+                        <option value="00:00">09:00</option>
+                        <option value="00:00">09:30</option>
+                        <option value="00:00">10:00</option>
+                        <option value="00:00">10:30</option>
+                        <option value="00:00">11:00</option>
+                        <option value="00:00">11:30</option>
+                        <option value="00:00">12:00</option>
+                        <option value="00:00">12:30</option>
+                        <option value="00:00">13:00</option>
+                        <option value="00:00">13:30</option>
+                        <option value="00:00">14:00</option>
+                        <option value="00:00">14:30</option>
+                        <option value="00:00">15:00</option>
+                        <option value="00:00">15:30</option>
+                        <option value="00:00">16:00</option>
+                        <option value="00:00">16:30</option>
+                        <option value="00:00">17:00</option>
+                        <option value="00:00">17:30</option>
+                        <option value="00:00">18:00</option>
+                        <option value="00:00">18:30</option>
+                        <option value="00:00">19:00</option>
+                        <option value="00:00">19:30</option>
+                        <option value="00:00">20:00</option>
+                        <option value="00:00">20:30</option>
+                        <option value="00:00">21:00</option>
+                        <option value="00:00">21:30</option>
+                        <option value="00:00">22:00</option>
+                        <option value="00:00">22:30</option>
+                        <option value="00:00">23:00</option>
+                        <option value="00:00">23:30</option>
+                      </select>
+                    </div>
+                    <span class="dropdown_side_text">부터</span>
+                    <div class="input_select_box">
+                      <select name="dropdown_working_hours_start_end" id="dropdown_working_hours_start_end" class="input_select">
+                        <option value="empty">선택</option>
+                        <option value="00:00">00:00</option>
+                        <option value="00:00">00:30</option>
+                        <option value="00:00">01:00</option>
+                        <option value="00:00">01:30</option>
+                        <option value="00:00">02:30</option>
+                        <option value="00:00">02:30</option>
+                        <option value="00:00">03:00</option>
+                        <option value="00:00">03:30</option>
+                        <option value="00:00">04:00</option>
+                        <option value="00:00">04:30</option>
+                        <option value="00:00">05:00</option>
+                        <option value="00:00">05:30</option>
+                        <option value="00:00">06:00</option>
+                        <option value="00:00">06:30</option>
+                        <option value="00:00">07:00</option>
+                        <option value="00:00">07:30</option>
+                        <option value="00:00">08:00</option>
+                        <option value="00:00">08:30</option>
+                        <option value="00:00">09:00</option>
+                        <option value="00:00">09:30</option>
+                        <option value="00:00">10:00</option>
+                        <option value="00:00">10:30</option>
+                        <option value="00:00">11:00</option>
+                        <option value="00:00">11:30</option>
+                        <option value="00:00">12:00</option>
+                        <option value="00:00">12:30</option>
+                        <option value="00:00">13:00</option>
+                        <option value="00:00">13:30</option>
+                        <option value="00:00">14:00</option>
+                        <option value="00:00">14:30</option>
+                        <option value="00:00">15:00</option>
+                        <option value="00:00">15:30</option>
+                        <option value="00:00">16:00</option>
+                        <option value="00:00">16:30</option>
+                        <option value="00:00">17:00</option>
+                        <option value="00:00">17:30</option>
+                        <option value="00:00">18:00</option>
+                        <option value="00:00">18:30</option>
+                        <option value="00:00">19:00</option>
+                        <option value="00:00">19:30</option>
+                        <option value="00:00">20:00</option>
+                        <option value="00:00">20:30</option>
+                        <option value="00:00">21:00</option>
+                        <option value="00:00">21:30</option>
+                        <option value="00:00">22:00</option>
+                        <option value="00:00">22:30</option>
+                        <option value="00:00">23:00</option>
+                        <option value="00:00">23:30</option>
+                      </select>
+                    </div>
+                    <span class="dropdown_side_text">까지</span>
+                    <div class="input_checkbox_box">
+                      <input type="checkbox" name="working_hours_consultation" id="working_hours_consultation">
+                      <label for="working_hours_consultation">협의 후 결정</label>
+                    </div>
+                  </div>
+                </section>
+                <section class="middle_bottom">
+                  <div>
+                    <div class="input_label_box">
+                      <label for="dropdown_holidays" class="input_label">휴무일</label>
+                      <i class="essential_text">*</i>
+                    </div>
+                    <div class="input_select_box">
+                      <select name="dropdown_holidays" id="dropdown_holidays" class="input_select">
+                        <option value="empty">선택</option>
+                        <option value="week_1">주 1일</option>
+                        <option value="week_2">주 2일</option>
+                        <option value="month_1">월 1일</option>
+                        <option value="month_2">월 2일</option>
+                        <option value="month_3">월 3일</option>
+                        <option value="month_4">월 4일</option>
+                        <option value="month_5">월 5일</option>
+                        <option value="month_6">월 6일</option>
+                        <option value="month_7">월 7일</option>
+                        <option value="month_8">월 8일</option>
+                        <option value="my_write">직접입력</option>
+                      </select>
+                    </div>
+                    <input type="text" name="text_holidays" id="text_holidays" class="input_text">
+                    <div class="input_checkbox_box">
+                      <input type="checkbox" name="holidays_consultation" id="holidays_consultation">
+                      <label for="holidays_consultation">협의 후 결정</label>
+                    </div>
                   </div>
                 </section>
                 <section class="bottom">
-                  <div class="holidays_box">
-                    <strong>휴무일</strong>
-                    <span>주 2회</span>
-                  </div>
-                  <div class="pay_box">
-                    <strong>급여</strong>
-                    <span>협의 후 결정</span>
+                  <div>
+                    <div class="input_label_box">
+                      <label for="dropdown_pay_type" class="input_label">급여</label>
+                      <i class="essential_text">*</i>
+                    </div>
+                    <div class="input_select_box">
+                      <select name="dropdown_pay_type" id="dropdown_pay_type" class="input_select">
+                        <option value="empty">선택</option>
+                        <option value="annual_income">연봉</option>
+                        <option value="monthly_pay">월급</option>
+                      </select>
+                    </div>
+                    <div class="input_select_box">
+                      <select name="dropdown_pay_annual_income" id="dropdown_pay_annual_income" class="input_select">
+                        <option value="empty">선택</option>
+                        <option value="above_2400">2,400만원 이상</option>
+                        <option value="above_2500">2,400만원 이상</option>
+                        <option value="above_2600">2,400만원 이상</option>
+                        <option value="above_2700">2,400만원 이상</option>
+                        <option value="above_2800">2,400만원 이상</option>
+                        <option value="above_2900">2,400만원 이상</option>
+                        <option value="above_3000">2,400만원 이상</option>
+                        <option value="above_3100">2,400만원 이상</option>
+                        <option value="above_3200">2,400만원 이상</option>
+                        <option value="above_3300">2,400만원 이상</option>
+                        <option value="above_3400">2,400만원 이상</option>
+                        <option value="above_3500">2,400만원 이상</option>
+                        <option value="above_3600">2,400만원 이상</option>
+                        <option value="above_3700">2,400만원 이상</option>
+                        <option value="above_3800">2,400만원 이상</option>
+                        <option value="above_3900">2,400만원 이상</option>
+                        <option value="above_4000">2,400만원 이상</option>
+                        <option value="above_4100">2,400만원 이상</option>
+                        <option value="above_4200">2,400만원 이상</option>
+                        <option value="above_4300">2,400만원 이상</option>
+                        <option value="above_4400">2,400만원 이상</option>
+                        <option value="my_write">직접입력</option>
+                      </select>
+                      <select style="display: none;" name="dropdown_pay_monthly_pay" id="dropdown_pay_monthly_pay" class="input_select">
+                        <option value="empty">선택</option>
+                        <option value="above_200">200만원 이상</option>
+                        <option value="above_210">210만원 이상</option>
+                        <option value="above_220">220만원 이상</option>
+                        <option value="above_230">230만원 이상</option>
+                        <option value="above_240">240만원 이상</option>
+                        <option value="above_250">250만원 이상</option>
+                        <option value="above_260">260만원 이상</option>
+                        <option value="above_270">270만원 이상</option>
+                        <option value="above_280">280만원 이상</option>
+                        <option value="above_290">290만원 이상</option>
+                        <option value="above_300">300만원 이상</option>
+                        <option value="above_310">310만원 이상</option>
+                        <option value="above_320">320만원 이상</option>
+                        <option value="above_330">330만원 이상</option>
+                        <option value="above_340">340만원 이상</option>
+                        <option value="above_350">350만원 이상</option>
+                        <option value="above_360">360만원 이상</option>
+                        <option value="above_370">370만원 이상</option>
+                        <option value="above_380">380만원 이상</option>
+                        <option value="above_390">390만원 이상</option>
+                        <option value="above_400">400만원 이상</option>
+                        <option value="my_write">직접입력</option>
+                      </select>
+                    </div>
+                    <input type="text" name="text_pay" id="text_pay" class="input_text">
+                    <div class="input_checkbox_box">
+                      <input type="checkbox" name="pay_consultation" id="pay_consultation">
+                      <label for="pay_consultation">협의 후 결정</label>
+                    </div>
                   </div>
                 </section>
               </div>
@@ -203,55 +539,50 @@
 
             <section class="description_wrap">
               <strong>상세내용</strong>
-              <article class="article_box">
-                <p class="text">
-                  헌법에 의하여 체결·공포된 조약과 일반적으로 승인된 국제법규는 국내법과 같은 효력을 가진다.
-                  <br>
-                  탄핵소추의 의결을 받은 자는 탄핵심판이 있을 때까지 그 권한행사가 정지된다.
-                  <br>
-                  제3항의 승인을 얻지 못한 때에는 그 처분 또는 명령은 그때부터 효력을 상실한다. 이 경우 그 명령에 의하여 개정 또는 폐지되었던 법률은 그 명령이 승인을 얻지 못한 때부터 당연히 효력을 회복한다.대법원과 각급법원의 조직은 법률로 정한다. 모든 국민은 신체의 자유를 가진다. 누구든지 법률에 의하지 아니하고는 체포·구속·압수·수색 또는 심문을 받지 아니하며, 법률과 적법한 절차에 의하지 아니하고는 처벌·보안처분 또는 강제노역을 받지 아니한다.
-                  <br>
-                  국군의 조직과 편성은 법률로 정한다. 헌법재판소 재판관은 탄핵 또는 금고 이상의 형의 선고에 의하지 아니하고는 파면되지 아니한다. 헌법개정안은 국회가 의결한 후 30일 이내에 국민투표에 붙여 국회의원선거권자 과반수의 투표와 투표자 과반수의 찬성을 얻어야 한다.
-                  <br>
-                  <br>
-                  헌법에 의하여 체결·공포된 조약과 일반적으로 승인된 국제법규는 국내법과 같은 효력을 가진다. 
-                  <br>
-                  탄핵소추의 의결을 받은 자는 탄핵심판이 있을 때까지 그 권한행사가 정지된다.
-                  <br>
-                  제3항의 승인을 얻지 못한 때에는 그 처분 또는 명령은 그때부터 효력을 상실한다. 이 경우 그 명령에 의하여 개정 또는 폐지되었던 법률은 그 명령이 승인을 얻지 못한 때부터 당연히 효력을 회복한다.대법원과 각급법원의 조직은 법률로 정한다. 모든 국민은 신체의 자유를 가진다. 누구든지 법률에 의하지 아니하고는 체포·구속·압수·수색 또는 심문을 받지 아니하며, 법률과 적법한 절차에 의하지 아니하고는 처벌·보안처분 또는 강제노역을 받지 아니한다.
-                  <br>
-                  국군의 조직과 편성은 법률로 정한다. 헌법재판소 재판관은 탄핵 또는 금고 이상의 형의 선고에 의하지 아니하고는 파면되지 아니한다. 헌법개정안은 국회가 의결한 후 30일 이내에 국민투표에 붙여 국회의원선거권자 과반수의 투표와 투표자 과반수의 찬성을 얻어야 한다.
-                  <br>
-                  <br>
-                  헌법에 의하여 체결·공포된 조약과 일반적으로 승인된 국제법규는 국내법과 같은 효력을 가진다. 
-                  <br>
-                  탄핵소추의 의결을 받은 자는 탄핵심판이 있을 때까지 그 권한행사가 정지된다.
-                  <br>
-                  제3항의 승인을 얻지 못한 때에는 그 처분 또는 명령은 그때부터 효력을 상실한다. 이 경우 그 명령에 의하여 개정 또는 폐지되었던 법률은 그 명령이 승인을 얻지 못한 때부터 당연히 효력을 회복한다.대법원과 각급법원의 조직은 법률로 정한다. 모든 국민은 신체의 자유를 가진다. 누구든지 법률에 의하지 아니하고는 체포·구속·압수·수색 또는 심문을 받지 아니하며, 법률과 적법한 절차에 의하지 아니하고는 처벌·보안처분 또는 강제노역을 받지 아니한다.
-                  <br>
-                  국군의 조직과 편성은 법률로 정한다. 헌법재판소 재판관은 탄핵 또는 금고 이상의 형의 선고에 의하지 아니하고는 파면되지 아니한다. 헌법개정안은 국회가 의결한 후 30일 이내에 국민투표에 붙여 국회의원선거권자 과반수의 투표와 투표자 과반수의 찬성을 얻어야 한다.
-                  <ul>
-                    <li>
-                      <figure>
-                        <figcaption class="hide">구인 글 이미지</figcaption>
-                        <img src="./resource/images/recruit/recruit_thumbnail_dummy_img.png">
-                      </figure>
-                    </li>
-                    <li>
-                      <figure>
-                        <figcaption class="hide">구인 글 이미지</figcaption>
-                        <img src="./resource/images/recruit/recruit_thumbnail_dummy_img.png">
-                      </figure>
-                    </li>
-                    <li>
-                      <figure>
-                        <figcaption class="hide">구인 글 이미지</figcaption>
-                        <img src="./resource/images/recruit/recruit_thumbnail_dummy_img.png">
-                      </figure>
-                    </li>
-                  </ul>
-                </p>
-              </article>
+              <div class="info_wrap">
+                <article class="article_box">
+                  <p class="text">
+                    내용을 입력해주세요.내용을 입력해주세요.내용을 입력해주세요.내용을 입력해주세요.내용을 입력해주세요.내용을 입력해주세요.내용을 입력해주세요.
+                    내용을 입력해주세요.내용을 입력해주세요.내용을 입력해주세요.내용을 입력해주세요.
+                    내용을 입력해주세요.내용을 입력해주세요.
+                  </p>
+                </article>
+                <section class="bottom">
+                  <div>
+                    <strong>사진</strong>
+                    <div>
+                      <div>
+                        <label for="file_description" class="input_file_label">+ 첨부하기</label>
+                        <input type="file" name="file_description" id="file_description" class="hide" multiple>
+                        <div class="input_file_info_box">
+                          <em>0MB (0개)</em>
+                          <b>/</b>
+                          <span>6MB</span>
+                        </div>
+                      </div>
+                      <div class="input_file_name_box">
+                        <div class="file_name_row">
+                          <button></button>
+                          <span>이미지1.png</span>
+                        </div>
+                        <div class="file_name_row">
+                          <button></button>
+                          <span>이미지2.png</span>
+                        </div>
+                      </div>
+                      <p class="input_file_caution">
+                        &middot; 파일은 <span>최대 3개</span>까지 첨부 가능하며, 개당 최대 <span>2MB</span>까지 업로드할 수 있습니다.
+                        <br>
+                        &middot; 가로, 세로 각각의 최댓값에 맞춰 자동 리사이징 됩니다.(가로 000px / 세로 000px)
+                        <br>
+                        &middot; 이미지는 그림파일만 업로드 가능합니다.(jpg, jpeg, png)
+                        <br>
+                        &middot; 첫번째 사진이 썸네일로 등록됩니다.
+                      </p>
+                    </div>
+                  </div>
+                </section>
+              <div>
             </section>
 
             <section class="note_wrap">
@@ -267,15 +598,10 @@
             </section>
 
             <section class="control_wrap">
-              <form action="#" class="clipping">
-                <input type="button" value="스크랩" class="btn_submit">
-              </form>
-              <button class="btn_call">연락하기</button>
+              <button class="btn_submit">등록하기</button>
             </section>
-
+            
           </form>
-
-          
         </section>
       </main>
 
