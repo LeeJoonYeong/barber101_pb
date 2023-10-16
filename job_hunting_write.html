@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>구직 글쓰기</title>
+  <link rel="stylesheet" href="./resource/css/root.css">
+</head>
+<body>
+  <div class="whole_wrapper">
+    <div class="whole_wrapper_inner">
+      <header class="main_header">
+        <div class="logo_box">
+          <h1>
+            <a href="/" class="main_logo">BARBER101</a>
+          </h1>
+        </div>
+        <nav class="gnb_box">
+          <ul>
+            <li class="active">
+              <a href="#">구인·구직</a>
+            </li>
+            <li>
+              <a href="#">커뮤니티</a>
+            </li>
+            <li>
+              <a href="#">정보</a>
+            </li>
+            <li>
+              <a href="#">쇼핑</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="auth_box">
+          <section style="display: none;" class="login_box">
+            <div class="profile_img">프로필 사진</div>
+            <strong class="nick_name">바버문화좋아요</strong>
+            <span class="grade">(사업자)</span>
+          </section>
+          <ul>
+            <li>
+              <a href="#">회원가입</a>
+            </li>
+            <li class="log_in">
+              <a href="#">로그인</a>
+            </li>
+            <li>
+              <a href="#" style="display: none;">마이페이지</a>
+            </li>
+            <li style="display: none;" class="log_out">
+              <button>로그아웃</button>
+            </li>
+          </ul>
+        </div>
+      </header>
+      <main class="main_body">
+        <section class="job_hunting_write_wrapper">
+
+          <header>
+            <a href="#" class="link_back">이전</a>
+            <h2>구직글 작성</h2>
+          </header>
+
+          <form action="#" method="post" enctype="multipart/form-data">
+
+            <section class="human_info_wrap">
+              <strong>인적사항</strong>
+              <div class="info_wrap">
+                <section class="top">
+                  <div>
+                    <div class="input_label_box">
+                      <label for="title" class="input_label">인사말</label>
+                      <i class="essential_text">*</i>
+                    </div>
+                    <input type="text" name="title" id="title" class="input_text" data-text="limit">
+                    <span class="text_limit">(<i>0</i>/<b>200</b>자)</span>
+                  </div>
+                </section>
+                <section class="middle_top">
+                  <div>
+                    <div class="input_label_box">
+                      <label for="author_name" class="input_label">이름</label>
+                      <i class="essential_text">*</i>
+                    </div>
+                    <input type="text" name="author_name" id="author_name" class="input_text">
+                  </div>
+                  <div>
+                    <div class="input_label_box">
+                      <label for="gender" class="input_label">성별</label>
+                      <i class="essential_text">*</i>
+                    </div>
+                    <div class="input_radio_box">
+                      <input type="radio" name="gender_man" id="gender_man" checked="">
+                      <label for="gender_man">남</label>
+                    </div>
+                    <div class="input_radio_box">
+                      <input type="radio" name="gender_woman" id="gender_woman" checked="">
+                      <label for="gender_woman">여</label>
+                    </div>
+                  </div>
+                </section>
+                <section class="middle_bottom">
+                  <div>
+                    <div class="input_label_box">
+                      <label for="age" class="input_label">나이</label>
+                      <i class="essential_text">*</i>
+                    </div>
+                    <div class="input_date_box">
+                      <input type="date" name="select_age" id="select_age">
+                    </div>
+                  </div>
+                  <div> 
+                    <div class="input_label_box">
+                      <label for="contact" class="input_label">연락처</label>
+                      <i class="essential_text">*</i>
+                    </div>
+                    <input type="tel" name="contact" id="contact" class="input_tel">
+                  </div>
+                </section>
+                <section class="bottom">
+                  <div>
+                    <strong>사진</strong>
+                    <div>
+                      <div>
+                        <label for="file_thumbnail" class="input_file_label">+ 첨부하기</label>
+                        <input type="file" name="file_thumbnail" id="file_thumbnail" class="hide" multiple>
+                        <div class="input_file_info_box">
+                          <em>0MB (0개)</em>
+                          <b>/</b>
+                          <span>6MB</span>
+                        </div>
+                      </div>
+                      <div class="input_file_name_box">
+                        <div class="file_name_row">
+                          <button></button>
+                          <span>이미지1.png</span>
+                        </div>
+                        <div class="file_name_row">
+                          <button></button>
+                          <span>이미지2.png</span>
+                        </div>
+                      </div>
+                      <p class="input_file_caution">
+                        &middot; 파일은 <span>최대 3개</span>까지 첨부 가능하며, 개당 최대 <span>2MB</span>까지 업로드할 수 있습니다.
+                        <br>
+                        &middot; 가로, 세로 각각의 최댓값에 맞춰 자동 리사이징 됩니다.(가로 000px / 세로 000px)
+                        <br>
+                        &middot; 이미지는 그림파일만 업로드 가능합니다.(jpg, jpeg, png)
+                        <br>
+                        &middot; 첫번째 사진이 썸네일로 등록됩니다.
+                      </p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </section>
+            
+            <section class="recruit_info_wrap">
+              <strong>채용정보</strong>
+              <div class="info_wrap">
+                <section class="top">
+                  <div>
+                    <div class="input_label_box">
+                      <label for="career" class="input_label">경력여부</label>
+                      <i class="essential_text">*</i>
+                    </div>
+                    <div class="input_radio_box">
+                      <input type="radio" name="junior" id="junior" checked>
+                      <label for="junior">신입</label>
+                    </div>
+                    <div class="input_radio_box">
+                      <input type="radio" name="senior" id="senior">
+                      <label for="senior">경력</label>
+                    </div>
+                    <div class="input_select_box">
+                      <select name="dropdown_senior" id="dropdown_senior" class="input_select">
+                        <option value="empty">선택</option>
+                        <option value="under_year_1">1년 미만</option>
+                        <option value="above_year_1">1년 이상</option>
+                        <option value="above_year_2">2년 이상</option>
+                        <option value="above_year_3">3년 이상</option>
+                        <option value="above_year_4">4년 이상</option>
+                        <option value="above_year_5">5년 이상</option>
+                        <option value="above_year_6">6년 이상</option>
+                        <option value="above_year_7">7년 이상</option>
+                        <option value="above_year_8">8년 이상</option>
+                        <option value="above_year_9">9년 이상</option>
+                        <option value="above_year_10">10년 이상</option>
+                        <option value="above_year_15">15년 이상</option>
+                        <option value="above_year_20">20년 이상</option>
+                        <option value="my_write">직접입력</option>
+                      </select>
+                    </div>
+                    <input type="text" name="text_senior" id="text_senior" class="input_text">
+                  </div>
+                </section>
+                <section class="bottom">
+                  <div>
+                    <div class="input_label_box">
+                      <label for="dropdown_wish_area" class="input_label">희망지역</label>
+                      <i class="essential_text">*</i>
+                    </div>
+                    <div class="right_col_box">
+                      <div class="right_col_box_top">
+                        <div class="input_select_box">
+                          <select name="dropdown_wish_area_main" id="dropdown_wish_area_main" class="input_select">
+                            <option value="empty">시/도</option>
+                            <option value="seoul">서울</option>
+                            <option value="seoul">인천</option>
+                            <option value="seoul">대전</option>
+                            <option value="seoul">대구</option>
+                            <option value="seoul">광주</option>
+                            <option value="seoul">울산</option>
+                            <option value="seoul">부산</option>
+                            <option value="seoul">세종</option>
+                            <option value="seoul">제주</option>
+                            <option value="seoul">강원</option>
+                            <option value="seoul">경기</option>
+                            <option value="seoul">충북</option>
+                            <option value="seoul">충남</option>
+                            <option value="seoul">전북</option>
+                            <option value="seoul">전남</option>
+                            <option value="seoul">경북</option>
+                            <option value="seoul">경남</option>
+                          </select>
+                        </div>
+                        <div class="input_select_box">
+                          <select name="dropdown_wish_area_sub" id="dropdown_wish_area_sub" class="input_select">
+                            <option value="empty">시/군/구</option>
+                          </select>
+                        </div>
+                        <button class="btn_item_add">+ 추가하기</button>
+                      </div>
+                      <div class="right_col_box_bottom">
+                        <p class="guide_text">*최대 3개 지역까지 등록 가능합니다.</p>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </section>
+
+            <section class="description_wrap">
+              <strong>상세내용</strong>
+              <div class="info_wrap">
+                <article class="article_box">
+                  <p class="text">
+                    내용을 입력해주세요.내용을 입력해주세요.내용을 입력해주세요.내용을 입력해주세요.내용을 입력해주세요.내용을 입력해주세요.내용을 입력해주세요.
+                    내용을 입력해주세요.내용을 입력해주세요.내용을 입력해주세요.내용을 입력해주세요.
+                    내용을 입력해주세요.내용을 입력해주세요.
+                  </p>
+                </article>
+                <section class="bottom">
+                  <div>
+                    <strong>사진</strong>
+                    <div>
+                      <div>
+                        <label for="file_description" class="input_file_label">+ 첨부하기</label>
+                        <input type="file" name="file_description" id="file_description" class="hide" multiple>
+                        <div class="input_file_info_box">
+                          <em>0MB (0개)</em>
+                          <b>/</b>
+                          <span>6MB</span>
+                        </div>
+                      </div>
+                      <div class="input_file_name_box">
+                        <div class="file_name_row">
+                          <button></button>
+                          <span>이미지1.png</span>
+                        </div>
+                        <div class="file_name_row">
+                          <button></button>
+                          <span>이미지2.png</span>
+                        </div>
+                      </div>
+                      <p class="input_file_caution">
+                        &middot; 파일은 <span>최대 3개</span>까지 첨부 가능하며, 개당 최대 <span>2MB</span>까지 업로드할 수 있습니다.
+                        <br>
+                        &middot; 가로, 세로 각각의 최댓값에 맞춰 자동 리사이징 됩니다.(가로 000px / 세로 000px)
+                        <br>
+                        &middot; 이미지는 그림파일만 업로드 가능합니다.(jpg, jpeg, png)
+                        <br>
+                        &middot; 첫번째 사진이 썸네일로 등록됩니다.
+                      </p>
+                    </div>
+                  </div>
+                </section>
+              <div>
+            </section>
+
+            <section class="note_wrap">
+              <p>
+                ※ 마감기한 없이 상시채용, 채용시까지로 선택된 게시물은 등록일 기준 100일 후 자동 마감 처리(첨부이미지 삭제)됩니다.
+                <br>
+                ※ 본 게시글은 구인목적으로만 이용가능하며, 무단수집, 임의유포를 금지합니다. 위반 시 관련법령에 의거 처벌을 받을 수 있습니다.
+                <br>
+                ※ 본 게시글의 기재오류, 하자, 허위 등에 대한 책임은 작성자에게 있습니다.
+                <br>
+                ※ 본 사이트는 기재된 내용에 대한 오류와 사용자가 이를 신뢰하여 취한 조치에 대해 책임을 지지 않습니다.
+              </p>
+            </section>
+
+            <section class="control_wrap">
+              <button class="btn_submit">등록하기</button>
+            </section>
+            
+          </form>
+        </section>
+      </main>
+
+
+      <footer class="main_footer">
+        <ul>
+          <li>
+            <a href="#">BARBER101소개 |&nbsp;</a>
+          </li>
+          <li>
+            <a href="#">이용약관 |&nbsp;</a>
+          </li>
+          <li>
+            <a href="#">개인정보처리방침 |&nbsp;</a>
+          </li>
+          <li>
+            <a href="#">이메일 무단수집거부 |&nbsp;</a>
+          </li>
+          <li>
+            <a href="#">책임의 한계와 법적고지 |&nbsp;</a>
+          </li>
+          <li>
+            <a href="#">공지</a>
+          </li>
+        </ul>
+        <div>
+          <div>
+            <address>상호 : BARBER101</address>
+            <span>사업자등록번호 : 000-00-00000</span>
+          </div>
+          <p>BARBER101 &copy; All rights reserver.</p>
+        </div>
+        <div class="logo_box">
+          <a href="/" class="main_logo">BARBER101</a>
+        </div>
+      </footer>
+    </div>
+  </div>
+</body>
+</html>

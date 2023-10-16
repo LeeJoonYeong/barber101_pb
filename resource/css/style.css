@@ -88,6 +88,10 @@ input:autofill:active {
 .region_tag { display: inline-block; height: 3rem; line-height: 3rem; padding: 0 2rem; border-radius: 1.6rem; border: 0.1rem solid var(--color-gray31); background-color: var(--color-gray31); font-size: 1.5rem; font-weight: 700; color: var(--color-white); }
 /* //지역 태그 스타일*/
 
+/* 아이템 추가 버튼 */
+.btn_item_add { line-height: 2rem; padding: 1rem 1.5rem 1rem 1rem; background-color: var(--color-gray31); border-radius: 0.6rem; font-size: 1.4rem; font-weight: 600; color: var(--color-white); cursor: pointer; }
+/* //아이템 추가 버튼 */
+
 /* 필수항목 * 스타일*/
 .essential_text { font-size: 2rem; font-weight: 600; color: var(--color-redec); }
 /* //필수항목 * 스타일*/
@@ -102,6 +106,8 @@ input:autofill:active {
 
 /* 인풋 텍스트 스타일 */
 .input_text { height: 4rem; padding: 0.8rem; border: 0.1rem solid var(--color-gray75); border-radius: 0.4rem; }
+.input_text[data-text="limit"] + .text_limit { margin-left: 2rem; font-size: 1.8rem; color: var(--color-gray76); font-weight: 400; }
+.input_text[data-text="limit"] + .text_limit b { font-weight: inherit; }
 /* //인풋 텍스트 스타일 */
 
 /* 인풋 텔 스타일 */
