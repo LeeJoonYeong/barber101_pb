@@ -150,6 +150,8 @@
 .recruit_write_wrapper .description_wrap .info_wrap::after { bottom: 0; }
 .recruit_write_wrapper .description_wrap .info_wrap .article_box { height: 69.4rem; padding: 1.2rem 0.8rem; background-color: var(--color-grayf8f8); }
 .recruit_write_wrapper .description_wrap .info_wrap .article_box .text { height: 100%; line-height: 3.2rem; padding: 2rem 4.6rem 0 2.4rem; font-size: 1.8rem; color: var(--color-black); overflow-y: auto; }
+.recruit_write_wrapper .description_wrap .info_wrap .article_box .text::-webkit-scrollbar { width: 0.6rem; }
+.recruit_write_wrapper .description_wrap .info_wrap .article_box .text::-webkit-scrollbar-thumb { background-color: var(--color-graycf); border-radius: 0.4rem; }
 .recruit_write_wrapper .description_wrap .info_wrap > .bottom { display: flex; align-items: center; gap: 4.8rem; margin-top: 4rem; }
 .recruit_write_wrapper .description_wrap .info_wrap > .bottom > div { flex-grow: 1; display: flex; align-items: center;  }
 .recruit_write_wrapper .description_wrap .info_wrap > .bottom > div > strong { align-self: flex-start; width: 8.1rem; margin-top: 0.8rem; font-size: 2rem; font-weight: 600; color: var(--color-black); }
@@ -277,26 +279,61 @@
 .job_hunting_write_wrapper .human_info_wrap .info_wrap > section.bottom .input_file_caution { line-height: 2.5rem; margin-top: 2.4rem; font-size: 1.6rem; color: var(--color-gray8e); }
 .job_hunting_write_wrapper .human_info_wrap .info_wrap > section.bottom .input_file_caution span { font-size: 1.6rem; font-weight: 700; }
 
-.job_hunting_write_wrapper .recruit_info_wrap  { margin-top: 3.6rem; }
-.job_hunting_write_wrapper .recruit_info_wrap > strong { font-size: 2.8rem; font-weight: 700; color: var(--color-gray18); letter-spacing: -0.05rem; }
-.job_hunting_write_wrapper .recruit_info_wrap .info_wrap { position: relative; display: flex; flex-direction: column; justify-content: center; gap: 4rem; padding: 3.6rem 0; margin-top: 2.4rem; }
-.job_hunting_write_wrapper .recruit_info_wrap .info_wrap::before,
-.job_hunting_write_wrapper .recruit_info_wrap .info_wrap::after { content: ''; position: absolute; left: -3.2rem; width: 120rem; height: 0.1rem; background-color: var(--color-graye8); }
-.job_hunting_write_wrapper .recruit_info_wrap .info_wrap::before { top: 0; }
-.job_hunting_write_wrapper .recruit_info_wrap .info_wrap::after { bottom: 0; }
-.job_hunting_write_wrapper .recruit_info_wrap .info_wrap > section { display: flex; align-items: center; gap: 22.8rem; }
-.job_hunting_write_wrapper .recruit_info_wrap .info_wrap > section > div { display: flex; align-items: center; }
-.job_hunting_write_wrapper .recruit_info_wrap .info_wrap > section > div .input_label_box { display: flex; width: 8.4rem; }
-.job_hunting_write_wrapper .recruit_info_wrap .info_wrap > section.top > div .input_select_box { margin-left: 1.6rem; }
-.job_hunting_write_wrapper .recruit_info_wrap .info_wrap > section.top > div .input_select { width: 17.1rem; }
-.job_hunting_write_wrapper .recruit_info_wrap .info_wrap > section.top > div .input_text { margin-left: 3.2rem; }
-.job_hunting_write_wrapper .recruit_info_wrap .info_wrap > section.top > div .input_radio_box:nth-of-type(2) { margin-left: 5.9rem; }
-.job_hunting_write_wrapper .recruit_info_wrap .info_wrap > section.top > div .input_radio_box:nth-of-type(3) { margin-left: 4.8rem; }
-.job_hunting_write_wrapper .recruit_info_wrap .info_wrap > section.bottom > div { gap: 0.8rem; }
-.job_hunting_write_wrapper .recruit_info_wrap .info_wrap > section.bottom > div .input_label_box { align-self: flex-start; }
-.job_hunting_write_wrapper .recruit_info_wrap .info_wrap > section.bottom > div .right_col_box { display: flex; flex-direction: column; gap: 1rem; }
-.job_hunting_write_wrapper .recruit_info_wrap .info_wrap > section.bottom > div .right_col_box .right_col_box_top { display: flex; align-items: center; }
-.job_hunting_write_wrapper .recruit_info_wrap .info_wrap > section.bottom > div .right_col_box .right_col_box_top .input_select_box .input_select { width: 29.6rem; }
-.job_hunting_write_wrapper .recruit_info_wrap .info_wrap > section.bottom > div .right_col_box .right_col_box_top .input_select_box:nth-of-type(2) { margin-left: 1.6rem; }
-.job_hunting_write_wrapper .recruit_info_wrap .info_wrap > section.bottom > div .right_col_box .right_col_box_top .btn_item_add { margin-left: 2.4rem; }
-.job_hunting_write_wrapper .recruit_info_wrap .info_wrap > section.bottom > div .right_col_box .right_col_box_bottom .guide_text { font-size: 1.6rem; color: var(--color-gray8e); }
+.job_hunting_write_wrapper .working_conditions_wrap { margin-top: 3.6rem; }
+.job_hunting_write_wrapper .working_conditions_wrap > strong { font-size: 2.8rem; font-weight: 700; color: var(--color-gray18); letter-spacing: -0.05rem; }
+.job_hunting_write_wrapper .working_conditions_wrap .info_wrap { position: relative; display: flex; flex-direction: column; justify-content: center; gap: 4rem; padding: 3.6rem 0; margin-top: 2.4rem; }
+.job_hunting_write_wrapper .working_conditions_wrap .info_wrap::before,
+.job_hunting_write_wrapper .working_conditions_wrap .info_wrap::after { content: ''; position: absolute; left: -3.2rem; width: 120rem; height: 0.1rem; background-color: var(--color-graye8); }
+.job_hunting_write_wrapper .working_conditions_wrap .info_wrap::before { top: 0; }
+.job_hunting_write_wrapper .working_conditions_wrap .info_wrap::after { bottom: 0; }
+.job_hunting_write_wrapper .working_conditions_wrap .info_wrap > section { display: flex; align-items: center; gap: 22.8rem; }
+.job_hunting_write_wrapper .working_conditions_wrap .info_wrap > section > div { display: flex; align-items: center; }
+.job_hunting_write_wrapper .working_conditions_wrap .info_wrap > section > div .input_label_box { display: flex; width: 8.4rem; }
+.job_hunting_write_wrapper .working_conditions_wrap .info_wrap > section.top > div .input_select_box { margin-left: 1.6rem; }
+.job_hunting_write_wrapper .working_conditions_wrap .info_wrap > section.top > div .input_select { width: 17.1rem; }
+.job_hunting_write_wrapper .working_conditions_wrap .info_wrap > section.top > div .input_text { margin-left: 3.2rem; }
+.job_hunting_write_wrapper .working_conditions_wrap .info_wrap > section.top > div .input_radio_box:nth-of-type(2) { margin-left: 5.9rem; }
+.job_hunting_write_wrapper .working_conditions_wrap .info_wrap > section.top > div .input_radio_box:nth-of-type(3) { margin-left: 4.8rem; }
+.job_hunting_write_wrapper .working_conditions_wrap .info_wrap > section.bottom > div { gap: 0.8rem; }
+.job_hunting_write_wrapper .working_conditions_wrap .info_wrap > section.bottom > div .input_label_box { align-self: flex-start; }
+.job_hunting_write_wrapper .working_conditions_wrap .info_wrap > section.bottom > div .right_col_box { display: flex; flex-direction: column; gap: 1rem; }
+.job_hunting_write_wrapper .working_conditions_wrap .info_wrap > section.bottom > div .right_col_box .right_col_box_top { display: flex; align-items: center; }
+.job_hunting_write_wrapper .working_conditions_wrap .info_wrap > section.bottom > div .right_col_box .right_col_box_top .input_select_box .input_select { width: 29.6rem; }
+.job_hunting_write_wrapper .working_conditions_wrap .info_wrap > section.bottom > div .right_col_box .right_col_box_top .input_select_box:nth-of-type(2) { margin-left: 1.6rem; }
+.job_hunting_write_wrapper .working_conditions_wrap .info_wrap > section.bottom > div .right_col_box .right_col_box_top .btn_item_add { margin-left: 2.4rem; }
+.job_hunting_write_wrapper .working_conditions_wrap .info_wrap > section.bottom > div .right_col_box .right_col_box_bottom .guide_text { font-size: 1.6rem; color: var(--color-gray8e); }
+
+.job_hunting_write_wrapper .working_career_wrap { margin-top: 3.6rem; }
+.job_hunting_write_wrapper .working_career_wrap > strong { font-size: 2.8rem; font-weight: 700; color: var(--color-gray18); letter-spacing: -0.05rem; }
+.job_hunting_write_wrapper .working_career_wrap .info_wrap { position: relative; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 4rem; padding: 3.6rem 0; margin-top: 2.4rem; }
+.job_hunting_write_wrapper .working_career_wrap .info_wrap::before,
+.job_hunting_write_wrapper .working_career_wrap .info_wrap::after { content: ''; position: absolute; left: -3.2rem; width: 120rem; height: 0.1rem; background-color: var(--color-graye8); }
+.job_hunting_write_wrapper .working_career_wrap .info_wrap::before { top: 0; }
+.job_hunting_write_wrapper .working_career_wrap .info_wrap::after { bottom: 0; }
+.job_hunting_write_wrapper .working_career_wrap .info_wrap .btn_item_add { display: flex; flex-direction: column; border: 0.1rem solid var(--color-grayaa); }
+.job_hunting_write_wrapper .working_career_wrap .info_wrap ul { width: 100%; }
+.job_hunting_write_wrapper .working_career_wrap .info_wrap ul li { display: flex; flex-direction: column; border: 0.1rem solid var(--color-grayaa); }
+.job_hunting_write_wrapper .working_career_wrap .info_wrap ul li > section { position: relative; display: flex; align-items: center; height: 8.4rem; line-height: 8.4rem; text-align: center; }
+.job_hunting_write_wrapper .working_career_wrap .info_wrap ul li > section.top { border-bottom: 0.1rem solid var(--color-grayaa); }
+.job_hunting_write_wrapper .working_career_wrap .info_wrap ul li > section label { width: 21.1rem; height: 100%; background-color: var(--color-graydd); border-right: 0.1rem solid var(--color-grayaa); font-size: 2.4rem; letter-spacing: -0.05rem; }
+.job_hunting_write_wrapper .working_career_wrap .info_wrap ul li > section.top .input_text { flex-grow: 1; margin: 0 2.4rem; }
+.job_hunting_write_wrapper .working_career_wrap .info_wrap ul li > section.bottom .input_date_box:nth-of-type(1) { margin-left: 2.4rem; }
+.job_hunting_write_wrapper .working_career_wrap .info_wrap ul li > section.bottom .input_date_box input { width: 21.3rem; }
+.job_hunting_write_wrapper .working_career_wrap .info_wrap ul li > section.bottom .input_date_box ~ .input_date_box input { margin-left: 5.2rem; }
+
+.job_hunting_write_wrapper .self_introduction_wrap  { margin-top: 3.6rem; }
+.job_hunting_write_wrapper .self_introduction_wrap > strong { font-size: 2.8rem; font-weight: 700; color: var(--color-gray18); letter-spacing: -0.05rem; }
+.job_hunting_write_wrapper .self_introduction_wrap .info_wrap { position: relative; display: flex; flex-direction: column; padding: 3.6rem 0; margin-top: 2.4rem; }
+.job_hunting_write_wrapper .self_introduction_wrap .info_wrap::before,
+.job_hunting_write_wrapper .self_introduction_wrap .info_wrap::after { content: ''; position: absolute; left: -3.2rem; width: 120rem; height: 0.1rem; background-color: var(--color-graye8); }
+.job_hunting_write_wrapper .self_introduction_wrap .info_wrap::before { top: 0; }
+.job_hunting_write_wrapper .self_introduction_wrap .info_wrap::after { bottom: 0; }
+.job_hunting_write_wrapper .self_introduction_wrap .info_wrap .article_box { height: 69.4rem; padding: 1.2rem 0.8rem; background-color: var(--color-grayf8f8); }
+.job_hunting_write_wrapper .self_introduction_wrap .info_wrap .article_box .text { height: 100%; line-height: 3.2rem; padding: 2rem 4.6rem 0 2.4rem; font-size: 1.8rem; color: var(--color-black); overflow-y: auto; }
+.job_hunting_write_wrapper .self_introduction_wrap .info_wrap .article_box .text::-webkit-scrollbar { width: 0.6rem; }
+.job_hunting_write_wrapper .self_introduction_wrap .info_wrap .article_box .text::-webkit-scrollbar-thumb { background-color: var(--color-graycf); border-radius: 0.4rem; }
+.job_hunting_write_wrapper .note_wrap { position: relative; padding-bottom: 3.6rem; margin-top: 3.6rem; }
+.job_hunting_write_wrapper .note_wrap::after { content: ''; position: absolute; bottom: 0; left: -3.2rem; width: 120rem; height: 0.1rem; background-color: var(--color-graye8); }
+.job_hunting_write_wrapper .note_wrap p { line-height: 3rem; font-size: 1.6rem; color: var(--color-gray8e); letter-spacing: -0.05rem; }
+.job_hunting_write_wrapper .control_wrap { align-self: flex-end; margin-top: 3.6rem; }
+.job_hunting_write_wrapper .control_wrap .btn_submit { height: 4.8rem; line-height: 4.8rem; padding: 0 2rem; background-color: var(--color-gray31); border-radius: 0.6rem; font-size: 2rem; font-weight: 600; color: var(--color-white); }
