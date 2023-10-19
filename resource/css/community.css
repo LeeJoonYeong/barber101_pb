@@ -54,3 +54,23 @@
 .community_view_wrapper .control_wrap .link_article_list,
 .community_view_wrapper .control_wrap .right_box .btn_article_copy { height: 4rem; line-height: 4rem; padding: 0 2rem; background-color: var(--color-grayf3); border-radius: 0.6rem; font-size: 1.4rem; font-weight: 600; color: var(--color-gray31); }
 .community_view_wrapper .control_wrap .right_box .btn_accusation { height: 4rem; line-height: 4rem; padding: 0 2rem; background-color: var(--color-redec); border-radius: 0.6rem; font-size: 1.4rem; font-weight: 600; color: var(--color-white); }
+
+/* ================== 커뮤니티 글쓰기 ================== */
+.community_write_wrapper { position: relative; display: flex; flex-direction: column; gap: 2.8rem; padding: 2.4rem 3.2rem 3.6rem; background-color: var(--color-white); border: 1px solid var(--color-graye8); margin-top: 4rem; }
+.community_write_wrapper header { position: relative; display: flex; flex-direction: column; gap: 4.6rem; }
+.community_write_wrapper header .link_back { width: max-content; height: 3.2rem; line-height: 3.2rem; padding: 0 1rem 0 3rem; background: url('../images/icons/arrow_left_black_icon.png') left 1rem center / 1.6rem var(--color-grayf3) no-repeat; border-radius: 0.6rem; font-size: 1.4rem; font-weight: 600; color: var(--color-gray31); }
+.community_write_wrapper header h2 { font-size: 3.6rem; font-weight: 700; color: var(--color-gray18); letter-spacing: -0.05rem; }
+.community_write_wrapper header + form { display: flex; flex-direction: column; }
+.community_write_wrapper .article_configure_wrap .info_wrap { display: flex; flex-direction: column; gap: 6rem; }
+.community_write_wrapper .article_configure_wrap .info_wrap > section { display: flex; align-items: center; }
+.community_write_wrapper .article_configure_wrap .info_wrap > section > div { display: flex; align-items: center; }
+.community_write_wrapper .article_configure_wrap .info_wrap > section > div .input_label_box { display: flex; width: 8.4rem; }
+.community_write_wrapper .article_configure_wrap .info_wrap > section.top > div { gap: 0.8rem; }
+.community_write_wrapper .article_configure_wrap .info_wrap > section.top > div .input_label_box { align-self: flex-start; }
+.community_write_wrapper .article_configure_wrap .info_wrap > section.top > div .right_col_box { display: flex; flex-direction: column; gap: 1.2rem; }
+.community_write_wrapper .article_configure_wrap .info_wrap > section.top > div .right_col_box .right_col_box_top { display: flex; align-items: center; }
+.community_write_wrapper .article_configure_wrap .info_wrap > section.top > div .right_col_box .right_col_box_top .input_select_box .input_select { width: 34.9rem; }
+.community_write_wrapper .article_configure_wrap .info_wrap > section.top > div .right_col_box .right_col_box_top .input_select_box:nth-of-type(2) { margin-left: 1rem; }
+.community_write_wrapper .article_configure_wrap .info_wrap > section.top > div .right_col_box .right_col_box_bottom .guide_text { font-size: 1.6rem; color: var(--color-gray8e); }
+.community_write_wrapper .article_configure_wrap .info_wrap > section.bottom > div .input_radio_box:nth-of-type(2) { margin-left: 0.8rem; }
+.community_write_wrapper .article_configure_wrap .info_wrap > section.bottom > div .input_radio_box:nth-of-type(3) { margin-left: 4rem; }
