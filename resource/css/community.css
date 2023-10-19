@@ -1,4 +1,4 @@
-/* ================== 커뮤니티 헤더 ================== */
+/* ================== 커뮤니티 리스트 헤더 ================== */
 .community_wrapper .h2_header { display: flex; flex-direction: column; justify-content: initial; align-items: initial; gap: 2.4rem; }
 .community_wrapper .h2_header h2 { font-size: 4.8rem; letter-spacing: -0.05rem; }
 .community_wrapper .h2_header p { position: initial; color: var(--color-gray18); }
@@ -27,3 +27,30 @@
 .community_list_wrapper ul li a figure { position: absolute; top: 50%; right: 3.4rem; transform: translateY(-50%); width: 16rem; height: 9rem; }
 .community_list_wrapper .amount { position: absolute; top: 1.2rem; left: 0; line-height: 2.8rem; font-size: 2rem; color: var(--color-gray8e); }
 .community_list_wrapper .article_write_btn { position: absolute; top: 0; right: 0; display: inline-block; height: 4rem; line-height: 4rem; padding: 0 1.4rem 0 3.8rem; background: url(../images/icons/article_write_icon.png) left 1rem center / 2.2rem var(--color-gray31) no-repeat; border-radius: 0.6rem; font-size: 1.4rem; font-weight: 600; color: var(--color-white); }
+
+/* ================== 커뮤니티 상세 리스트 헤더 ================== */
+.community_view_wrapper { position: relative; padding: 2.4rem 3.2rem 3.6rem; background-color: var(--color-white); border: 1px solid var(--color-graye8); margin-top: 4rem; }
+.community_view_wrapper header { position: relative; display: flex; align-items: center; justify-content: space-between; }
+.community_view_wrapper header .link_back { height: 3.2rem; line-height: 3.2rem; padding: 0 1rem 0 3rem; background: url('../images/icons/arrow_left_black_icon.png') left 1rem center / 1.6rem var(--color-grayf3) no-repeat; border-radius: 0.6rem; font-size: 1.4rem; font-weight: 600; color: var(--color-gray31); }
+.community_view_wrapper header .summary_info { display: flex; gap: 2.4rem; }
+.community_view_wrapper header .summary_info .date,
+.community_view_wrapper header .summary_info .hit { font-size: 1.6rem; color: var(--color-gray8e); }
+
+/* ================== 커뮤니티 상세 ================== */
+.community_view_wrapper .topic_head { display: flex; flex-direction: column; gap: 2.4rem; margin-top: 4.6rem; }
+.community_view_wrapper .topic_head .title_box { display: flex; align-items: center; gap: 0.6rem; }
+.community_view_wrapper .topic_head .title_box span { width: 8.5rem; }
+.community_view_wrapper .topic_head .title_box h2 { font-size: 3.6rem; font-weight: 700; color: var(--color-gray18); letter-spacing: -0.05rem; }
+.community_view_wrapper .topic_head .info_box span { font-size: 1.8rem; color: var(--color-gray8e); letter-spacing: -0.05rem; }
+.community_view_wrapper .description_wrap { position: relative; display: flex; flex-direction: column; align-items: center; gap: 6rem; padding: 3.6rem 0; margin-top: 4rem; }
+.community_view_wrapper .description_wrap::before,
+.community_view_wrapper .description_wrap::after { content: ''; position: absolute; left: -3.2rem; width: 120rem; height: 0.1rem; background-color: var(--color-graye8); }
+.community_view_wrapper .description_wrap::before { top: 0; }
+.community_view_wrapper .description_wrap::after { bottom: 0; }
+.community_view_wrapper .description_wrap .article_box { line-height: 2.8rem; font-size: 1.8rem; color: var(--color-gray18); letter-spacing: -0.05rem; }
+.community_view_wrapper .description_wrap .btn_like { height: 5.1rem; line-height: 5.1rem; padding: 0 3.2rem; background-color: var(--color-gray31); border-radius: 0.6rem; font-family: inherit; font-size: 2.4rem; font-weight: 600; color: var(--color-white); }
+.community_view_wrapper .control_wrap { display: flex; align-items: center; justify-content: space-between; margin-top: 3.2rem; }
+.community_view_wrapper .control_wrap .right_box { display: flex; align-items: center; gap: 1.4rem; }
+.community_view_wrapper .control_wrap .link_article_list,
+.community_view_wrapper .control_wrap .right_box .btn_article_copy { height: 4rem; line-height: 4rem; padding: 0 2rem; background-color: var(--color-grayf3); border-radius: 0.6rem; font-size: 1.4rem; font-weight: 600; color: var(--color-gray31); }
+.community_view_wrapper .control_wrap .right_box .btn_accusation { height: 4rem; line-height: 4rem; padding: 0 2rem; background-color: var(--color-redec); border-radius: 0.6rem; font-size: 1.4rem; font-weight: 600; color: var(--color-white); }

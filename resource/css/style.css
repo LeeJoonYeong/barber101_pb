@@ -28,6 +28,7 @@ body { background-color: #fff; font-size: 1rem; overflow-x: hidden; font-family:
 body.hidden { position: fixed; overflow-y: hidden; touch-action: none; }
 
 a, button { color: #666; }
+button, input, textarea { font-family: inherit; }
 p, li{ word-break: keep-all; }
 caption { padding: 10px 0; }
 figure img { width: 100%; }
@@ -150,6 +151,18 @@ input:autofill:active {
 .input_file_info_box b { font-size: 1.8rem; font-weight: 400; color: var(--color-black); }
 .input_file_info_box span { font-size: 1.8rem; font-weight: 400; color: var(--color-gray76); }
 /* //첨부파일 정보 */
+
+/* 댓글 wrapper */
+.comment_wrapper { position: relative; padding: 2.4rem 3.2rem 3.6rem; background-color: var(--color-white); border: 1px solid var(--color-graye8); margin-top: 3.2rem; }
+.comment_wrapper .comment_header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 3.5rem; }
+.comment_wrapper .comment_header .title { font-size: 2.8rem; font-weight: 700; color: var(--color-gray18); letter-spacing: -0.05rem; }
+.comment_wrapper .comment_header .btn_comment_policy { position: relative; background-color: transparent; font-size: 2rem; color: var(--color-gray8e); letter-spacing: -0.05rem; }
+.comment_wrapper .comment_header .btn_comment_policy::after { content: ''; position: absolute; bottom: -0.3rem; left: 0; width: 100%; height: 0.1rem; background-color: var(--color-gray8e); }
+.comment_wrapper .comment_write_form_box > form { position: relative; }
+.comment_wrapper .comment_write_form_box > form .commment_description { position: relative; left: -3.2rem; width: 120rem; height: 13.5rem; line-height: 2.8rem; padding: 2rem 9.5rem 2rem 2rem; border-top: 0.1rem solid var(--color-graye8); border-bottom: 0.1rem solid var(--color-graye8); font-size: 1.8rem; color: var(--color-gray18); letter-spacing: -0.05rem; }
+.comment_wrapper .comment_write_form_box > form .commment_description::placeholder { font-size: 1.8rem; color: var(--color-gray8e); letter-spacing: -0.05rem; }
+.comment_wrapper .comment_write_form_box > form .input_submit { position: absolute; right: -2rem; bottom: 1.2rem; height: 3.2rem; line-height: 3.2rem; padding: 0 2rem; border-radius: 0.6rem; background-color: var(--color-gray31); font-size: 1.4rem; font-weight: 600; color: var(--color-white); }
+/* //댓글 wrapper */
 
 /* 페이지네이션 넘버 스타일*/
 .list_pagination_wrap { margin-top: 2.4rem; }
