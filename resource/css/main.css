@@ -62,16 +62,16 @@
 .recent_community .list_wrap a figure { position: absolute; top: 50%; right: 3.4rem; transform: translateY(-50%); width: 16rem; height: 9rem; }
 
 /* ================== 메인 - 정보 인기글 ================== */
-.infomation_popular .h2_header p { left: 16.2rem; }
-.infomation_popular .list_wrap a figure { width: 28.1rem; height: 17.8rem; }
-.infomation_popular .list_wrap { margin-top: 4rem; }
-.infomation_popular .list_wrap ul { display: flex; flex-wrap: wrap; gap: 2.4rem; }
-.infomation_popular .list_wrap a .info_box { margin-top: 1.5rem; }
-.infomation_popular .list_wrap a .info_box .primary_info { display: flex; align-items: center; gap: 0.6rem; }
-.infomation_popular .list_wrap a .info_box .primary_info span { display: flex; justify-content: center; align-items: center; height: 2.5rem; padding: 0 0.8rem; background-color: var(--color-redf9); border-radius: 0.4rem; font-size: 1.4rem; font-weight: 600; color: var(--color-white); box-sizing: border-box; }
-.infomation_popular .list_wrap a .info_box .primary_info p { font-size: 2.4rem; font-weight: 600; color: var(--color-gray18);  }
-.infomation_popular .list_wrap a .info_box .primary_info b { font-size: 2.4rem; font-weight: 500; color: var(--color-grayb5); }
-.infomation_popular .list_wrap a .info_box .sub_info { margin-top: 0.8rem; }
+.information_popular .h2_header p { left: 16.2rem; }
+.information_popular .list_wrap { margin-top: 4rem; }
+.information_popular .list_wrap ul { display: flex; flex-wrap: wrap; gap: 2.4rem; }
+.information_popular .list_wrap ul li a > figure { width: 28.1rem; height: 17.8rem; }
+.information_popular .list_wrap ul li a .info_box { margin-top: 1.5rem; }
+.information_popular .list_wrap ul li a .info_box .primary_info { display: flex; align-items: center; gap: 0.6rem; }
+.information_popular .list_wrap ul li a .info_box .primary_info span { display: flex; justify-content: center; align-items: center; height: 2.5rem; padding: 0 0.8rem; background-color: var(--color-redf9); border-radius: 0.4rem; font-size: 1.4rem; font-weight: 600; color: var(--color-white); box-sizing: border-box; }
+.information_popular .list_wrap ul li a .info_box .primary_info p { font-size: 2.4rem; font-weight: 600; color: var(--color-gray18);  }
+.information_popular .list_wrap ul li a .info_box .primary_info b { font-size: 2.4rem; font-weight: 500; color: var(--color-grayb5); }
+.information_popular .list_wrap ul li a .info_box .sub_info { margin-top: 0.8rem; }
 
 /* ================== 메인 - 구인 / 구직 wrap ================== */
 .job_wrap { display: flex; gap: 3rem; }
