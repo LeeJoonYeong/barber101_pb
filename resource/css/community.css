@@ -19,7 +19,7 @@
 .community_list_wrapper ul li.fiexd_list a { position: relative; display: flex; align-items: center; height: 13.8rem; padding-left: 3.2rem; background-color: var(--color-grayf3); }
 .community_list_wrapper ul li a .info_box .primary_info { display: flex; align-items: center; gap: 1rem; }
 .community_list_wrapper ul li a .info_box .primary_info .normal_tag { display: flex; justify-content: center; align-items: center; height: 2.5rem; padding: 0 0.8rem; border: 0.1rem solid var(--color-gray31); border-radius: 0.4rem; font-size: 1.4rem; font-weight: 600; color: var(--color-gray31); box-sizing: border-box; }
-.community_list_wrapper ul li a .info_box .primary_info .fixed_tag { display: flex; justify-content: center; align-items: center; height: 2.5rem; padding: 0 0.8rem; background-color: var(--color-gray31); border: 0.1rem solid var(--color-gray31); border-radius: 0.4rem; font-size: 1.4rem; font-weight: 600; color: var(--color-white); box-sizing: border-box; }
+.community_list_wrapper ul li a .info_box .primary_info .fixed_tag { display: flex; justify-content: center; align-items: center; height: 2.5rem; padding: 0 0.8rem; background-color: var(--color-gray31); border-radius: 0.4rem; font-size: 1.4rem; font-weight: 600; color: var(--color-white); box-sizing: border-box; }
 .community_list_wrapper ul li a .info_box .primary_info .hot_tag { display: flex; justify-content: center; align-items: center; height: 2.5rem; padding: 0 0.8rem; background-color: var(--color-redf9); border-radius: 0.4rem; font-size: 1.4rem; font-weight: 600; color: var(--color-white); box-sizing: border-box; }
 .community_list_wrapper ul li a .info_box .primary_info p { font-size: 2.4rem; font-weight: 500; color: var(--color-gray18); }
 .community_list_wrapper ul li a .info_box .primary_info b { font-size: 2.4rem; font-weight: 500; color: var(--color-grayb5); }
@@ -28,7 +28,7 @@
 .community_list_wrapper .amount { position: absolute; top: 1.2rem; left: 0; line-height: 2.8rem; font-size: 2rem; color: var(--color-gray8e); }
 .community_list_wrapper .article_write_btn { position: absolute; top: 0; right: 0; display: inline-block; height: 4rem; line-height: 4rem; padding: 0 1.4rem 0 3.8rem; background: url(../images/icons/article_write_icon.png) left 1rem center / 2.2rem var(--color-gray31) no-repeat; border-radius: 0.6rem; font-size: 1.4rem; font-weight: 600; color: var(--color-white); }
 
-/* ================== 커뮤니티 상세 리스트 헤더 ================== */
+/* ================== 커뮤니티 상세 헤더 ================== */
 .community_view_wrapper { position: relative; padding: 2.4rem 3.2rem 3.6rem; background-color: var(--color-white); border: 1px solid var(--color-graye8); margin-top: 4rem; }
 .community_view_wrapper header { position: relative; display: flex; align-items: center; justify-content: space-between; }
 .community_view_wrapper header .link_back { height: 3.2rem; line-height: 3.2rem; padding: 0 1rem 0 3rem; background: url('../images/icons/arrow_left_black_icon.png') left 1rem center / 1.6rem var(--color-grayf3) no-repeat; border-radius: 0.6rem; font-size: 1.4rem; font-weight: 600; color: var(--color-gray31); }
@@ -73,6 +73,7 @@
 .community_write_wrapper .article_configure_wrap .info_wrap > section.top > div .right_col_box .right_col_box_top .input_select_box:nth-of-type(2) { margin-left: 1rem; }
 .community_write_wrapper .article_configure_wrap .info_wrap > section.top > div .right_col_box .right_col_box_bottom .guide_text { font-size: 1.6rem; color: var(--color-gray8e); }
 .community_write_wrapper .article_configure_wrap .info_wrap > section.bottom > div .input_radio_box:nth-of-type(2) { margin-left: 0.8rem; }
+.community_write_wrapper .article_configure_wrap .info_wrap > section.bottom > div .input_radio_box:nth-of-type(2) > label { width: 7rem; }
 .community_write_wrapper .article_configure_wrap .info_wrap > section.bottom > div .input_radio_box:nth-of-type(3) { margin-left: 4rem; }
 .community_write_wrapper .note_wrap { margin-top: 3.6rem; }
 .community_write_wrapper .note_wrap p { line-height: 3rem; font-size: 1.6rem;  letter-spacing: -0.05rem; }
