@@ -39,6 +39,8 @@
 .main_body.information_view,
 .main_body.notice_view { display: flex; flex-direction: column; align-items: center; }
 .main_body.login { display: flex; justify-content: center; padding: 18rem 0 19.8rem; }
+.main_body.join_email_verify,
+.main_body.user_password_find { display: flex; justify-content: center; padding: 18.2rem 0 25.8rem; }
 
 /* ================== 메인 - 배너 ================== */
 .main_banner { width: 100%; margin-top: 4rem; } 
