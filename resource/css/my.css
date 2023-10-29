@@ -1,0 +1,133 @@
+/* ================== 최상단 헤더 ================== */
+.my_page_wrapper .h2_header { display: flex; flex-direction: column; justify-content: initial; align-items: initial; gap: 2.4rem; }
+.my_page_wrapper .h2_header > h2 { font-size: 4.8rem; letter-spacing: -0.05rem; }
+.my_page_wrapper .h2_header > p { position: initial; color: var(--color-gray18); }
+
+/* ================== 내 정보 ================== */
+.my_page_wrapper .my_info_wrapper { display: flex; justify-content: space-between; align-items: center; padding: 2.8rem 3.2rem; background-color: var(--color-white); border: 0.1rem solid var(--color-graye8); margin-top: 3rem; }
+.my_page_wrapper .my_info_wrapper > .left { display: flex; align-items: center; gap: 1.2rem; }
+.my_page_wrapper .my_info_wrapper > .left .user_profile_edit_box { position: relative; }
+.my_page_wrapper .my_info_wrapper > .left .user_profile_edit_box > figure { width: 8.4rem; height: 8.4rem; }
+.my_page_wrapper .my_info_wrapper > .left .user_profile_edit_box .input_file_label { position: absolute; right: 0; bottom: 0; width: 3.2rem; height: 3.2rem; padding: 0; background: url('../images/icons/user_profile_add_icon.png') center / 3.7rem no-repeat; border-radius: 100%; }
+.my_page_wrapper .my_info_wrapper > .left .my_info_box { align-self: flex-end; display: flex; flex-direction: column; gap: 1.2rem; }
+.my_page_wrapper .my_info_wrapper > .left .my_info_box .my_info_name { font-size: 3.2rem; font-weight: 700; color: var(--color-gray18); letter-spacing: -0.05rem; }
+.my_page_wrapper .my_info_wrapper > .left .my_info_box .my_info_grade_box { display: flex; align-items: center; gap: 0.8rem; }
+.my_page_wrapper .my_info_wrapper > .left .my_info_box .my_info_grade_box .grade { font-size: 2rem; font-weight: 500; color: var(--color-gray18); }
+.my_page_wrapper .my_info_wrapper > .left .my_info_box .my_info_grade_box .btn_grade_guide { background-color: transparent; font-size: 2rem; color: var(--color-gray8e); text-decoration: underline; }
+.my_page_wrapper .my_info_wrapper > .right { align-self: flex-start; display: flex; align-items: center; gap: 1.4rem; padding-top: 0.4rem; }
+.my_page_wrapper .my_info_wrapper > .right .link_profile_update { height: 4rem; line-height: 4rem; padding: 0 2rem; background-color: var(--color-gray18); border-radius: 0.6rem; font-size: 1.4rem; font-weight: 600; color: var(--color-white); }
+.my_page_wrapper .my_info_wrapper > .right .btn_grade_update { height: 4rem; line-height: 4rem; padding: 0 2rem; background-color: var(--color-grayf3); border-radius: 0.6rem; font-size: 1.4rem; font-weight: 600; color: var(--color-gray31); }
+
+/* ================== 나의 발자취 및 스크랩 탭 ================== */
+.my_page_wrapper .my_trace_tab_wrapper { margin-top: 6.6rem; }
+.my_page_wrapper .my_trace_tab_wrapper > ul { display: flex; gap: 3.6rem; }
+.my_page_wrapper .my_trace_tab_wrapper > ul > li > a { font-size: 2.4rem; color: var(--color-gray99); letter-spacing: -0.05rem; }
+.my_page_wrapper .my_trace_tab_wrapper > ul > li.active > a { color: var(--color-gray18); font-weight: 700; }
+
+/* ================== 내가 쓴 글 리스트 ================== */
+.my_page_wrapper .my_community_list_wrapper { margin-top: 4rem; }
+.my_page_wrapper .my_community_list_wrapper > ul { display: flex; flex-direction: column; border: 0.1rem solid var(--color-graye8); }
+.my_page_wrapper .my_community_list_wrapper > ul > li ~ li { border-top: 0.1rem solid var(--color-graye8); }
+.my_page_wrapper .my_community_list_wrapper > ul > li > a { display: flex; justify-content: space-between; align-items: center; width: 100%; height: 10rem; padding: 0 2rem; background-color: var(--color-white); }
+.my_page_wrapper .my_community_list_wrapper > ul > li > a .comm_title { font-size: 2.4rem; font-weight: 500; color: var(--color-gray18); }
+.my_page_wrapper .my_community_list_wrapper > ul > li > a .comm_created { font-size: 2rem; font-weight: 500; color: var(--color-gray8e); }
+
+/* ================== 내가 쓴 댓글 리스트 ================== */
+.my_page_wrapper .my_comment_list_wrapper { margin-top: 4rem; }
+.my_page_wrapper .my_comment_list_wrapper > ul { display: flex; flex-direction: column; border: 0.1rem solid var(--color-graye8); }
+.my_page_wrapper .my_comment_list_wrapper > ul > li ~ li { border-top: 0.1rem solid var(--color-graye8); }
+.my_page_wrapper .my_comment_list_wrapper > ul > li > a { display: flex; justify-content: space-between; align-items: center; width: 100%; height: 10rem; padding: 2rem; background-color: var(--color-white); }
+.my_page_wrapper .my_comment_list_wrapper > ul > li > a > .left_box { display: flex; flex-direction: column; gap: 1.2rem; }
+.my_page_wrapper .my_comment_list_wrapper > ul > li > a > .left_box .community_title { font-size: 2rem; color: var(--color-gray99); letter-spacing: -0.05rem; }
+.my_page_wrapper .my_comment_list_wrapper > ul > li > a > .left_box .comment { font-size: 2.4rem; font-weight: 500; color: var(--color-gray18); }
+.my_page_wrapper .my_comment_list_wrapper > ul > li > a > .right_box { align-self: flex-end; }
+.my_page_wrapper .my_comment_list_wrapper > ul > li > a > .right_box .comment_created { font-size: 2rem; font-weight: 500; color: var(--color-gray8e); }
+
+/* ================== 내가 쓴 구인글 리스트 ================== */
+.my_page_wrapper .my_recruit_list_wrapper { position: relative; margin-top: 8.6rem; }
+.my_page_wrapper .my_recruit_list_wrapper::before { content: '※ 구인글은 한번에 하나의 게시글만 작성 가능합니다. 새로운 구인글을 작성하시려면 기존 구인글은 마감처리하거나 삭제해주세요.'; position: absolute; top: -4.6rem; left: 0; font-size: 1.6rem; color: var(--color-gray99); }
+.my_page_wrapper .my_recruit_list_wrapper > ul { display: flex; flex-direction: column; border: 0.1rem solid var(--color-graye8); }
+.my_page_wrapper .my_recruit_list_wrapper > ul > li ~ li { border-top: 0.1rem solid var(--color-graye8); }
+.my_page_wrapper .my_recruit_list_wrapper > ul > li > a { display: flex; justify-content: space-between; align-items: center; width: 100%; height: max-content; padding: 1.6rem 3.2rem 1.6rem 2rem; background-color: var(--color-white); }
+.my_page_wrapper .my_recruit_list_wrapper > ul > li > a > .left_box { display: flex;  gap: 2rem; }
+.my_page_wrapper .my_recruit_list_wrapper > ul > li > a > .left_box > figure { width: 9.6rem; height: 9.6rem; }
+.my_page_wrapper .my_recruit_list_wrapper > ul > li > a > .left_box .info_box { display: flex; flex-direction: column; justify-content: center; }
+.my_page_wrapper .my_recruit_list_wrapper > ul > li > a > .left_box .info_box .primary_info { display: flex; align-items: center; gap: 0.8rem; }
+.my_page_wrapper .my_recruit_list_wrapper > ul > li > a > .left_box .info_box .primary_info .close_tag { height: 3rem; line-height: 3rem; padding: 0 2rem; background-color: var(--color-redec); border-radius: 1.6rem; font-size: 1.5rem; font-weight: 700; color: var(--color-white);}
+.my_page_wrapper .my_recruit_list_wrapper > ul > li > a > .left_box .info_box .primary_info > p { font-size: 2.4rem; font-weight: 500; color: var(--color-gray18); }
+.my_page_wrapper .my_recruit_list_wrapper > ul > li > a > .left_box .info_box .sub_info { display: flex; gap: 0.8rem; margin-top: 1.1rem; }
+.my_page_wrapper .my_recruit_list_wrapper > ul > li > a > .left_box .info_box .sub_info > span { display: block; max-width: 40.3rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.my_page_wrapper .my_recruit_list_wrapper > ul > li > a > .right_box { width: 4.8rem; height: 4.8rem; background: url('../images/icons/arrow_right_gray_icon.png') center / 100% no-repeat; }
+
+/* ================== 내가 쓴 구직글 리스트 ================== */
+.my_page_wrapper .my_job_hunting_list_wrapper { position: relative; margin-top: 8.6rem; }
+.my_page_wrapper .my_job_hunting_list_wrapper::before { content: '※ 구직글은 한번에 하나의 게시글만 작성 가능합니다. 새로운 구직글을 작성하시려면 기존 구직글은 마감처리하거나 삭제해주세요.'; position: absolute; top: -4.6rem; left: 0; font-size: 1.6rem; color: var(--color-gray99); }
+.my_page_wrapper .my_job_hunting_list_wrapper > ul { display: flex; flex-direction: column; border: 0.1rem solid var(--color-graye8); }
+.my_page_wrapper .my_job_hunting_list_wrapper > ul > li ~ li { border-top: 0.1rem solid var(--color-graye8); }
+.my_page_wrapper .my_job_hunting_list_wrapper > ul > li > a { display: flex; align-items: center; gap: 1rem; width: 100%; height: max-content; padding: 3.2rem 2rem; background-color: var(--color-white); }
+.my_page_wrapper .my_job_hunting_list_wrapper > ul > li > a > figure { width: 6.4rem; height: 6.4rem; }
+.my_page_wrapper .my_job_hunting_list_wrapper > ul > li > a .info_box { display: flex; flex-direction: column; justify-content: center; }
+.my_page_wrapper .my_job_hunting_list_wrapper > ul > li > a .info_box .primary_info > p { font-size: 2.4rem; font-weight: 500; color: var(--color-gray18); }
+.my_page_wrapper .my_job_hunting_list_wrapper > ul > li > a .info_box .sub_info { display: flex; margin-top: 1.6rem; }
+.my_page_wrapper .my_job_hunting_list_wrapper > ul > li > a .info_box .sub_info > span { font-size: 1.8rem; font-weight: 400; color: var(--color-gray8e); letter-spacing: -0.05rem; }
+
+/* ================== 구인 스크랩 리스트 ================== */
+.my_page_wrapper .recruit_scrap_list_wrapper { position: relative; margin-top: 8.6rem; }
+.my_page_wrapper .recruit_scrap_list_wrapper::before { content: '※ 마감되었거나 삭제된 구인글은 노출되지 않습니다.'; position: absolute; top: -4.6rem; left: 0; font-size: 1.6rem; color: var(--color-gray99); }
+.my_page_wrapper .recruit_scrap_list_wrapper > ul { display: flex; flex-direction: column; border: 0.1rem solid var(--color-graye8); }
+.my_page_wrapper .recruit_scrap_list_wrapper > ul > li ~ li { border-top: 0.1rem solid var(--color-graye8); }
+.my_page_wrapper .recruit_scrap_list_wrapper > ul > li > a { display: flex; justify-content: space-between; align-items: center; width: 100%; height: max-content; padding: 1.6rem 3.2rem 1.6rem 2rem; background-color: var(--color-white); }
+.my_page_wrapper .recruit_scrap_list_wrapper > ul > li > a > .left_box { display: flex;  gap: 2rem; }
+.my_page_wrapper .recruit_scrap_list_wrapper > ul > li > a > .left_box > figure { width: 9.6rem; height: 9.6rem; }
+.my_page_wrapper .recruit_scrap_list_wrapper > ul > li > a > .left_box .info_box { display: flex; flex-direction: column; justify-content: center; }
+.my_page_wrapper .recruit_scrap_list_wrapper > ul > li > a > .left_box .info_box .primary_info { display: flex; align-items: center; gap: 0.8rem; }
+.my_page_wrapper .recruit_scrap_list_wrapper > ul > li > a > .left_box .info_box .primary_info .close_tag { height: 3rem; line-height: 3rem; padding: 0 2rem; background-color: var(--color-redec); border-radius: 1.6rem; font-size: 1.5rem; font-weight: 700; color: var(--color-white);}
+.my_page_wrapper .recruit_scrap_list_wrapper > ul > li > a > .left_box .info_box .primary_info > p { font-size: 2.4rem; font-weight: 500; color: var(--color-gray18); }
+.my_page_wrapper .recruit_scrap_list_wrapper > ul > li > a > .left_box .info_box .sub_info { display: flex; gap: 0.8rem; margin-top: 1.1rem; }
+.my_page_wrapper .recruit_scrap_list_wrapper > ul > li > a > .left_box .info_box .sub_info > span { display: block; max-width: 40.3rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.my_page_wrapper .recruit_scrap_list_wrapper > ul > li > a > .right_box { width: 4.8rem; height: 4.8rem; background: url('../images/icons/arrow_right_gray_icon.png') center / 100% no-repeat; }
+
+/* ================== 구직 스크랩 리스트 ================== */
+.my_page_wrapper .job_hunting_scrap_list_wrapper { position: relative; margin-top: 8.6rem; }
+.my_page_wrapper .job_hunting_scrap_list_wrapper::before { content: '※ 마감되었거나 삭제된 구직글은 노출되지 않습니다.'; position: absolute; top: -4.6rem; left: 0; font-size: 1.6rem; color: var(--color-gray99); }
+.my_page_wrapper .job_hunting_scrap_list_wrapper > ul { display: flex; flex-direction: column; border: 0.1rem solid var(--color-graye8); }
+.my_page_wrapper .job_hunting_scrap_list_wrapper > ul > li ~ li { border-top: 0.1rem solid var(--color-graye8); }
+.my_page_wrapper .job_hunting_scrap_list_wrapper > ul > li > a { display: flex; align-items: center; gap: 1rem; width: 100%; height: max-content; padding: 3.2rem 2rem; background-color: var(--color-white); }
+.my_page_wrapper .job_hunting_scrap_list_wrapper > ul > li > a > figure { width: 6.4rem; height: 6.4rem; }
+.my_page_wrapper .job_hunting_scrap_list_wrapper > ul > li > a .info_box { display: flex; flex-direction: column; justify-content: center; }
+.my_page_wrapper .job_hunting_scrap_list_wrapper > ul > li > a .info_box .primary_info > p { font-size: 2.4rem; font-weight: 500; color: var(--color-gray18); }
+.my_page_wrapper .job_hunting_scrap_list_wrapper > ul > li > a .info_box .sub_info { display: flex; margin-top: 1.6rem; }
+.my_page_wrapper .job_hunting_scrap_list_wrapper > ul > li > a .info_box .sub_info > span { font-size: 1.8rem; font-weight: 400; color: var(--color-gray8e); letter-spacing: -0.05rem; }
+
+/* ================== 프로필 수정 ================== */
+.my_page_wrapper { position: relative; padding: 2.4rem 3.2rem 3.6rem; background-color: var(--color-white); border: 1px solid var(--color-graye8); margin-top: 4rem; }
+.my_page_wrapper > header { position: relative; display: flex; flex-direction: column; gap: 3.2rem; }
+.my_page_wrapper > header .link_back { width: max-content; height: 3.2rem; line-height: 3.2rem; padding: 0 1rem 0 3rem; background: url('../images/icons/arrow_left_black_icon.png') left 1rem center / 1.6rem var(--color-grayf3) no-repeat; border-radius: 0.6rem; font-size: 1.4rem; font-weight: 600; color: var(--color-gray31); }
+.my_page_wrapper > header > h2 { font-size: 3.6rem; font-weight: 700; color: var(--color-gray18); letter-spacing: -0.05rem; }
+.my_page_wrapper > header + form { display: flex; flex-direction: column; }
+.my_page_wrapper .my_profile_update_wrap  { margin-top: 6rem; }
+.my_page_wrapper .my_profile_update_wrap > strong { font-size: 2.8rem; font-weight: 700; color: var(--color-gray18); letter-spacing: -0.05rem; }
+.my_page_wrapper .my_profile_update_wrap .info_wrap { position: relative; display: flex; flex-direction: column; gap: 4rem; padding: 3.6rem 0 3rem; margin-top: 2.4rem; }
+.my_page_wrapper .my_profile_update_wrap .info_wrap::before,
+.my_page_wrapper .my_profile_update_wrap .info_wrap::after { content: ''; position: absolute; left: -3.2rem; width: 120rem; height: 0.1rem; background-color: var(--color-graye8); }
+.my_page_wrapper .my_profile_update_wrap .info_wrap::before { top: 0; }
+.my_page_wrapper .my_profile_update_wrap .info_wrap::after { bottom: 0; }
+.my_page_wrapper .my_profile_update_wrap .info_wrap > section > div { display: flex; align-items: center; }
+.my_page_wrapper .my_profile_update_wrap .info_wrap > section > div .input_label_box { width: 8.4rem; }
+.my_page_wrapper .my_profile_update_wrap .info_wrap > section.top > div .input_email { width: 39.7rem; height: 4rem; border-color: var(--color-gray75); font-size: 2.4rem; letter-spacing: -0.05rem; }
+.my_page_wrapper .my_profile_update_wrap .info_wrap > section.top > div .input_email:read-only { background-color: var(--color-graye1); }
+.my_page_wrapper .my_profile_update_wrap .info_wrap > section.middle > div .input_label_box { align-self: flex-start; }
+.my_page_wrapper .my_profile_update_wrap .info_wrap > section.middle > div .right_col_box .input_checkbox_box { gap: 1rem; }
+.my_page_wrapper .my_profile_update_wrap .info_wrap > section.middle > div .right_col_box .input_text { width: 39.7rem; height: 4rem; margin-top: 1.4rem; font-size: 2.4rem; letter-spacing: -0.05rem; }
+.my_page_wrapper .my_profile_update_wrap .info_wrap > section.middle > div .right_col_box .input_text:read-only { background-color: var(--color-graye1); }
+.my_page_wrapper .my_profile_update_wrap .info_wrap > section.middle > div .right_col_box .input_text + .text_limit { position: relative; top: 1rem; margin-left: 1rem; font-size: 1.6rem; font-weight: 600; color: var(--color-black); }
+.my_page_wrapper .my_profile_update_wrap .info_wrap > section.middle > div .right_col_box .input_text + .text_limit + .guide_text { margin-top: 0.8rem;}
+.my_page_wrapper .my_profile_update_wrap .info_wrap > section.bottom > div .input_label_box { align-self: flex-start; }
+.my_page_wrapper .my_profile_update_wrap .info_wrap > section.bottom > div .right_col_box .input_checkbox_box { gap: 1rem; }
+.my_page_wrapper .my_profile_update_wrap .info_wrap > section.bottom > div .right_col_box .input_password { width: 39.7rem; height: 4rem; border-color: var(--color-gray75); margin-top: 1.4rem; font-size: 2.4rem; letter-spacing: -0.05rem; }
+.my_page_wrapper .my_profile_update_wrap .info_wrap > section.bottom > div .right_col_box .input_password::placeholder { font-size: 2.4rem; color: var(--color-gray8e); }
+.my_page_wrapper .my_profile_update_wrap .info_wrap > section.bottom > div .right_col_box .input_password ~ .input_password { margin-top: 2.5rem; }
+.my_page_wrapper .my_profile_update_wrap .info_wrap > section.bottom > div .right_col_box .input_password + .guide_text { margin-top: 0.8rem; }
+.my_page_wrapper .control_wrap { display: flex; flex-direction: column; align-items: center; gap: 4.8rem; margin-top: 2.4rem; }
+.my_page_wrapper .control_wrap .btn_leave { align-self: flex-start; background-color: transparent; font-size: 2rem; color: var(--color-redec); text-decoration: underline; }
+.my_page_wrapper .control_wrap .btn_submit { width: 34.9rem; height: 4.8rem; line-height: 4.8rem; background-color: var(--color-gray31); border-radius: 0.4rem; font-size: 1.8rem; color: var(--color-white); }
