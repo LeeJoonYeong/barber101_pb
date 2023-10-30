@@ -131,3 +131,56 @@
 .my_page_wrapper .control_wrap { display: flex; flex-direction: column; align-items: center; gap: 4.8rem; margin-top: 2.4rem; }
 .my_page_wrapper .control_wrap .btn_leave { align-self: flex-start; background-color: transparent; font-size: 2rem; color: var(--color-redec); text-decoration: underline; }
 .my_page_wrapper .control_wrap .btn_submit { width: 34.9rem; height: 4.8rem; line-height: 4.8rem; background-color: var(--color-gray31); border-radius: 0.4rem; font-size: 1.8rem; color: var(--color-white); }
+
+/* ================== 바버회원으로 변경 ================== */
+.my_page_wrapper .change_barber_wrap  { margin-top: 6rem; }
+.my_page_wrapper .change_barber_wrap > strong { font-size: 2.8rem; font-weight: 700; color: var(--color-gray18); letter-spacing: -0.05rem; }
+.my_page_wrapper .change_barber_wrap .info_wrap { position: relative; display: flex; flex-direction: column; gap: 4rem; padding: 3.6rem 0 3rem; margin-top: 2.4rem; }
+.my_page_wrapper .change_barber_wrap .info_wrap::before,
+.my_page_wrapper .change_barber_wrap .info_wrap::after { content: ''; position: absolute; left: -3.2rem; width: 120rem; height: 0.1rem; background-color: var(--color-graye8); }
+.my_page_wrapper .change_barber_wrap .info_wrap::before { top: 0; }
+.my_page_wrapper .change_barber_wrap .info_wrap::after { bottom: 0; }
+.my_page_wrapper .change_barber_wrap .info_wrap > section > div { display: flex; align-items: center; }
+.my_page_wrapper .change_barber_wrap .info_wrap > section > div .input_label_box { display: flex; width: 8.4rem; }
+.my_page_wrapper .change_barber_wrap .info_wrap > section > div .input_text { width: 39.7rem; }
+.my_page_wrapper .change_barber_wrap .info_wrap > section.bottom > div .input_label_box { align-self: flex-start; margin-top: 0.8rem; }
+.my_page_wrapper .change_barber_wrap .info_wrap > section.bottom > div > div:nth-of-type(2) { flex-grow: 1; }
+.my_page_wrapper .change_barber_wrap .info_wrap > section.bottom > div > div > div:nth-of-type(1) { display: flex; justify-content: space-between; }
+.my_page_wrapper .change_barber_wrap .info_wrap > section.bottom .input_file_name_box { display: flex; flex-direction: column; gap: 1rem; padding: 0.8rem; border: 0.1rem solid var(--color-gray75); border-radius: 0.4rem; margin-top: 1rem; }
+.my_page_wrapper .change_barber_wrap .info_wrap > section.bottom .input_file_name_box .file_name_row { display: flex; align-items: center; gap: 1rem; margin-left: 0.5rem; }
+.my_page_wrapper .change_barber_wrap .info_wrap > section.bottom .input_file_name_box .file_name_row button { width: 1rem; height: 1rem; background: url('../images/icons/cancel_icon.png') center / 1rem no-repeat; }
+.my_page_wrapper .change_barber_wrap .info_wrap > section.bottom .input_file_name_box .file_name_row span { font-size: 1.8rem; color: var(--color-gray8e); letter-spacing: -0.05rem; }
+.my_page_wrapper .change_barber_wrap .info_wrap > section.bottom .input_file_caution { line-height: 2.5rem; margin-top: 2.4rem; font-size: 1.6rem; color: var(--color-gray8e); }
+.my_page_wrapper .change_barber_wrap .info_wrap > section.bottom .input_file_caution span { font-size: 1.6rem; font-weight: 700; }
+.my_page_wrapper .note_wrap { position: relative; padding-bottom: 3.6rem; margin-top: 3.6rem; }
+.my_page_wrapper .note_wrap p { line-height: 3rem; font-size: 1.6rem; color: var(--color-gray8e); letter-spacing: -0.05rem; }
+
+/* ================== 사업자회원으로 변경 ================== */
+.my_page_wrapper .change_businessperson_wrap  { margin-top: 6rem; }
+.my_page_wrapper .change_businessperson_wrap > strong { font-size: 2.8rem; font-weight: 700; color: var(--color-gray18); letter-spacing: -0.05rem; }
+.my_page_wrapper .change_businessperson_wrap .info_wrap { position: relative; display: flex; flex-direction: column; gap: 4rem; padding: 3.6rem 0 3rem; margin-top: 2.4rem; }
+.my_page_wrapper .change_businessperson_wrap .info_wrap::before,
+.my_page_wrapper .change_businessperson_wrap .info_wrap::after { content: ''; position: absolute; left: -3.2rem; width: 120rem; height: 0.1rem; background-color: var(--color-graye8); }
+.my_page_wrapper .change_businessperson_wrap .info_wrap::before { top: 0; }
+.my_page_wrapper .change_businessperson_wrap .info_wrap::after { bottom: 0; }
+.my_page_wrapper .change_businessperson_wrap .info_wrap > section > div { display: flex; align-items: center; }
+.my_page_wrapper .change_businessperson_wrap .info_wrap > section > div .input_label_box { display: flex; width: 8.4rem; }
+.my_page_wrapper .change_businessperson_wrap .info_wrap > section > div .input_text { width: 39.7rem; padding: 0.8rem 1.2rem; }
+.my_page_wrapper .change_businessperson_wrap .info_wrap > section.middle_top > div .input_text::placeholder { font-size: 2rem; letter-spacing: -0.05rem; color: var(--color-gray8e); }
+.my_page_wrapper .change_businessperson_wrap .info_wrap > section.middle_bottom > div .input_label_box { align-self: flex-start; margin-top: 0.8rem; }
+.my_page_wrapper .change_businessperson_wrap .info_wrap > section.middle_bottom > div .right_box { display: flex; flex-direction: column; gap: 1.2rem; }
+.my_page_wrapper .change_businessperson_wrap .info_wrap > section.middle_bottom > div .right_box .input_address_search_box { position: relative; }
+.my_page_wrapper .change_businessperson_wrap .info_wrap > section.middle_bottom > div .right_box .input_address_search_box::after { content: ''; position: absolute; top: 50%; right: 0.8rem; transform: translateY(-50%); width: 3rem; height: 3rem; background: url('../images/icons/search_icon.png') center / 3rem no-repeat; pointer-events: none; }
+.my_page_wrapper .change_businessperson_wrap .info_wrap > section.middle_bottom > div .right_box .input_text::placeholder { font-size: 2rem; letter-spacing: -0.05rem; color: var(--color-gray8e); }
+
+.my_page_wrapper .change_businessperson_wrap .info_wrap > section.bottom > div .input_label_box { align-self: flex-start; }
+.my_page_wrapper .change_businessperson_wrap .info_wrap > section.bottom > div .input_label_box .input_label { width: 5.2rem; }
+.my_page_wrapper .change_businessperson_wrap .info_wrap > section.bottom > div .input_label_box .essential_text { align-self: flex-end; }
+.my_page_wrapper .change_businessperson_wrap .info_wrap > section.bottom > div > div:nth-of-type(2) { flex-grow: 1; }
+.my_page_wrapper .change_businessperson_wrap .info_wrap > section.bottom > div > div > div:nth-of-type(1) { display: flex; justify-content: space-between; }
+.my_page_wrapper .change_businessperson_wrap .info_wrap > section.bottom .input_file_name_box { display: flex; flex-direction: column; gap: 1rem; padding: 0.8rem; border: 0.1rem solid var(--color-gray75); border-radius: 0.4rem; margin-top: 1rem; }
+.my_page_wrapper .change_businessperson_wrap .info_wrap > section.bottom .input_file_name_box .file_name_row { display: flex; align-items: center; gap: 1rem; margin-left: 0.5rem; }
+.my_page_wrapper .change_businessperson_wrap .info_wrap > section.bottom .input_file_name_box .file_name_row button { width: 1rem; height: 1rem; background: url('../images/icons/cancel_icon.png') center / 1rem no-repeat; }
+.my_page_wrapper .change_businessperson_wrap .info_wrap > section.bottom .input_file_name_box .file_name_row span { font-size: 1.8rem; color: var(--color-gray8e); letter-spacing: -0.05rem; }
+.my_page_wrapper .change_businessperson_wrap .info_wrap > section.bottom .input_file_caution { line-height: 2.5rem; margin-top: 2.4rem; font-size: 1.6rem; color: var(--color-gray8e); }
+.my_page_wrapper .change_businessperson_wrap .info_wrap > section.bottom .input_file_caution span { font-size: 1.6rem; font-weight: 700; }
