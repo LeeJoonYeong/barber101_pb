@@ -1,0 +1,63 @@
+:root {
+    --color-white: #fff;
+    --color-grayc5: #c5c5c5;
+    --color-graye6: #e6e6e6;
+    --color-grayfb: #fbfbfb;
+    --color-black: #000000;
+}
+
+html { font-size: 10px; }
+body { background-color: #fff; font-size: 1rem; overflow-x: hidden; font-family: 'Pretendard'; }
+body.hidden { position: fixed; overflow-y: hidden; touch-action: none; }
+
+a, button { color: #666; }
+button, input, textarea { font-family: inherit; }
+p, li{ word-break: keep-all; }
+caption { padding: 10px 0; }
+figure img { width: 100%; }
+
+.clear { clear: both; }
+.clear:after { content: ""; display: block; clear: both; }
+caption > div,
+legend,
+.hide { overflow: hidden; display: block; position: absolute; border: 0; width: 1px; height: 1px; clip-path: polygon(0 0, 0 0, 0 0, 0 0); }
+
+/* 본문 바로가기 */
+.skip { position: absolute; left: 0; right: 0; top: -100%; transition: all .3s; line-height: 5rem; background: #000; color: #fff; text-align: center; z-index: 100; }
+.skip:focus { top: 0; }
+/* //본문 바로가기 */
+
+/* 인풋 자동완성 */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+	-webkit-text-fill-color: #000;
+    -webkit-box-shadow: 0 0 0px 1000px #fff inset;
+    box-shadow: 0 0 0px 1000px #fff inset;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+input:autofill,
+input:autofill:hover,
+input:autofill:focus,
+input:autofill:active {
+	-webkit-text-fill-color: #000;
+    -webkit-box-shadow: 0 0 0px 1000px #fff inset;
+    box-shadow: 0 0 0px 1000px #fff inset;
+    transition: background-color 5000s ease-in-out 0s;
+}
+/* //인풋 자동완성 */
+
+/* 로고 */
+.main_logo { display: block; font-family: 'Jomhuria', cursive; font-size: 3.6rem; font-weight: 400; color: var(--color-black); }
+/* //로고 */
+
+/* 페이지네이션 넘버 */
+/* .list_pagination_wrap { margin-top: 2.4rem; }
+.list_pagination_wrap .list_pagination_box { display: flex; justify-content: center; gap: 0.5rem; }
+.list_pagination_wrap .list_pagination_box a { display: block; width: 3.2rem; height: 3.2rem; line-height: 3.2rem; font-size: 1.3rem; font-weight: 600; border-radius: 0.8rem; border: 1px solid var(--color-grayf1); background-color: var(--color-white); color: var(--color-gray33); text-align: center; }
+.list_pagination_wrap .list_pagination_box a.active { background-color: var(--color-gray31); color: var(--color-white); }
+.list_pagination_wrap .list_pagination_box .list_pre { background: url('../images/icons/arrow_left_black_icon.png') center / 1.6rem var(--color-white) no-repeat; }
+.list_pagination_wrap .list_pagination_box .list_next { transform: rotate(180deg); background: url('../images/icons/arrow_left_black_icon.png') center / 1.6rem var(--color-white) no-repeat; } */
+/* //페이지네이션 넘버 */

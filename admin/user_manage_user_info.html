@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>회원정보 | 회원관리</title>
+  <link rel="stylesheet" href="./resource/css/root.css">
+</head>
+<body>
+  <div class="whole_wrapper">
+    <div class="whole_wrapper_inner">
+
+      <header class="main_header">
+        <div class="left_box">
+
+          <div class="logo_box">
+            <h1>
+              <a href="/" class="main_logo">BARBER101</a>
+            </h1>
+          </div>
+
+          <nav class="gnb_box">
+            <ul>
+              <li>
+                <a href="#">회원관리</a>
+              </li>
+              <li>
+                <a href="#">구인&middot;구직</a>
+              </li>
+              <li>
+                <a href="#">커뮤니티</a>
+              </li>
+              <li>
+                <a href="#">정보</a>
+              </li>
+              <li>
+                <a href="#">쇼핑</a>
+              </li>
+              <li>
+                <a href="#">공지</a>
+              </li>
+              <li>
+                <a href="#">신고</a>
+              </li>
+            </ul>
+          </nav>
+
+        </div>
+        <div class="right_box">
+          <div class="login_info">
+            <strong>운영자님,</strong>
+            <span>안녕하세요</span>
+          </div>
+          <div class="short_cut_box">
+            <a href="#">홈페이지</a>
+          </div>
+          <div class="logout_box">
+            <button>로그아웃</button>
+          </div>
+        </div>
+      </header>
+
+      <div class="content_wrapper">
+        
+        <aside class="main_aside">
+          <h2 class="subject">회원관리</h2>
+          <ul class="category_list">
+            <li class="active">
+              <a href="#">회원정보</a>
+            </li>
+            <li>
+              <a href="#">바버회원 신청대기</a>
+            </li>
+            <li>
+              <a href="#">사업자회원 신청대기</a>
+            </li>
+          </ul>
+        </aside>
+
+        <main class="main_body">
+
+          <div class="main_body_inner_wrapper">
+
+            <header class="main_body_inner_header">
+              <h3 class="subject">회원정보</h3>
+              <ul class="indicator">
+                <li>회원관리</li>
+                <li>회원정보</li>
+              </ul>
+            </header>
+
+            <section class="outer_content_top">
+              <form action="#" method="get">
+
+                <div class="common_row_box">
+                  <div class="row_subject">검색어</div>
+                  <div class="row_content">
+                    <div class="selectBox_box">
+                      <select id="article_search_type" name="article_search_type" class="article_search_type">
+                        <option value="all" selected>전체</option>
+                        <option value="user_id" selected>아이디</option>
+                        <option value="user_nickname" selected>닉네임</option>
+                      </select>
+                    </div>
+                    <div class="input_search_box">
+                      <input type="search" name="keyword" id="keyword">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="common_row_box">
+                  <div class="row_subject">회원등급</div>
+                  <div class="row_content">
+                    <div class="input_radio_box">
+                      <input type="radio" name="user_grade" id="user_grade_all" checked>
+                      <label for="user_grade_all">전체</label>
+                    </div>
+                    <div class="input_radio_box">
+                      <input type="radio" name="user_grade" id="user_grade_normal">
+                      <label for="user_grade_normal">일반회원</label>
+                    </div>
+                    <div class="input_radio_box">
+                      <input type="radio" name="user_grade" id="user_grade_barber">
+                      <label for="user_grade_barber">바버회원</label>
+                    </div>
+                    <div class="input_radio_box">
+                      <input type="radio" name="user_grade" id="user_grade_businessperson">
+                      <label for="user_grade_businessperson">사업자회원</label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="common_row_box">
+                  <div class="row_subject">정지여부</div>
+                  <div class="row_content">
+                    <div class="input_radio_box">
+                      <input type="radio" name="is_suspend" id="is_suspend_all" checked>
+                      <label for="is_suspend_all">전체</label>
+                    </div>
+                    <div class="input_radio_box">
+                      <input type="radio" name="is_suspend" id="is_suspend_suspended">
+                      <label for="is_suspend_suspended">정지된 회원</label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="input_submit_box">
+                  <input type="submit" value="검색">
+                </div>
+
+              </form>
+            </section>
+
+          </div>
+        </main>
+
+      </div>
+    </div>
+  </div>
+</body>
+</html>
