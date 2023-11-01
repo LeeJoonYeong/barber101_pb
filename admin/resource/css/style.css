@@ -1,5 +1,7 @@
 :root {
     --color-white: #fff;
+    --color-gray92: #929292;
+    --color-graybb: #bbbbbb;
     --color-grayc5: #c5c5c5;
     --color-graye6: #e6e6e6;
     --color-grayfb: #fbfbfb;
@@ -52,6 +54,30 @@ input:autofill:active {
 /* 로고 */
 .main_logo { display: block; font-family: 'Jomhuria', cursive; font-size: 3.6rem; font-weight: 400; color: var(--color-black); }
 /* //로고 */
+
+/* 공통 로우 박스 */
+.common_row_box { display: flex; align-items: center; border-top: 0.1rem solid var(--color-gray92); border-bottom: 0.1rem solid var(--color-gray92); }
+.common_row_box.single { border-top: 0.1rem solid var(--color-black); }
+.common_row_box.sibling { border-top: none; }
+.common_row_box .row_subject { flex-shrink: 0; width: 15.2rem; height: 5.8rem; line-height: 5.8rem; padding-left: 1.8rem; background-color: var(--color-graye6); font-size: 1.5rem; font-weight: 500; color: var(--color-black); letter-spacing: -0.015rem; }
+.common_row_box .row_content { display: flex; align-items: center; gap: 1.4rem; padding-left: 1.8rem; } 
+/* //공통 로우 박스 */
+
+/* 셀렉트 박스 */
+.selectBox_box { position: relative; width: 16.7rem; height: 3.8rem; }
+.selectBox_box > select { width: 100%; height: 100%; padding: 0 4rem 0 1.8rem; background: url('../images/icons/arrow_down_icon.png') right 0.8rem center / 3.2rem no-repeat; border: 0.1rem solid var(--color-black); font-size: 1.4rem; letter-spacing: -0.014rem; color: var(--color-black); }
+/* //셀렉트 박스 */
+
+/* 인풋 - 서치 */
+.input_search_box { position: relative; width: 61.6rem; height: 3.8rem; }
+.input_search_box > input { width: 100%; height: 100%; padding: 0.9rem 1.8rem; border: 0.1rem solid var(--color-black); }
+/* //인풋 - 서치 */
+
+/* 인풋 - 라디오 */
+.input_radio_box { display: flex; align-items: center; gap: 1rem; }
+.input_radio_box > input { width: 2rem; height: 2rem; }
+.input_radio_box > label { font-size: 1.4rem; font-weight: 500; color: var(--color-black); letter-spacing: -0.014rem; }
+/* //인풋 - 라디오 */
 
 /* 페이지네이션 넘버 */
 /* .list_pagination_wrap { margin-top: 2.4rem; }

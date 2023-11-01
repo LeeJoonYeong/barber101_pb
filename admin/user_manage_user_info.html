@@ -90,16 +90,16 @@
             </header>
 
             <section class="outer_content_top">
-              <form action="#" method="get">
+              <form id="form_user_info" action="#" method="get"> <!-- 회원관리 - 회원정보 목록 검색 폼  -->
 
-                <div class="common_row_box">
+                <div class="common_row_box single">
                   <div class="row_subject">검색어</div>
                   <div class="row_content">
                     <div class="selectBox_box">
                       <select id="article_search_type" name="article_search_type" class="article_search_type">
                         <option value="all" selected>전체</option>
-                        <option value="user_id" selected>아이디</option>
-                        <option value="user_nickname" selected>닉네임</option>
+                        <option value="user_id">아이디</option>
+                        <option value="user_nickname">닉네임</option>
                       </select>
                     </div>
                     <div class="input_search_box">
@@ -108,7 +108,7 @@
                   </div>
                 </div>
 
-                <div class="common_row_box">
+                <div class="common_row_box single">
                   <div class="row_subject">회원등급</div>
                   <div class="row_content">
                     <div class="input_radio_box">
@@ -130,7 +130,7 @@
                   </div>
                 </div>
 
-                <div class="common_row_box">
+                <div class="common_row_box single">
                   <div class="row_subject">정지여부</div>
                   <div class="row_content">
                     <div class="input_radio_box">

@@ -16,7 +16,7 @@
 .main_header .right_box .login_info > strong { flex-shrink: 0; font-size: 1.2rem; font-weight: 600; letter-spacing: -0.012rem; }
 .main_header .right_box .login_info > span { flex-shrink: 0; font-size: 1.2rem; letter-spacing: -0.012rem; }
 .main_header .right_box .short_cut_box { flex-shrink: 0; margin-left: 5rem; }
-.main_header .right_box .short_cut_box > a { display: inline-block; height: 2.6rem; line-height: 2.6rem; padding-right: 2rem; background: url('./images/icons/short_cut_icon.png') right center / 1.4rem no-repeat; font-size: 1.2rem; color: var(--color-black); letter-spacing: -0.012rem; }
+.main_header .right_box .short_cut_box > a { display: inline-block; height: 2.6rem; line-height: 2.6rem; padding-right: 2rem; background: url('../images/icons/short_cut_icon.png') right center / 1.4rem no-repeat; font-size: 1.2rem; color: var(--color-black); letter-spacing: -0.012rem; }
 .main_header .right_box .logout_box { flex-shrink: 0; margin-left: 2.4rem; }
 .main_header .right_box .logout_box > button { padding: 0.9rem 2.4rem; background-color: var(--color-black); font-size: 1.1rem; font-weight: 500; color: var(--color-white); letter-spacing: -0.011rem; }
 
@@ -27,7 +27,19 @@
 .content_wrapper .main_aside .category_list > li { padding-left: 4rem; }
 .content_wrapper .main_aside .category_list > li.active { background-color: var(--color-graye6); }
 .content_wrapper .main_aside .category_list > li > a { display: block; width: max-content; height: 4.2rem; line-height: 4.2rem; font-size: 1.2rem; font-weight: 500; letter-spacing: -0.012rem; color: var(--color-black); }
-.content_wrapper .main_aside .category_list > li.active > a { padding-right: 3rem; background: url('./images/icons/arrow_right_icon.png') right center / 3rem no-repeat; }
+.content_wrapper .main_aside .category_list > li.active > a { padding-right: 3rem; background: url('../images/icons/arrow_right_icon.png') right center / 3rem no-repeat; }
 
 /* ================== 메인 바디  ================== */
-.content_wrapper .main_body { position: absolute; top: 5.6rem; left: 18rem; }
+.content_wrapper .main_body { position: absolute; top: 5.5rem; left: 18rem; }
+.content_wrapper .main_body .main_body_inner_wrapper { width: calc(100vw - 18rem); padding: 4rem; }
+.content_wrapper .main_body .main_body_inner_wrapper .main_body_inner_header { display: flex; justify-content: space-between; }
+.content_wrapper .main_body .main_body_inner_wrapper .main_body_inner_header .subject { height: 4rem; line-height: 4rem; font-size: 2.2rem; font-weight: 500; letter-spacing: -0.022rem; }
+.content_wrapper .main_body .main_body_inner_wrapper .main_body_inner_header .indicator { display: flex; align-items: center; }
+.content_wrapper .main_body .main_body_inner_wrapper .main_body_inner_header .indicator > li { font-size: 1.2rem; font-weight: 500; letter-spacing: -0.012rem; }
+.content_wrapper .main_body .main_body_inner_wrapper .main_body_inner_header .indicator > li:not(:last-child) { padding-right: 3rem; background: url('../images/icons/arrow_right_icon_02.png') right center / 3rem no-repeat; color: var(--color-gray92); }
+.content_wrapper .main_body .main_body_inner_wrapper .outer_content_top { margin-top: 2rem; }
+
+/* ================== 회원관리 - 회원정보 목록 ================== */
+#form_user_info .common_row_box ~ .common_row_box { margin-top: 2rem; }
+#form_user_info .common_row_box:nth-of-type(2) .row_content { gap: 5rem; }
+#form_user_info .common_row_box:nth-of-type(3) .row_content { gap: 5rem; }
