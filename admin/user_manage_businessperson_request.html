@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>회원정보 | 회원관리</title>
+  <title>사업자회원 신청대기 | 회원관리</title>
   <link rel="stylesheet" href="./resource/css/root.css">
 </head>
 <body>
@@ -68,13 +68,13 @@
         <aside class="main_aside">
           <h2 class="subject">회원관리</h2>
           <ul class="category_list">
-            <li class="active">
+            <li>
               <a href="#">회원정보</a>
             </li>
             <li>
               <a href="#">바버회원 신청대기</a>
             </li>
-            <li>
+            <li class="active">
               <a href="#">사업자회원 신청대기</a>
             </li>
           </ul>
@@ -85,15 +85,15 @@
           <div class="main_body_inner_wrapper">
 
             <header class="main_body_inner_header">
-              <h3 class="subject">회원정보</h3>
+              <h3 class="subject">사업자회원 신청대기</h3>
               <ul class="indicator">
                 <li>회원관리</li>
-                <li>회원정보</li>
+                <li>사업자회원 신청대기</li>
               </ul>
             </header>
 
             <section class="outer_content_top">
-              <form id="form_user_info" action="#" method="get"> <!-- 회원관리 - 회원정보 목록 검색 폼  -->
+              <form id="form_businessperson_request_info" action="#" method="get"> <!-- 회원관리 - 사업자회원 신청대기 목록 검색 폼  -->
 
                 <div class="common_row_box single">
                   <div class="row_subject">검색어</div>
@@ -112,37 +112,19 @@
                 </div>
 
                 <div class="common_row_box single">
-                  <div class="row_subject">회원등급</div>
+                  <div class="row_subject">상태</div>
                   <div class="row_content">
                     <div class="input_radio_box">
-                      <input type="radio" name="user_grade" id="user_grade_all" checked>
-                      <label for="user_grade_all">전체</label>
+                      <input type="radio" name="user_account_status" id="user_account_status_all" checked>
+                      <label for="user_account_status_all">전체</label>
                     </div>
                     <div class="input_radio_box">
-                      <input type="radio" name="user_grade" id="user_grade_normal">
-                      <label for="user_grade_normal">일반회원</label>
+                      <input type="radio" name="user_account_status" id="user_account_status_waiting">
+                      <label for="user_account_status_waiting">대기</label>
                     </div>
                     <div class="input_radio_box">
-                      <input type="radio" name="user_grade" id="user_grade_barber">
-                      <label for="user_grade_barber">바버회원</label>
-                    </div>
-                    <div class="input_radio_box">
-                      <input type="radio" name="user_grade" id="user_grade_businessperson">
-                      <label for="user_grade_businessperson">사업자회원</label>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="common_row_box single">
-                  <div class="row_subject">정지여부</div>
-                  <div class="row_content">
-                    <div class="input_radio_box">
-                      <input type="radio" name="is_suspend" id="is_suspend_all" checked>
-                      <label for="is_suspend_all">전체</label>
-                    </div>
-                    <div class="input_radio_box">
-                      <input type="radio" name="is_suspend" id="is_suspend_suspended">
-                      <label for="is_suspend_suspended">정지된 회원</label>
+                      <input type="radio" name="user_account_status" id="user_account_status_suspension">
+                      <label for="user_account_status_suspension">보류</label>
                     </div>
                   </div>
                 </div>
@@ -161,8 +143,8 @@
                   <span>아이디</span>
                   <span>닉네임</span>
                   <span>회원등급</span>
-                  <span>신고받은 수</span>
-                  <span>정지여부</span>
+                  <span>신청일</span>
+                  <span>상태</span>
                 </div>
                 <div class="common_list_table_content_wrapper">
                   <ul>
@@ -177,8 +159,8 @@
                       </span>
                       <span>바버가좋아요</span>
                       <span>일반회원</span>
-                      <span>0</span>
-                      <span>-</span>
+                      <span>2023/09/08</span>
+                      <span>보류</span>
                     </li>
                     <li>
                       <span>69</span>
@@ -187,8 +169,8 @@
                       </span>
                       <span>저스틴바버</span>
                       <span>일반회원</span>
-                      <span>0</span>
-                      <span>-</span>
+                      <span>2023/09/08</span>
+                      <span>대기</span>
                     </li>
                     <li>
                       <span>68</span>
@@ -197,8 +179,8 @@
                       </span>
                       <span>아기바버</span>
                       <span>바버회원</span>
-                      <span>2</span>
-                      <span>-</span>
+                      <span>2023/09/07</span>
+                      <span>대기</span>
                     </li>
                     <li>
                       <span>67</span>
@@ -207,8 +189,8 @@
                       </span>
                       <span>바버가좋아요</span>
                       <span>일반회원</span>
-                      <span>1</span>
-                      <span>-</span>
+                      <span>2023/09/06</span>
+                      <span>대기</span>
                     </li>
                     <li>
                       <span>66</span>
@@ -217,8 +199,8 @@
                       </span>
                       <span>저스틴바버</span>
                       <span>사업자회원</span>
-                      <span>1</span>
-                      <span>-</span>
+                      <span>2023/09/04</span>
+                      <span>보류</span>
                     </li>
                     <li>
                       <span>65</span>
@@ -227,8 +209,8 @@
                       </span>
                       <span>아기바버</span>
                       <span>일반회원</span>
-                      <span>0</span>
-                      <span>정지</span>
+                      <span>2023/09/03</span>
+                      <span>대기</span>
                     </li>
                     <li>
                       <span>64</span>
@@ -237,8 +219,8 @@
                       </span>
                       <span>바버가좋아요</span>
                       <span>일반회원</span>
-                      <span>0</span>
-                      <span>-</span>
+                      <span>2023/09/01</span>
+                      <span>대기</span>
                     </li>
                     <li>
                       <span>63</span>
@@ -247,8 +229,8 @@
                       </span>
                       <span>저스틴바버</span>
                       <span>일반회원</span>
-                      <span>0</span>
-                      <span>-</span>
+                      <span>2023/08/29</span>
+                      <span>보류</span>
                     </li>
                     <li>
                       <span>62</span>
@@ -257,8 +239,8 @@
                       </span>
                       <span>아기바버</span>
                       <span>일반회원</span>
-                      <span>0</span>
-                      <span>정지</span>
+                      <span>2023/08/28</span>
+                      <span>보류</span>
                     </li>
                     <li>
                       <span>61</span>
@@ -267,8 +249,8 @@
                       </span>
                       <span>바버가좋아요</span>
                       <span>일반회원</span>
-                      <span>0</span>
-                      <span>-</span>
+                      <span>2023/08/26</span>
+                      <span>대기</span>
                     </li>
                   </ul>
                 </div>

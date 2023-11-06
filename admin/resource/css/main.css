@@ -31,15 +31,30 @@
 
 /* ================== 메인 바디  ================== */
 .content_wrapper .main_body { position: absolute; top: 5.5rem; left: 18rem; }
-.content_wrapper .main_body .main_body_inner_wrapper { width: calc(100vw - 18rem); padding: 4rem; }
+.content_wrapper .main_body .main_body_inner_wrapper { width: calc(100vw - 18rem); min-width: 106.5rem; padding: 4rem; }
 .content_wrapper .main_body .main_body_inner_wrapper .main_body_inner_header { display: flex; justify-content: space-between; }
 .content_wrapper .main_body .main_body_inner_wrapper .main_body_inner_header .subject { height: 4rem; line-height: 4rem; font-size: 2.2rem; font-weight: 500; letter-spacing: -0.022rem; }
 .content_wrapper .main_body .main_body_inner_wrapper .main_body_inner_header .indicator { display: flex; align-items: center; }
 .content_wrapper .main_body .main_body_inner_wrapper .main_body_inner_header .indicator > li { font-size: 1.2rem; font-weight: 500; letter-spacing: -0.012rem; }
 .content_wrapper .main_body .main_body_inner_wrapper .main_body_inner_header .indicator > li:not(:last-child) { padding-right: 3rem; background: url('../images/icons/arrow_right_icon_02.png') right center / 3rem no-repeat; color: var(--color-gray92); }
 .content_wrapper .main_body .main_body_inner_wrapper .outer_content_top { margin-top: 2rem; }
+.content_wrapper .main_body .main_body_inner_wrapper .outer_content_bottom { margin-top: 8rem; }
 
 /* ================== 회원관리 - 회원정보 목록 ================== */
+#form_user_info { display: flex; flex-direction: column; }
 #form_user_info .common_row_box ~ .common_row_box { margin-top: 2rem; }
 #form_user_info .common_row_box:nth-of-type(2) .row_content { gap: 5rem; }
 #form_user_info .common_row_box:nth-of-type(3) .row_content { gap: 5rem; }
+#form_user_info .input_submit_box { align-self: flex-end; margin-top: 2rem; }
+
+/* ================== 회원관리 - 바버회원 신청대기 목록 ================== */
+#form_barber_request_info { display: flex; flex-direction: column; }
+#form_barber_request_info .common_row_box ~ .common_row_box { margin-top: 2rem; }
+#form_barber_request_info .common_row_box:nth-of-type(2) .row_content { gap: 5rem; }
+#form_barber_request_info .input_submit_box { align-self: flex-end; margin-top: 2rem; }
+
+/* ================== 회원관리 - 사업자회원 신청대기 목록 ================== */
+#form_businessperson_request_info { display: flex; flex-direction: column; }
+#form_businessperson_request_info .common_row_box ~ .common_row_box { margin-top: 2rem; }
+#form_businessperson_request_info .common_row_box:nth-of-type(2) .row_content { gap: 5rem; }
+#form_businessperson_request_info .input_submit_box { align-self: flex-end; margin-top: 2rem; }
