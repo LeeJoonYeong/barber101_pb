@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>구직 관리 | 구인&middot;구직</title>
+  <link rel="stylesheet" href="./resource/css/root.css">
+</head>
+<body>
+  <div class="whole_wrapper">
+    <div class="whole_wrapper_inner">
+
+      <header class="main_header">
+        <div class="left_box">
+
+          <div class="logo_box">
+            <h1>
+              <a href="/" class="main_logo">BARBER101</a>
+            </h1>
+          </div>
+
+          <nav class="gnb_box">
+            <ul>
+              <li>
+                <a href="#">회원관리</a>
+              </li>
+              <li>
+                <a href="#">메인</a>
+              </li>
+              <li>
+                <a href="#">구인&middot;구직</a>
+              </li>
+              <li>
+                <a href="#">커뮤니티</a>
+              </li>
+              <li>
+                <a href="#">정보</a>
+              </li>
+              <li>
+                <a href="#">쇼핑</a>
+              </li>
+              <li>
+                <a href="#">공지</a>
+              </li>
+              <li>
+                <a href="#">신고</a>
+              </li>
+            </ul>
+          </nav>
+
+        </div>
+        <div class="right_box">
+          <div class="login_info">
+            <strong>운영자님,</strong>
+            <span>안녕하세요</span>
+          </div>
+          <div class="short_cut_box">
+            <a href="#">홈페이지</a>
+          </div>
+          <div class="logout_box">
+            <button>로그아웃</button>
+          </div>
+        </div>
+      </header>
+
+      <div class="content_wrapper">
+        
+        <aside class="main_aside">
+          <h2 class="subject">구인&middot;구직</h2>
+          <ul class="category_list">
+            <li>
+              <a href="#">구인 관리</a>
+            </li>
+            <li class="active">
+              <a href="#">구직 관리</a>
+            </li>
+          </ul>
+        </aside>
+
+        <main class="main_body">
+
+          <div class="main_body_inner_wrapper">
+
+            <header class="main_body_inner_header">
+              <h3 class="subject">구직 관리</h3>
+              <ul class="indicator">
+                <li>구인&middot;구직</li>
+                <li>구직 관리</li>
+              </ul>
+            </header>
+
+            <section class="outer_content_top">
+              <form id="form_job_hunting_search" action="#" method="get"> <!-- 구인 구직 - 구직 목록 검색 폼  -->
+
+                <div class="common_row_box single">
+                  <div class="row_subject">검색어</div>
+                  <div class="row_content">
+                    <div class="selectBox_box">
+                      <select id="article_search_type" name="article_search_type" class="article_search_type">
+                        <option value="all" selected>전체</option>
+                        <option value="title">상호명</option>
+                        <option value="user_id">아이디</option>
+                      </select>
+                    </div>
+                    <div class="input_search_box">
+                      <input type="search" name="search_keyword" id="search_keyword">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="common_row_box single">
+                  <div class="row_subject">상태</div>
+                  <div class="row_content">
+                    <div class="input_radio_box">
+                      <input type="radio" name="job_hunting_status" id="job_hunting_status_all" checked>
+                      <label for="job_hunting_status_all">전체</label>
+                    </div>
+                    <div class="input_radio_box">
+                      <input type="radio" name="job_hunting_status" id="job_hunting_status_ongoing">
+                      <label for="job_hunting_status_ongoing">구인 중</label>
+                    </div>
+                    <div class="input_radio_box">
+                      <input type="radio" name="job_hunting_status" id="job_hunting_status_close">
+                      <label for="job_hunting_status_close">마감</label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="input_submit_box">
+                  <input type="submit" value="검색">
+                </div>
+
+              </form>
+            </section>
+
+            <section class="outer_content_bottom job"> <!-- 구인 및 구직 더블 클래스 : job  -->
+              <div class="common_list_wrap type0">
+                <div class="common_list_table_head_row">
+                  <span>No</span>
+                  <span>지역</span>
+                  <span>인사말</span>
+                  <span>등록된 아이디</span>
+                  <span>등록일</span>
+                  <span>상태</span>
+                </div>
+                <div class="common_list_table_content_wrapper">
+                  <ul>
+                    <li>
+                      <span>70</span>
+                      <span>경기, 서울, 서울</span>
+                      <span>
+                        <a href="#">
+                          <strong>
+                            <em>1인분은 하는 사람이 되겠습니다.1인분은 하는 사람이 되겠습니다.1인분은 하는 사람이 되겠습니다.1인분은 하는 사람이 되겠습니다.1인분은 하는 사람이 되겠습니다.</em>
+                          </strong>
+                        </a>
+                      </span>
+                      <span>asdf1234</span>
+                      <span>2023/09/08</span>
+                      <span>구직 중</span>
+                    </li>
+                    <li>
+                      <span>69</span>
+                      <span>서울</span>
+                      <span>
+                        <a href="#">
+                          <strong>
+                            <em>1인분은 하는 사람이 되겠습니다.</em>
+                          </strong>
+                        </a>
+                      </span>
+                      <span>asdf1234</span>
+                      <span>2023/09/08</span>
+                      <span>구직 중</span>
+                    </li>
+                    <li>
+                      <span>68</span>
+                      <span>서울</span>
+                      <span>
+                        <a href="#">
+                          <strong>
+                            <em>1인분은 하는 사람이 되겠습니다.</em>
+                          </strong>
+                        </a>
+                      </span>
+                      <span>asdf1234</span>
+                      <span>2023/09/07</span>
+                      <span>구직 중</span>
+                    </li>
+                    <li>
+                      <span>67</span>
+                      <span>서울</span>
+                      <span>
+                        <a href="#">
+                          <strong>
+                            <em>1인분은 하는 사람이 되겠습니다.</em>
+                          </strong>
+                        </a>
+                      </span>
+                      <span>asdf1234</span>
+                      <span>2023/09/06</span>
+                      <span>마감</span>
+                    </li>
+                    <li>
+                      <span>66</span>
+                      <span>경기</span>
+                      <span>
+                        <a href="#">
+                          <strong>
+                            <em>1인분은 하는 사람이 되겠습니다.</em>
+                          </strong>
+                        </a>
+                      </span>
+                      <span>asdf1234</span>
+                      <span>2023/09/04</span>
+                      <span>구직 중</span>
+                    </li>
+                    <li>
+                      <span>65</span>
+                      <span>경기, 인천</span>
+                      <span>
+                        <a href="#">
+                          <strong>
+                            <em>1인분은 하는 사람이 되겠습니다.</em>
+                          </strong>
+                        </a>
+                      </span>
+                      <span>asdf1234</span>
+                      <span>2023/09/04</span>
+                      <span>마감</span>
+                    </li>
+                    <li>
+                      <span>64</span>
+                      <span>서울, 경기</span>
+                      <span>
+                        <a href="#">
+                          <strong>
+                            <em>1인분은 하는 사람이 되겠습니다.</em>
+                          </strong>
+                        </a>
+                      </span>
+                      <span>asdf1234</span>
+                      <span>2023/09/03</span>
+                      <span>구직 중</span>
+                    </li>
+                    <li>
+                      <span>63</span>
+                      <span>제주</span>
+                      <span>
+                        <a href="#">
+                          <strong>
+                            <em>1인분은 하는 사람이 되겠습니다.</em>
+                          </strong>
+                        </a>
+                      </span>
+                      <span>asdf1234</span>
+                      <span>2023/08/29</span>
+                      <span>마감</span>
+                    </li>
+                    <li>
+                      <span>62</span>
+                      <span>제주</span>
+                      <span>
+                        <a href="#">
+                          <strong>
+                            <em>1인분은 하는 사람이 되겠습니다.</em>
+                          </strong>
+                        </a>
+                      </span>
+                      <span>asdf1234</span>
+                      <span>2023/08/28</span>
+                      <span>구직 중</span>
+                    </li>
+                    <li>
+                      <span>61</span>
+                      <span>강원</span>
+                      <span>
+                        <a href="#">
+                          <strong>
+                            <em>1인분은 하는 사람이 되겠습니다.</em>
+                          </strong>
+                        </a>
+                      </span>
+                      <span>asdf1234</span>
+                      <span>2023/08/26</span>
+                      <span>마감</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+
+            <div class="list_pagination_wrap">
+              <div class="list_pagination_box">
+                <a href="#" class="list_pre"></a>
+                <a href="#" class="list_page active">1</a>
+                <a href="#" class="list_page">2</a>
+                <a href="#" class="list_page">3</a>
+                <a href="#" class="list_page">4</a>
+                <a href="#" class="list_page">5</a>
+                <a href="#" class="list_next"></a>
+              </div>	
+            </div>
+
+          </div>
+        </main>
+
+      </div>
+    </div>
+  </div>
+</body>
+</html>
