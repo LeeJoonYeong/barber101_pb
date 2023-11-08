@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>정보 공지 관리 | 정보</title>
+  <link rel="stylesheet" href="./resource/css/root.css">
+</head>
+<body>
+  <div class="whole_wrapper">
+    <div class="whole_wrapper_inner">
+
+      <header class="main_header">
+        <div class="left_box">
+
+          <div class="logo_box">
+            <h1>
+              <a href="/" class="main_logo">BARBER101</a>
+            </h1>
+          </div>
+
+          <nav class="gnb_box">
+            <ul>
+              <li>
+                <a href="#">회원관리</a>
+              </li>
+              <li>
+                <a href="#">메인</a>
+              </li>
+              <li>
+                <a href="#">구인&middot;구직</a>
+              </li>
+              <li>
+                <a href="#">커뮤니티</a>
+              </li>
+              <li>
+                <a href="#">정보</a>
+              </li>
+              <li>
+                <a href="#">쇼핑</a>
+              </li>
+              <li>
+                <a href="#">공지</a>
+              </li>
+              <li>
+                <a href="#">신고</a>
+              </li>
+            </ul>
+          </nav>
+
+        </div>
+        <div class="right_box">
+          <div class="login_info">
+            <strong>운영자님,</strong>
+            <span>안녕하세요</span>
+          </div>
+          <div class="short_cut_box">
+            <a href="#">홈페이지</a>
+          </div>
+          <div class="logout_box">
+            <button>로그아웃</button>
+          </div>
+        </div>
+      </header>
+
+      <div class="content_wrapper">
+        
+        <aside class="main_aside">
+          <h2 class="subject">정보</h2>
+          <ul class="category_list">
+            <li>
+              <a href="#">정보 글 관리</a>
+            </li>
+            <li class="active">
+              <a href="#">정보 공지 관리</a>
+            </li>
+          </ul>
+        </aside>
+
+        <main class="main_body">
+
+          <div class="main_body_inner_wrapper">
+
+            <header class="main_body_inner_header">
+              <h3 class="subject">정보 공지 관리</h3>
+              <ul class="indicator">
+                <li>정보</li>
+                <li>정보 공지 관리</li>
+              </ul>
+            </header>
+
+            <section class="outer_content_top">
+              <form id="form_information_notice_search" action="#" method="get"> <!-- 정보 - 정보 공지 목록 검색 폼  -->
+
+                <div class="common_row_box single">
+                  <div class="row_subject">검색어</div>
+                  <div class="row_content">
+                    <div class="selectBox_box">
+                      <select id="article_search_type" name="article_search_type" class="article_search_type">
+                        <option value="title" selected>제목</option>
+                      </select>
+                    </div>
+                    <div class="input_search_box">
+                      <input type="search" name="search_keyword" id="search_keyword">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="input_submit_box">
+                  <input type="submit" value="검색">
+                </div>
+
+              </form>
+            </section>
+
+            <section class="outer_content_bottom">
+
+              <form id="form_information_notice_list_manage" action="#" method="post" > <!-- 정보 - 정보 공지 목록 관리 폼  -->
+
+              <div class="common_list_wrap type0">
+
+                <div class="common_list_table_head_row">
+                  <div class="input_checkBox_box">
+                    <input type="checkbox" name="checkBox_list_select_all">
+                  </div>
+                  <span>No</span>
+                  <span>제목</span>
+                  <span>등록일</span>
+                  <span>노출 여부</span>
+                  <span>노출 순서</span>
+                </div>
+
+                <div class="common_list_table_content_wrapper">
+                  <ul>
+                    <li>
+                      <div class="input_checkBox_box">
+                        <input type="checkbox" name="checkBox_list_select[]">
+                      </div>
+                      <span>101</span>
+                      <span>
+                        <a href="#">
+                          <strong>
+                            <em>정보 운영수칙 안내드립니다.정보 운영수칙 안내드립니다.정보 운영수칙 안내드립니다.정보 운영수칙 안내드립니다.정보 운영수칙 안내드립니다.정보 운영수칙 안내드립니다.정보 운영수칙 안내드립니다.</em>
+                          </strong>
+                        </a>
+                      </span>
+                      <span>2023/09/16</span>
+                      <div class="selectBox_box">
+                        <select name="select_is_exposure[]">
+                          <option value="yes" selected>노출</option>
+                          <option value="no">노출안함</option>
+                        </select>
+                      </div>
+                      <div class="input_number_box">
+                        <input type="number" name="input_exposure_num[]" min="0" value="1">
+                      </div>
+                    </li>
+                    <li>
+                      <div class="input_checkBox_box">
+                        <input type="checkbox" name="checkBox_list_select[]">
+                      </div>
+                      <span>100</span>
+                      <span>
+                        <a href="#">정보 운영수칙 안내드립니다.</a>
+                      </span>
+                      <span>2023/09/16</span>
+                      <div class="selectBox_box">
+                        <select name="select_is_exposure[]">
+                          <option value="yes" selected>노출</option>
+                          <option value="no">노출안함</option>
+                        </select>
+                      </div>
+                      <div class="input_number_box">
+                        <input type="number" name="input_exposure_num[]" min="0" value="3">
+                      </div>
+                    </li>
+                    <li>
+                      <div class="input_checkBox_box">
+                        <input type="checkbox" name="checkBox_list_select[]">
+                      </div>
+                      <span>99</span>
+                      <span>
+                        <a href="#">정보 운영수칙 안내드립니다.</a>
+                      </span>
+                      <span>2023/09/14</span>
+                      <div class="selectBox_box">
+                        <select name="select_is_exposure[]">
+                          <option value="yes" selected>노출</option>
+                          <option value="no">노출안함</option>
+                        </select>
+                      </div>
+                      <div class="input_number_box">
+                        <input type="number" name="input_exposure_num[]" min="0" value="2">
+                      </div>
+                    </li>
+                    <li>
+                      <div class="input_checkBox_box">
+                        <input type="checkbox" name="checkBox_list_select[]">
+                      </div>
+                      <span>98</span>
+                      <span>
+                        <a href="#">정보 운영수칙 안내드립니다.</a>
+                      </span>
+                      <span>2023/09/13</span>
+                      <div class="selectBox_box">
+                        <select name="select_is_exposure[]">
+                          <option value="yes" selected>노출</option>
+                          <option value="no">노출안함</option>
+                        </select>
+                      </div>
+                      <div class="input_number_box">
+                        <input type="number" name="input_exposure_num[]" min="0" value="5">
+                      </div>
+                    </li>
+                    <li>
+                      <div class="input_checkBox_box">
+                        <input type="checkbox" name="checkBox_list_select[]">
+                      </div>
+                      <span>97</span>
+                      <span>
+                        <a href="#">정보 운영수칙 안내드립니다.</a>
+                      </span>
+                      <span>2023/09/11</span>
+                      <div class="selectBox_box">
+                        <select name="select_is_exposure[]">
+                          <option value="yes" selected>노출</option>
+                          <option value="no">노출안함</option>
+                        </select>
+                      </div>
+                      <div class="input_number_box">
+                        <input type="number" name="input_exposure_num[]" min="0" value="4">
+                      </div>
+                    </li>
+                    <li>
+                      <div class="input_checkBox_box">
+                        <input type="checkbox" name="checkBox_list_select[]">
+                      </div>
+                      <span>96</span>
+                      <span>
+                        <a href="#">정보 운영수칙 안내드립니다.</a>
+                      </span>
+                      <span>2023/09/11</span>
+                      <div class="selectBox_box">
+                        <select name="select_is_exposure[]">
+                          <option value="yes" selected>노출</option>
+                          <option value="no">노출안함</option>
+                        </select>
+                      </div>
+                      <div class="input_number_box">
+                        <input type="number" name="input_exposure_num[]" min="0" value="2">
+                      </div>
+                    </li>
+                    <li>
+                      <div class="input_checkBox_box">
+                        <input type="checkbox" name="checkBox_list_select[]">
+                      </div>
+                      <span>95</span>
+                      <span>
+                        <a href="#">정보 운영수칙 안내드립니다.</a>
+                      </span>
+                      <span>2023/09/10</span>
+                      <div class="selectBox_box">
+                        <select name="select_is_exposure[]">
+                          <option value="yes">노출</option>
+                          <option value="no" selected>노출안함</option>
+                        </select>
+                      </div>
+                      <div class="input_number_box">
+                        <input type="number" name="input_exposure_num[]" min="0" value="0" readonly>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="input_checkBox_box">
+                        <input type="checkbox" name="checkBox_list_select[]">
+                      </div>
+                      <span>94</span>
+                      <span>
+                        <a href="#">정보 운영수칙 안내드립니다.</a>
+                      </span>
+                      <span>2023/09/09</span>
+                      <div class="selectBox_box">
+                        <select name="select_is_exposure[]">
+                          <option value="yes">노출</option>
+                          <option value="no" selected>노출안함</option>
+                        </select>
+                      </div>
+                      <div class="input_number_box">
+                        <input type="number" name="input_exposure_num[]" min="0" value="0" readonly>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="input_checkBox_box">
+                        <input type="checkbox" name="checkBox_list_select[]">
+                      </div>
+                      <span>93</span>
+                      <span>
+                        <a href="#">정보 운영수칙 안내드립니다.</a>
+                      </span>
+                      <span>2023/09/08</span>
+                      <div class="selectBox_box">
+                        <select name="select_is_exposure[]">
+                          <option value="yes">노출</option>
+                          <option value="no" selected>노출안함</option>
+                        </select>
+                      </div>
+                      <div class="input_number_box">
+                        <input type="number" name="input_exposure_num[]" min="0" value="0" readonly>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="input_checkBox_box">
+                        <input type="checkbox" name="checkBox_list_select[]">
+                      </div>
+                      <span>92</span>
+                      <span>
+                        <a href="#">정보 운영수칙 안내드립니다.</a>
+                      </span>
+                      <span>2023/09/06</span>
+                      <div class="selectBox_box">
+                        <select name="select_is_exposure[]">
+                          <option value="yes">노출</option>
+                          <option value="no" selected>노출안함</option>
+                        </select>
+                      </div>
+                      <div class="input_number_box">
+                        <input type="number" name="input_exposure_num[]" min="0" value="0" readonly>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+
+              </div>
+
+              <div class="common_list_control_wrapper">
+                <div class="input_submit_box type1">
+                  <input type="submit" value="삭제">
+                </div>
+                <button class="btn type0 btn_list_save">저장</button>
+                <a href="#" class="link type0 link_article_register">등록</a>
+              </div>
+
+              </form>
+
+            </section>
+
+            <div class="list_pagination_wrap">
+              <div class="list_pagination_box">
+                <a href="#" class="list_pre"></a>
+                <a href="#" class="list_page active">1</a>
+                <a href="#" class="list_page">2</a>
+                <a href="#" class="list_page">3</a>
+                <a href="#" class="list_page">4</a>
+                <a href="#" class="list_page">5</a>
+                <a href="#" class="list_next"></a>
+              </div>	
+            </div>
+
+          </div>
+        </main>
+
+      </div>
+    </div>
+  </div>
+</body>
+</html>

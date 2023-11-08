@@ -94,7 +94,7 @@
 #form_job_hunting_search .common_row_box:nth-of-type(2) .row_content { gap: 5rem; }
 #form_job_hunting_search .input_submit_box { align-self: flex-end; margin-top: 2rem; }
 
-/* ================== 커뮤니티 - 커뮤니티 글 (유저) 관리 ================== */
+/* ================== 커뮤니티 - 커뮤니티 글 (유저) 목록 ================== */
 #form_community_user_search { display: flex; flex-direction: column; }
 #form_community_user_search .common_row_box ~ .common_row_box { margin-top: 2rem; }
 #form_community_user_search .common_row_box:nth-of-type(2) .row_content { gap: 5rem; }
@@ -106,3 +106,48 @@
 .outer_content_bottom.community .common_list_wrap.type0 .common_list_table_content_wrapper > ul > li > span:nth-of-type(2) { flex-grow: initial; width: 10.8rem; padding: initial; }
 .outer_content_bottom.community .common_list_wrap.type0 .common_list_table_content_wrapper > ul > li > span:nth-of-type(3) { width: 10.8rem; }
 .outer_content_bottom.community .common_list_wrap.type0 .common_list_table_content_wrapper > ul > li > span:nth-of-type(4) { flex-grow: 1; padding: 0 2rem; }
+
+/* ================== 커뮤니티 - 커뮤니티 글 (공지) 목록 ================== */
+#form_community_notice_search { display: flex; flex-direction: column; gap: 2rem; }
+#form_community_notice_search > .input_submit_box { align-self: flex-end; }
+#form_community_notice_list_manage { display: flex; flex-direction: column; }
+#form_community_notice_list_manage .common_list_wrap.type0 .common_list_table_head_row > span:nth-of-type(1) { width: 5.8rem; }
+#form_community_notice_list_manage .common_list_wrap.type0 .common_list_table_head_row > span:nth-of-type(3) { width: 12.5rem; }
+#form_community_notice_list_manage .common_list_wrap.type0 .common_list_table_head_row > span:nth-of-type(4) { width: 17.2rem; }
+#form_community_notice_list_manage .common_list_wrap.type0 .common_list_table_head_row > span:nth-of-type(5) { width: 13.6rem; }
+#form_community_notice_list_manage .common_list_wrap.type0 .common_list_table_content_wrapper > ul > li > span:nth-of-type(1) { width: 5.8rem; }
+#form_community_notice_list_manage .common_list_wrap.type0 .common_list_table_content_wrapper > ul > li > span:nth-of-type(3) { width: 12.5rem; }
+#form_community_notice_list_manage .common_list_wrap.type0 .common_list_table_content_wrapper > ul > li > div:nth-of-type(2) { flex-grow: initial; width: 17.2rem; padding: initial; box-sizing: content-box; }
+#form_community_notice_list_manage .common_list_wrap.type0 .common_list_table_content_wrapper > ul > li > div:nth-of-type(3) { width: 13.6rem; box-sizing: content-box; }
+#form_community_notice_list_manage .common_list_wrap.type0 .common_list_table_content_wrapper > ul > li > div:nth-of-type(2) > select { width: 13.6rem; height: 3.8rem; }
+#form_community_notice_list_manage .common_list_wrap.type0 .common_list_table_content_wrapper > ul > li > div:nth-of-type(3) > input { width: 10rem; height: 3.8rem; }
+#form_community_notice_list_manage .common_list_control_wrapper { align-self: flex-end; }
+
+/* ================== 정보 - 정보 글 (유저) 목록 ================== */
+#form_informaion_user_search { display: flex; flex-direction: column; }
+#form_informaion_user_search .common_row_box ~ .common_row_box { margin-top: 2rem; }
+#form_informaion_user_search .common_row_box:nth-of-type(2) .row_content { gap: 5rem; }
+#form_informaion_user_search .input_submit_box { align-self: flex-end; margin-top: 2rem; }
+.outer_content_bottom.information .common_list_wrap.type0 .common_list_table_head_row > span:nth-of-type(2) { flex-grow: initial; width: 14rem; }
+.outer_content_bottom.information .common_list_wrap.type0 .common_list_table_head_row > span:nth-of-type(3) { flex-grow: 1; }
+.outer_content_bottom.information .common_list_wrap.type0 .common_list_table_content_wrapper > ul > li > span:nth-of-type(2) { flex-grow: initial; width: 14rem; padding: initial; }
+.outer_content_bottom.information .common_list_wrap.type0 .common_list_table_content_wrapper > ul > li > span:nth-of-type(3) { flex-grow: 1; padding: 0 2rem; }
+
+/* ================== 정보 - 정보 글 (공지) 목록 ================== */
+#form_information_notice_search { display: flex; flex-direction: column; gap: 2rem; }
+#form_information_notice_search > .input_submit_box { align-self: flex-end; }
+#form_information_notice_list_manage { display: flex; flex-direction: column; }
+#form_information_notice_list_manage .common_list_wrap.type0 .common_list_table_head_row > span:nth-of-type(1) { width: 5.8rem; }
+#form_information_notice_list_manage .common_list_wrap.type0 .common_list_table_head_row > span:nth-of-type(3) { width: 12.5rem; }
+#form_information_notice_list_manage .common_list_wrap.type0 .common_list_table_head_row > span:nth-of-type(4) { width: 17.2rem; }
+#form_information_notice_list_manage .common_list_wrap.type0 .common_list_table_head_row > span:nth-of-type(5) { width: 13.6rem; }
+#form_information_notice_list_manage .common_list_wrap.type0 .common_list_table_content_wrapper > ul > li > span:nth-of-type(1) { width: 5.8rem; }
+#form_information_notice_list_manage .common_list_wrap.type0 .common_list_table_content_wrapper > ul > li > span:nth-of-type(3) { width: 12.5rem; }
+#form_information_notice_list_manage .common_list_wrap.type0 .common_list_table_content_wrapper > ul > li > div:nth-of-type(2) { flex-grow: initial; width: 17.2rem; padding: initial; box-sizing: content-box; }
+#form_information_notice_list_manage .common_list_wrap.type0 .common_list_table_content_wrapper > ul > li > div:nth-of-type(3) { width: 13.6rem; box-sizing: content-box; }
+#form_information_notice_list_manage .common_list_wrap.type0 .common_list_table_content_wrapper > ul > li > div:nth-of-type(2) > select { width: 13.6rem; height: 3.8rem; }
+#form_information_notice_list_manage .common_list_wrap.type0 .common_list_table_content_wrapper > ul > li > div:nth-of-type(3) > input { width: 10rem; height: 3.8rem; }
+#form_information_notice_list_manage .common_list_control_wrapper { align-self: flex-end; }
+
+/* ================== 쇼핑 - 쇼핑 배너 목록 ================== */
+#form_shopping_list_manage .common_list_wrap.type1 .common_list_table_content_wrapper > ul > li > .common_row_box:nth-of-type(2) > .row_content > .input_text_box { width: 100%; }
