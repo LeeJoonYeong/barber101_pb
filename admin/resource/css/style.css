@@ -52,6 +52,11 @@ input:autofill:active {
 }
 /* //인풋 자동완성 */
 
+/* 공통 단일 클래스 */
+.pt10 { padding-top: 1rem; }
+.pb10 { padding-bottom: 1rem; }
+/* //공통 단일 클래스 */
+
 /* 로고 */
 .main_logo { display: block; font-family: 'Jomhuria', cursive; font-size: 3.6rem; font-weight: 400; color: var(--color-black); }
 /* //로고 */
@@ -62,8 +67,9 @@ input:autofill:active {
 .common_row_box.single { border-top: 0.1rem solid var(--color-black); }
 .common_row_box.sibling { border-top: none; }
 .common_row_box .row_subject { flex-shrink: 0; width: 15.2rem; height: 5.8rem; line-height: 5.8rem; padding-left: 1.8rem; background-color: var(--color-graye6); font-size: 1.5rem; font-weight: 500; color: var(--color-black); letter-spacing: -0.015rem; }
+.common_row_box .row_subject.stretch { align-self: stretch; height: initial; }
 .common_row_box.ceiling .row_subject { background-color: initial;}
-.common_row_box .row_content { display: flex; align-items: center; gap: 1.4rem; padding-left: 1.8rem; } 
+.common_row_box .row_content { position: relative; display: flex; align-items: center; gap: 1.4rem; padding-left: 1.8rem; } 
 .common_row_box .row_content.stretch { flex-grow: 1; padding-right: 1.8rem; } 
 .common_row_box .row_content.column { flex-direction: column; } 
 .common_row_box .row_content.column > .top_box { width: 100%; } 
@@ -93,12 +99,21 @@ input:autofill:active {
 .common_list_wrap.type0 .common_list_table_content_wrapper > ul > li > * > a { position: relative; display: block; width: 100%; height: 100%; color: var(--color-blue0c); text-decoration: underline; }
 .common_list_wrap.type0 .common_list_table_content_wrapper > ul > li > * > a > strong { position: absolute; left: 0; width: 100%; overflow: hidden; text-decoration: underline; text-overflow: ellipsis; white-space: nowrap; }
 
-.common_list_control_wrapper { display: flex; gap: 1.6rem; margin-top: 2rem; } /* 공통 리스트 컨트롤 */
+.common_list_wrap.type0 + .common_list_control_wrapper { display: flex; gap: 1.6rem; margin-top: 2rem; } /* 공통 리스트 컨트롤 */
 /* //공통 리스트 - type0 */
+
+/* 공통 리스트 - type1 */
+.common_list_wrap.type1 .common_list_table_head_row { margin-bottom: 1.6rem; }
+.common_list_wrap.type1 .common_list_table_head_row > strong { display: block; height: 3.6rem; line-height: 3.6rem; font-size: 1.8rem; font-weight: 500; letter-spacing: -0.018rem; }
+/* //공통 리스트 - type1 */
+
+/* 인풋 - 라벨 */
+.label_box > label { font-size: 1.4rem; font-weight: 500; color: var(--color-black); letter-spacing: -0.014rem; }
+/* //인풋 - 라벨 */
 
 /* 인풋 - 텍스트 */
 .input_text_box { position: relative; width: 10rem; height: 3.8rem; }
-.input_text_box > input { width: 100%; height: 100%; padding: 0.9rem 1.8rem; border: 0.1rem solid var(--color-black); font-size: 1.4rem; letter-spacing: -0.014rem; text-align: center; }
+.input_text_box > input { width: 100%; height: 100%; padding: 0.9rem 1.8rem; border: 0.1rem solid var(--color-black); font-size: 1.4rem; letter-spacing: -0.014rem; }
 /* //인풋 - 텍스트 */
 
 /* 셀렉트 박스 */
@@ -123,6 +138,10 @@ input:autofill:active {
 .input_radio_box > label { font-size: 1.4rem; font-weight: 500; color: var(--color-black); letter-spacing: -0.014rem; }
 /* //인풋 - 라디오 */
 
+/* 인풋 - 체크박스 */
+.input_checkBox_box > input { width: 1.6rem; height: 1.6rem; }
+/* //인풋 - 체크박스 */
+
 /* 인풋 - 서브밋 */
 .input_submit_box > input { width: 8.8rem; height: 3.8rem ; line-height: 3.8rem; background-color: var(--color-black); font-size: 1.3rem; font-weight: 500; color: var(--color-white); letter-spacing: -0.013rem; }
 .input_submit_box.type1 > input { width: 12.3rem; height: 3.8rem ; line-height: 3.8rem; background-color: var(--color-white); border: 0.1rem solid var(--color-black); font-size: 1.3rem; font-weight: 500; color: var(--color-black); letter-spacing: -0.013rem; }
@@ -133,6 +152,7 @@ input:autofill:active {
 .input_file_box > a { order: 2; position: absolute; left: 13.1rem; width: calc(100% - 15rem); font-size: 1.3rem; color: var(--color-blue0c); letter-spacing: -0.013rem; text-decoration: underline; }
 .input_file_box > a > span { display: block; width: 100%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .input_file_box > label { flex-shrink: 0; order: 1; display: block; width: 11.3rem; height: 3.8rem; line-height: 3.8rem; background-color: var(--color-black); font-size: 1.3rem; font-weight: 500; color: var(--color-white); letter-spacing: -0.013rem; text-align: center; cursor: pointer; }
+.input_file_box + .input_file_guide_box { line-height: 2rem; font-size: 1rem; letter-spacing: -0.01rem; }
 /* //인풋 - 파일 */
 
 /* 버튼 - type0 */
@@ -141,6 +161,7 @@ input:autofill:active {
 
 /* 링크 - type0 */
 .link.type0 { display: block; width: 12.3rem; height: 3.8rem ; line-height: 3.8rem; background-color: var(--color-black); font-size: 1.3rem; font-weight: 500; color: var(--color-white); letter-spacing: -0.013rem; text-align: center; }
+.link.type1 { display: block; width: 12.3rem; height: 3.8rem ; line-height: 3.8rem; background-color: var(--color-white); border: 0.1rem solid var(--color-black); font-size: 1.3rem; font-weight: 500; color: var(--color-black); letter-spacing: -0.013rem; text-align: center; }
 /* //링크 - type0 */
 
 /* 페이지네이션 넘버 */

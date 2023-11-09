@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>정보 글 관리 | 정보</title>
+  <title>게시글 신고 관리 | 신고</title>
   <link rel="stylesheet" href="./resource/css/root.css">
 </head>
 <body>
@@ -66,13 +66,13 @@
       <div class="content_wrapper">
         
         <aside class="main_aside">
-          <h2 class="subject">정보</h2>
+          <h2 class="subject">신고</h2>
           <ul class="category_list">
             <li class="active">
-              <a href="#">정보 글 관리</a>
+              <a href="#">게시글 신고 관리</a>
             </li>
             <li>
-              <a href="#">정보 공지 관리</a>
+              <a href="#">댓글 신고 관리</a>
             </li>
           </ul>
         </aside>
@@ -82,15 +82,15 @@
           <div class="main_body_inner_wrapper">
 
             <header class="main_body_inner_header">
-              <h3 class="subject">정보 글 관리</h3>
+              <h3 class="subject">게시글 신고 관리</h3>
               <ul class="indicator">
-                <li>정보</li>
-                <li>정보 글 관리</li>
+                <li>신고</li>
+                <li>게시글 신고 관리</li>
               </ul>
             </header>
 
             <section class="outer_content_top">
-              <form id="form_informaion_user_list_search" action="#" method="get"> <!-- 정보 - 정보 글 목록 검색 폼  -->
+              <form id="form_accusation_article_list_search" action="#" method="get"> <!-- 신고 - 게시글 신고 목록 검색 폼  -->
 
                 <div class="common_row_box single">
                   <div class="row_subject">검색어</div>
@@ -98,30 +98,12 @@
                     <div class="selectBox_box">
                       <select id="article_search_type" name="article_search_type" class="article_search_type">
                         <option value="all" selected>전체</option>
-                        <option value="title">제목</option>
+                        <option value="accusation_reason">신고사유</option>
                         <option value="user_id">아이디</option>
                       </select>
                     </div>
                     <div class="input_search_box">
                       <input type="search" name="search_keyword" id="search_keyword">
-                    </div>
-                  </div>
-                </div>
-
-                <div class="common_row_box single">
-                  <div class="row_subject">인기 여부</div>
-                  <div class="row_content">
-                    <div class="input_radio_box">
-                      <input type="radio" name="informaion_popular" id="informaion_popular_all" checked>
-                      <label for="informaion_popular_all">전체</label>
-                    </div>
-                    <div class="input_radio_box">
-                      <input type="radio" name="informaion_popular" id="informaion_popular_normal">
-                      <label for="informaion_popular_normal">일반 글</label>
-                    </div>
-                    <div class="input_radio_box">
-                      <input type="radio" name="informaion_popular" id="informaion_popular_hot">
-                      <label for="informaion_popular_hot">인기 글</label>
                     </div>
                   </div>
                 </div>
@@ -133,146 +115,99 @@
               </form>
             </section>
 
-            <section class="outer_content_bottom information"> <!-- 정보 더블 클래스 : information  -->
+            <section class="outer_content_bottom accusation">  <!-- 신고 더블 클래스 : accusation  -->
               <div class="common_list_wrap type0">
                 <div class="common_list_table_head_row">
                   <span>No</span>
-                  <span>인기 여부</span>
-                  <span>제목</span>
-                  <span>작성 아이디</span>
-                  <span>등록일</span>
+                  <span>신고사유</span>
+                  <span>신고일</span>
+                  <span>신고자</span>
                 </div>
                 <div class="common_list_table_content_wrapper">
                   <ul>
                     <li>
                       <span>101</span>
-                      <span>일반 글</span>
                       <span>
                         <a href="#">
                           <strong>
-                            <em>유광 포마드와 무광 포마드의 차이 알려드립니다.유광 포마드와 무광 포마드의 차이 알려드립니다.유광 포마드와 무광 포마드의 차이 알려드립니다.</em>
+                            <em>카테고리와 맞지 않는 글을 올렸습니다.카테고리와 맞지 않는 글을 올렸습니다.카테고리와 맞지 않는 글을 올렸습니다.카테고리와 맞지 않는 글을 올렸습니다.</em>
                           </strong>
                         </a>
                       </span>
-                      <span>asdf1234</span>
                       <span>2023/09/16</span>
+                      <span>asdf1234</span>
                     </li>
                     <li>
                       <span>100</span>
-                      <span>일반 글</span>
                       <span>
-                        <a href="#">
-                          <strong>
-                            <em>유광 포마드와 무광 포마드의 차이 알려드립니다.</em>
-                          </strong>
-                        </a>
+                        <a href="#">카테고리와 맞지 않는 글을 올렸습니다.</a>
                       </span>
-                      <span>asdf1234</span>
                       <span>2023/09/16</span>
+                      <span>asdf1234</span>
                     </li>
                     <li>
                       <span>99</span>
-                      <span>일반 글</span>
                       <span>
-                        <a href="#">
-                          <strong>
-                            <em>유광 포마드와 무광 포마드의 차이 알려드립니다.</em>
-                          </strong>
-                        </a>
+                        <a href="#">카테고리와 맞지 않는 글을 올렸습니다.</a>
                       </span>
-                      <span>asdf1234</span>
                       <span>2023/09/14</span>
+                      <span>asdf1234</span>
                     </li>
                     <li>
                       <span>98</span>
-                      <span>인기 글</span>
                       <span>
-                        <a href="#">
-                          <strong>
-                            <em>유광 포마드와 무광 포마드의 차이 알려드립니다.</em>
-                          </strong>
-                        </a>
+                        <a href="#">게시글 내에 특정 업체를 비난하는 글의 내용이 있습니다.</a>
                       </span>
-                      <span>asdf1234</span>
                       <span>2023/09/13</span>
+                      <span>asdf1234</span>
                     </li>
                     <li>
                       <span>97</span>
-                      <span>일반 글</span>
                       <span>
-                        <a href="#">
-                          <strong>
-                            <em>유광 포마드와 무광 포마드의 차이 알려드립니다.</em>
-                          </strong>
-                        </a>
+                        <a href="#">게시글 내에 특정 업체를 비난하는 글의 내용이 있습니다.</a>
                       </span>
-                      <span>asdf1234</span>
                       <span>2023/09/11</span>
+                      <span>asdf1234</span>
                     </li>
                     <li>
                       <span>96</span>
-                      <span>인기 글</span>
                       <span>
-                        <a href="#">
-                          <strong>
-                            <em>유광 포마드와 무광 포마드의 차이 알려드립니다.</em>
-                          </strong>
-                        </a>
+                        <a href="#">게시글 내에 특정 업체를 비난하는 글의 내용이 있습니다.</a>
                       </span>
-                      <span>asdf1234</span>
                       <span>2023/09/11</span>
+                      <span>asdf1234</span>
                     </li>
                     <li>
                       <span>95</span>
-                      <span>일반 글</span>
                       <span>
-                        <a href="#">
-                          <strong>
-                            <em>유광 포마드와 무광 포마드의 차이 알려드립니다.</em>
-                          </strong>
-                        </a>
+                        <a href="#">카테고리와 맞지 않는 글을 올렸습니다.</a>
                       </span>
-                      <span>asdf1234</span>
                       <span>2023/09/10</span>
+                      <span>asdf1234</span>
                     </li>
                     <li>
                       <span>94</span>
-                      <span>인기 글</span>
                       <span>
-                        <a href="#">
-                          <strong>
-                            <em>유광 포마드와 무광 포마드의 차이 알려드립니다.</em>
-                          </strong>
-                        </a>
+                        <a href="#">게시글 내에 특정 업체를 비난하는 글의 내용이 있습니다.</a>
                       </span>
-                      <span>asdf1234</span>
                       <span>2023/09/09</span>
+                      <span>asdf1234</span>
                     </li>
                     <li>
                       <span>93</span>
-                      <span>일반 글</span>
                       <span>
-                        <a href="#">
-                          <strong>
-                            <em>유광 포마드와 무광 포마드의 차이 알려드립니다.</em>
-                          </strong>
-                        </a>
+                        <a href="#">카테고리와 맞지 않는 글을 올렸습니다.</a>
                       </span>
-                      <span>asdf1234</span>
                       <span>2023/09/08</span>
+                      <span>asdf1234</span>
                     </li>
                     <li>
                       <span>92</span>
-                      <span>인기 글</span>
                       <span>
-                        <a href="#">
-                          <strong>
-                            <em>유광 포마드와 무광 포마드의 차이 알려드립니다.</em>
-                          </strong>
-                        </a>
+                        <a href="#">게시글 내에 특정 업체를 비난하는 글의 내용이 있습니다.</a>
                       </span>
+                      <span>2023/09/06</span>
                       <span>asdf1234</span>
-                      <span>2023/09/08</span>
                     </li>
                   </ul>
                 </div>

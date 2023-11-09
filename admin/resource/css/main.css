@@ -41,29 +41,33 @@
 .content_wrapper .main_body .main_body_inner_wrapper .outer_content_bottom { margin-top: 8rem; }
 
 /* ================== 회원관리 - 회원정보 목록 ================== */
-#form_user_info { display: flex; flex-direction: column; }
-#form_user_info .common_row_box ~ .common_row_box { margin-top: 2rem; }
-#form_user_info .common_row_box:nth-of-type(2) .row_content { gap: 5rem; }
-#form_user_info .common_row_box:nth-of-type(3) .row_content { gap: 5rem; }
-#form_user_info .input_submit_box { align-self: flex-end; margin-top: 2rem; }
+#form_user_list_search { display: flex; flex-direction: column; }
+#form_user_list_search > .common_row_box ~ .common_row_box { margin-top: 2rem; }
+#form_user_list_search > .common_row_box:nth-of-type(2) .row_content { gap: 5rem; }
+#form_user_list_search > .common_row_box:nth-of-type(3) .row_content { gap: 5rem; }
+#form_user_list_search > .common_row_box .row_content > .input_search_box { flex-grow: 1; }
+#form_user_list_search .input_submit_box { align-self: flex-end; margin-top: 2rem; }
 
 /* ================== 회원관리 - 바버회원 신청대기 목록 ================== */
-#form_barber_request_info { display: flex; flex-direction: column; }
-#form_barber_request_info .common_row_box ~ .common_row_box { margin-top: 2rem; }
-#form_barber_request_info .common_row_box:nth-of-type(2) .row_content { gap: 5rem; }
-#form_barber_request_info .input_submit_box { align-self: flex-end; margin-top: 2rem; }
+#form_barber_request_list_search { display: flex; flex-direction: column; }
+#form_barber_request_list_search > .common_row_box ~ .common_row_box { margin-top: 2rem; }
+#form_barber_request_list_search > .common_row_box:nth-of-type(2) .row_content { gap: 5rem; }
+#form_barber_request_list_search > .common_row_box .row_content > .input_search_box { flex-grow: 1; }
+#form_barber_request_list_search .input_submit_box { align-self: flex-end; margin-top: 2rem; }
 
 /* ================== 회원관리 - 사업자회원 신청대기 목록 ================== */
-#form_businessperson_request_info { display: flex; flex-direction: column; }
-#form_businessperson_request_info .common_row_box ~ .common_row_box { margin-top: 2rem; }
-#form_businessperson_request_info .common_row_box:nth-of-type(2) .row_content { gap: 5rem; }
-#form_businessperson_request_info .input_submit_box { align-self: flex-end; margin-top: 2rem; }
+#form_businessperson_request_list_search { display: flex; flex-direction: column; }
+#form_businessperson_request_list_search > .common_row_box ~ .common_row_box { margin-top: 2rem; }
+#form_businessperson_request_list_search > .common_row_box:nth-of-type(2) .row_content { gap: 5rem; }
+#form_businessperson_request_list_search > .common_row_box .row_content > .input_search_box { flex-grow: 1; }
+#form_businessperson_request_list_search .input_submit_box { align-self: flex-end; margin-top: 2rem; }
 
 /* ================== 메인 - 배너관리 목록 ================== */
 #form_banner_is_exposure { display: flex; flex-direction: column; gap: 2rem; }
 #form_banner_is_exposure > .input_submit_box { align-self: flex-end; }
 #form_banner_is_exposure > .common_row_box:first-child .row_content { gap: 5rem; }
 #form_banner_list_search { display: flex; flex-direction: column; gap: 2rem; margin-top: 2rem; }
+#form_banner_list_search > .common_row_box .row_content > .input_search_box { flex-grow: 1; }
 #form_banner_list_search > .input_submit_box { align-self: flex-end; }
 #form_banner_list_manage { display: flex; flex-direction: column; }
 #form_banner_list_manage .common_list_wrap.type0 .common_list_table_head_row > span:nth-of-type(1) { width: 5.8rem; }
@@ -79,27 +83,30 @@
 #form_banner_list_manage .common_list_control_wrapper { align-self: flex-end; }
 
 /* ================== 구인 및 구직 - 구인 목록 ================== */
-#form_recruit_search { display: flex; flex-direction: column; }
-#form_recruit_search .common_row_box ~ .common_row_box { margin-top: 2rem; }
-#form_recruit_search .common_row_box:nth-of-type(2) .row_content { gap: 5rem; }
-#form_recruit_search .input_submit_box { align-self: flex-end; margin-top: 2rem; }
+#form_recruit_list_search { display: flex; flex-direction: column; }
+#form_recruit_list_search > .common_row_box ~ .common_row_box { margin-top: 2rem; }
+#form_recruit_list_search > .common_row_box:nth-of-type(2) .row_content { gap: 5rem; }
+#form_recruit_list_search > .common_row_box .row_content > .input_search_box { flex-grow: 1; }
+#form_recruit_list_search .input_submit_box { align-self: flex-end; margin-top: 2rem; }
 .outer_content_bottom.job .common_list_wrap.type0 .common_list_table_head_row > span:nth-of-type(2) { flex-grow: initial; width: 14rem; }
 .outer_content_bottom.job .common_list_wrap.type0 .common_list_table_head_row > span:nth-of-type(3) { flex-grow: 1; }
 .outer_content_bottom.job .common_list_wrap.type0 .common_list_table_content_wrapper > ul > li > span:nth-of-type(2) { flex-grow: initial; width: 14rem; padding: initial; }
 .outer_content_bottom.job .common_list_wrap.type0 .common_list_table_content_wrapper > ul > li > span:nth-of-type(3) { flex-grow: 1; padding: 0 2rem; }
 
 /* ================== 구인 및 구직 - 구직 목록 ================== */
-#form_job_hunting_search { display: flex; flex-direction: column; }
-#form_job_hunting_search .common_row_box ~ .common_row_box { margin-top: 2rem; }
-#form_job_hunting_search .common_row_box:nth-of-type(2) .row_content { gap: 5rem; }
-#form_job_hunting_search .input_submit_box { align-self: flex-end; margin-top: 2rem; }
+#form_job_hunting_list_search { display: flex; flex-direction: column; }
+#form_job_hunting_list_search > .common_row_box ~ .common_row_box { margin-top: 2rem; }
+#form_job_hunting_list_search > .common_row_box:nth-of-type(2) .row_content { gap: 5rem; }
+#form_job_hunting_list_search > .common_row_box .row_content > .input_search_box { flex-grow: 1; }
+#form_job_hunting_list_search .input_submit_box { align-self: flex-end; margin-top: 2rem; }
 
 /* ================== 커뮤니티 - 커뮤니티 글 (유저) 목록 ================== */
-#form_community_user_search { display: flex; flex-direction: column; }
-#form_community_user_search .common_row_box ~ .common_row_box { margin-top: 2rem; }
-#form_community_user_search .common_row_box:nth-of-type(2) .row_content { gap: 5rem; }
-#form_community_user_search .common_row_box:nth-of-type(3) .row_content { gap: 5rem; }
-#form_community_user_search .input_submit_box { align-self: flex-end; margin-top: 2rem; }
+#form_community_user_list_search { display: flex; flex-direction: column; }
+#form_community_user_list_search > .common_row_box ~ .common_row_box { margin-top: 2rem; }
+#form_community_user_list_search > .common_row_box:nth-of-type(2) .row_content { gap: 5rem; }
+#form_community_user_list_search > .common_row_box:nth-of-type(3) .row_content { gap: 5rem; }
+#form_community_user_list_search > .common_row_box .row_content > .input_search_box { flex-grow: 1; }
+#form_community_user_list_search .input_submit_box { align-self: flex-end; margin-top: 2rem; }
 .outer_content_bottom.community .common_list_wrap.type0 .common_list_table_head_row > span:nth-of-type(2) { flex-grow: initial; width: 10.8rem; }
 .outer_content_bottom.community .common_list_wrap.type0 .common_list_table_head_row > span:nth-of-type(3) { width: 10.8rem; }
 .outer_content_bottom.community .common_list_wrap.type0 .common_list_table_head_row > span:nth-of-type(4) { flex-grow: 1; }
@@ -108,8 +115,9 @@
 .outer_content_bottom.community .common_list_wrap.type0 .common_list_table_content_wrapper > ul > li > span:nth-of-type(4) { flex-grow: 1; padding: 0 2rem; }
 
 /* ================== 커뮤니티 - 커뮤니티 글 (공지) 목록 ================== */
-#form_community_notice_search { display: flex; flex-direction: column; gap: 2rem; }
-#form_community_notice_search > .input_submit_box { align-self: flex-end; }
+#form_community_notice_list_search { display: flex; flex-direction: column; gap: 2rem; }
+#form_community_notice_list_search > .common_row_box .row_content > .input_search_box { flex-grow: 1; }
+#form_community_notice_list_search > .input_submit_box { align-self: flex-end; }
 #form_community_notice_list_manage { display: flex; flex-direction: column; }
 #form_community_notice_list_manage .common_list_wrap.type0 .common_list_table_head_row > span:nth-of-type(1) { width: 5.8rem; }
 #form_community_notice_list_manage .common_list_wrap.type0 .common_list_table_head_row > span:nth-of-type(3) { width: 12.5rem; }
@@ -124,18 +132,20 @@
 #form_community_notice_list_manage .common_list_control_wrapper { align-self: flex-end; }
 
 /* ================== 정보 - 정보 글 (유저) 목록 ================== */
-#form_informaion_user_search { display: flex; flex-direction: column; }
-#form_informaion_user_search .common_row_box ~ .common_row_box { margin-top: 2rem; }
-#form_informaion_user_search .common_row_box:nth-of-type(2) .row_content { gap: 5rem; }
-#form_informaion_user_search .input_submit_box { align-self: flex-end; margin-top: 2rem; }
+#form_informaion_user_list_search { display: flex; flex-direction: column; }
+#form_informaion_user_list_search > .common_row_box ~ .common_row_box { margin-top: 2rem; }
+#form_informaion_user_list_search > .common_row_box:nth-of-type(2) .row_content { gap: 5rem; }
+#form_informaion_user_list_search > .common_row_box .row_content > .input_search_box { flex-grow: 1; }
+#form_informaion_user_list_search .input_submit_box { align-self: flex-end; margin-top: 2rem; }
 .outer_content_bottom.information .common_list_wrap.type0 .common_list_table_head_row > span:nth-of-type(2) { flex-grow: initial; width: 14rem; }
 .outer_content_bottom.information .common_list_wrap.type0 .common_list_table_head_row > span:nth-of-type(3) { flex-grow: 1; }
 .outer_content_bottom.information .common_list_wrap.type0 .common_list_table_content_wrapper > ul > li > span:nth-of-type(2) { flex-grow: initial; width: 14rem; padding: initial; }
 .outer_content_bottom.information .common_list_wrap.type0 .common_list_table_content_wrapper > ul > li > span:nth-of-type(3) { flex-grow: 1; padding: 0 2rem; }
 
 /* ================== 정보 - 정보 글 (공지) 목록 ================== */
-#form_information_notice_search { display: flex; flex-direction: column; gap: 2rem; }
-#form_information_notice_search > .input_submit_box { align-self: flex-end; }
+#form_information_notice_list_search { display: flex; flex-direction: column; gap: 2rem; }
+#form_information_notice_list_search > .common_row_box .row_content > .input_search_box { flex-grow: 1; }
+#form_information_notice_list_search > .input_submit_box { align-self: flex-end; }
 #form_information_notice_list_manage { display: flex; flex-direction: column; }
 #form_information_notice_list_manage .common_list_wrap.type0 .common_list_table_head_row > span:nth-of-type(1) { width: 5.8rem; }
 #form_information_notice_list_manage .common_list_wrap.type0 .common_list_table_head_row > span:nth-of-type(3) { width: 12.5rem; }
@@ -150,4 +160,44 @@
 #form_information_notice_list_manage .common_list_control_wrapper { align-self: flex-end; }
 
 /* ================== 쇼핑 - 쇼핑 배너 목록 ================== */
+#form_shopping_list_manage { display: flex; flex-direction: column; gap: 2rem; }
+#form_shopping_list_manage .common_list_wrap.type1 .common_list_table_content_wrapper > ul > li > .common_row_box > .row_subject > .label_box > label { font-size: 1.5rem; letter-spacing: -0.015rem; }
 #form_shopping_list_manage .common_list_wrap.type1 .common_list_table_content_wrapper > ul > li > .common_row_box:nth-of-type(2) > .row_content > .input_text_box { width: 100%; }
+#form_shopping_list_manage .common_list_wrap.type1 .common_list_table_content_wrapper > ul > li > .common_row_box > .row_content.stretch.column { gap: 2rem; }
+#form_shopping_list_manage .common_list_wrap.type1 .common_list_table_content_wrapper > ul > li > .common_row_box > .row_content.stretch.column::after { content: ''; position: absolute; bottom: 5.8rem; left: 0; width: 100%; height: 0.1rem; background-color: var(--color-graybb); }
+#form_shopping_list_manage .common_list_wrap.type1 .common_list_table_content_wrapper > ul > li > .common_row_box > .row_content > .top_box { display: flex; flex-direction: column; gap: 1rem; }
+#form_shopping_list_manage .common_list_wrap.type1 .common_list_table_content_wrapper > ul > li > .common_row_box > .row_content > .bottom_box { position: relative; display: flex; align-items: center; gap: 2rem; width: 100%; }
+#form_shopping_list_manage .common_list_wrap.type1 .common_list_table_content_wrapper > ul > li > .common_row_box > .row_content > .bottom_box > .input_text_box { flex-grow: 1; width: auto; }
+#form_shopping_list_manage .common_list_wrap.type1 + .common_list_control_wrapper { align-self: flex-end; display: flex; gap: 1.6rem; }
+#form_shopping_list_manage .common_list_wrap.type1 + .common_list_control_wrapper > .input_submit_box > input { width: 12.3rem; }
+
+/* ================== 공지 - 공지관리 목록 ================== */
+#form_notice_list_search { display: flex; flex-direction: column; gap: 2rem; margin-top: 2rem; }
+#form_notice_list_search > .common_row_box .row_content > .input_search_box { flex-grow: 1; }
+#form_notice_list_search > .input_submit_box { align-self: flex-end; }
+#form_notice_list_manage { display: flex; flex-direction: column; }
+#form_notice_list_manage .common_list_wrap.type0 .common_list_table_head_row > span:nth-of-type(1) { width: 7rem; box-sizing: border-box; }
+#form_notice_list_manage .common_list_wrap.type0 .common_list_table_head_row > span:nth-of-type(3) { width: 10.8rem; box-sizing: border-box; }
+#form_notice_list_manage .common_list_wrap.type0 .common_list_table_head_row > span:nth-of-type(4) { width: 15rem; box-sizing: border-box; }
+#form_notice_list_manage .common_list_wrap.type0 .common_list_table_head_row > span:nth-of-type(5) { width: 15rem; box-sizing: border-box; }
+#form_notice_list_manage .common_list_wrap.type0 .common_list_table_content_wrapper > ul > li > span:nth-of-type(1) { width: 7rem; box-sizing: border-box; }
+#form_notice_list_manage .common_list_wrap.type0 .common_list_table_content_wrapper > ul > li > span:nth-of-type(3) { width: 10.8rem; box-sizing: border-box; }
+#form_notice_list_manage .common_list_wrap.type0 .common_list_table_content_wrapper > ul > li > div:nth-of-type(2) { flex-grow: initial; width: 15rem; padding: initial; }
+#form_notice_list_manage .common_list_wrap.type0 .common_list_table_content_wrapper > ul > li > div:nth-of-type(3) { width: 15rem; }
+#form_notice_list_manage .common_list_wrap.type0 .common_list_table_content_wrapper > ul > li > div:nth-of-type(2) > select { width: 11.4rem; height: 3.8rem; }
+#form_notice_list_manage .common_list_wrap.type0 .common_list_table_content_wrapper > ul > li > div:nth-of-type(3) > input { width: 11.4rem; height: 3.8rem; }
+#form_notice_list_manage .common_list_control_wrapper { align-self: flex-end; }
+
+/* ================== 신고 - 게시글 신고 관리 목록 ================== */
+#form_accusation_article_list_search { display: flex; flex-direction: column; gap: 2rem; margin-top: 2rem; }
+#form_accusation_article_list_search > .common_row_box .row_content > .input_search_box { flex-grow: 1; }
+#form_accusation_article_list_search > .input_submit_box { align-self: flex-end; }
+.outer_content_bottom.accusation .common_list_wrap.type0 .common_list_table_head_row > span:nth-of-type(3) { width: 10.8rem; box-sizing: border-box; }
+.outer_content_bottom.accusation .common_list_wrap.type0 .common_list_table_head_row > span:nth-of-type(4) { box-sizing: border-box; }
+.outer_content_bottom.accusation .common_list_wrap.type0 .common_list_table_content_wrapper > ul > li > span:nth-of-type(3) { width: 10.8rem; box-sizing: border-box; }
+.outer_content_bottom.accusation .common_list_wrap.type0 .common_list_table_content_wrapper > ul > li > span:nth-of-type(4) { box-sizing: border-box; }
+
+/* ================== 신고 - 댓글 신고 관리 목록 ================== */
+#form_accusation_comment_list_search { display: flex; flex-direction: column; gap: 2rem; margin-top: 2rem; }
+#form_accusation_comment_list_search > .common_row_box .row_content > .input_search_box { flex-grow: 1; }
+#form_accusation_comment_list_search > .input_submit_box { align-self: flex-end; }

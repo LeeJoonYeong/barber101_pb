@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>쇼핑관리 | 쇼핑</title>
+  <title>쇼핑 관리 | 쇼핑</title>
   <link rel="stylesheet" href="./resource/css/root.css">
 </head>
 <body>
@@ -69,7 +69,7 @@
           <h2 class="subject">쇼핑</h2>
           <ul class="category_list">
             <li class="active">
-              <a href="#">쇼핑관리</a>
+              <a href="#">쇼핑 관리</a>
             </li>
           </ul>
         </aside>
@@ -79,10 +79,10 @@
           <div class="main_body_inner_wrapper">
 
             <header class="main_body_inner_header">
-              <h3 class="subject">쇼핑관리</h3>
+              <h3 class="subject">쇼핑 관리</h3>
               <ul class="indicator">
                 <li>쇼핑</li>
-                <li>쇼핑관리</li>
+                <li>쇼핑 관리</li>
               </ul>
             </header>
 
@@ -114,7 +114,7 @@
 
             <section class="outer_content_bottom">
 
-              <form id="form_shopping_list_manage" action="#" method="post" > <!-- 쇼핑 - 쇼핑관리 목록 관리 폼  -->
+              <form id="form_shopping_list_manage" action="#" method="post" > <!-- 쇼핑 - 쇼핑 관리 목록 관리 폼  -->
 
                 <div class="common_list_wrap type1">
 
@@ -129,26 +129,32 @@
                           <div class="row_subject">배너 1</div>
                         </div>
                         <div class="common_row_box sibling">
-                          <div class="row_subject">등록명</div>
+                          <div class="row_subject">
+                            <div class="label_box">
+                              <label for="title_1">등록명</label>
+                            </div>
+                          </div>
                           <div class="row_content stretch">
                             <div class="input_text_box">
-                              <input type="text" name="title[]">
+                              <input type="text" name="title[]" id="title_1">
                             </div>
                           </div>
                         </div>
                         <div class="common_row_box sibling">
-                          <div class="row_subject">PC 이미지</div>
-                          <div class="row_content stretch column">
+                          <div class="row_subject stretch">PC 이미지</div>
+                          <div class="row_content stretch column pt10 pb10">
                             <div class="top_box">
                               <div class="input_file_box">
-                                <a href="#"><span>쇼핑메인배너 이미지로 이미지 등록 시 이름이 칸보다 길 등록 시 이름이 칸보다 길 경우에는 이렇게 등록 시 이름이 칸보다 길 경우에는 이렇게 등록 시 이름이 칸보다 길 경우에는 이렇게 경우에는 이렇게 점점점을 이용하여 이것처럼 말줄임표가 됩니다...png</span></a>
+                                <a href="#">
+                                  <span>쇼핑메인배너 이미지로 이미지 등록 시 이름이 칸보다 길 등록 시 이름이 칸보다 길 경우에는 이렇게 등록 시 이름이 칸보다 길 경우에는 이렇게 등록 시 이름이 칸보다 길 경우에는 이렇게 경우에는 이렇게 점점점을 이용하여 이것처럼 말줄임표가 됩니다...png</span>
+                                </a>
                                 <label for="file_shopping_banner_pc_1" class="input_file_label">파일첨부</label>
-                                <input type="file" name="file_shopping_banner_pc_1" id="file_shopping_banner_pc_1" class="hide">
+                                <input type="file" name="file_shopping_banner_pc[]" id="file_shopping_banner_pc_1" class="hide">
                               </div>
                               <div class="input_file_guide_box">
                                 ⓘ 권장 이미지 사이즈: 가로 0000px * 세로 0000px로 리사이징 됩니다.
                                 <br>
-                                - 등록 파일: 1M 이하 /  jpg, jpeg, png
+                                - 등록 파일: 1M 이하 / jpg, jpeg, png
                               </div>
                             </div>
                             <div class="bottom_box">
@@ -156,7 +162,308 @@
                                 <label for="shopping_banner_pc_link_1">링크</label>
                               </div>
                               <div class="input_text_box">
-                                <input type="text" name="shopping_banner_pc_link_1" id="shopping_banner_pc_link_1">
+                                <input type="text" name="shopping_banner_pc_link[]" id="shopping_banner_pc_link_1">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="common_row_box sibling">
+                          <div class="row_subject stretch">Mobile 이미지</div>
+                          <div class="row_content stretch column pt10 pb10">
+                            <div class="top_box">
+                              <div class="input_file_box">
+                                <a href="#"><span>쇼핑메인배너 이미지로 이미지 등록 시 이름이 칸보다 길 등록 시 이름이 칸보다 길 경우에는 이렇게 등록 시 이름이 칸보다 길 경우에는 이렇게 등록 시 이름이 칸보다 길 경우에는 이렇게 경우에는 이렇게 점점점을 이용하여 이것처럼 말줄임표가 됩니다...png</span></a>
+                                <label for="file_shopping_banner_mobile_1" class="input_file_label">파일첨부</label>
+                                <input type="file" name="file_shopping_banner_mobile[]" id="file_shopping_banner_mobile_1" class="hide">
+                              </div>
+                              <div class="input_file_guide_box">
+                                ⓘ 권장 이미지 사이즈: 가로 0000px * 세로 0000px로 리사이징 됩니다.
+                                <br>
+                                - 등록 파일: 1M 이하 / jpg, jpeg, png
+                              </div>
+                            </div>
+                            <div class="bottom_box">
+                              <div class="label_box">
+                                <label for="shopping_banner_mobile_link_1">링크</label>
+                              </div>
+                              <div class="input_text_box">
+                                <input type="text" name="shopping_banner_mobile_link[]" id="shopping_banner_mobile_link_1">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="common_row_box ceiling">
+                          <div class="row_subject">배너 2</div>
+                        </div>
+                        <div class="common_row_box sibling">
+                          <div class="row_subject">
+                            <div class="label_box">
+                              <label for="title_2">등록명</label>
+                            </div>
+                          </div>
+                          <div class="row_content stretch">
+                            <div class="input_text_box">
+                              <input type="text" name="title[]" id="title_2">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="common_row_box sibling">
+                          <div class="row_subject stretch">PC 이미지</div>
+                          <div class="row_content stretch column pt10 pb10">
+                            <div class="top_box">
+                              <div class="input_file_box">
+                                <a href="#">
+                                  <span>쇼핑메인배너 이미지로 이미지 등록 시 이름이 칸보다 길 등록 시 이름이 칸보다 길 경우에는 이렇게 등록 시 이름이 칸보다 길 경우에는 이렇게 등록 시 이름이 칸보다 길 경우에는 이렇게 경우에는 이렇게 점점점을 이용하여 이것처럼 말줄임표가 됩니다...png</span>
+                                </a>
+                                <label for="file_shopping_banner_pc_2" class="input_file_label">파일첨부</label>
+                                <input type="file" name="file_shopping_banner_pc[]" id="file_shopping_banner_pc_2" class="hide">
+                              </div>
+                              <div class="input_file_guide_box">
+                                ⓘ 권장 이미지 사이즈: 가로 0000px * 세로 0000px로 리사이징 됩니다.
+                                <br>
+                                - 등록 파일: 1M 이하 / jpg, jpeg, png
+                              </div>
+                            </div>
+                            <div class="bottom_box">
+                              <div class="label_box">
+                                <label for="shopping_banner_pc_link_2">링크</label>
+                              </div>
+                              <div class="input_text_box">
+                                <input type="text" name="shopping_banner_pc_link[]" id="shopping_banner_pc_link_2">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="common_row_box sibling">
+                          <div class="row_subject stretch">Mobile 이미지</div>
+                          <div class="row_content stretch column pt10 pb10">
+                            <div class="top_box">
+                              <div class="input_file_box">
+                                <a href="#"><span>쇼핑메인배너 이미지로 이미지 등록 시 이름이 칸보다 길 등록 시 이름이 칸보다 길 경우에는 이렇게 등록 시 이름이 칸보다 길 경우에는 이렇게 등록 시 이름이 칸보다 길 경우에는 이렇게 경우에는 이렇게 점점점을 이용하여 이것처럼 말줄임표가 됩니다...png</span></a>
+                                <label for="file_shopping_banner_mobile_2" class="input_file_label">파일첨부</label>
+                                <input type="file" name="file_shopping_banner_mobile[]" id="file_shopping_banner_mobile_2" class="hide">
+                              </div>
+                              <div class="input_file_guide_box">
+                                ⓘ 권장 이미지 사이즈: 가로 0000px * 세로 0000px로 리사이징 됩니다.
+                                <br>
+                                - 등록 파일: 1M 이하 / jpg, jpeg, png
+                              </div>
+                            </div>
+                            <div class="bottom_box">
+                              <div class="label_box">
+                                <label for="shopping_banner_mobile_link_2">링크</label>
+                              </div>
+                              <div class="input_text_box">
+                                <input type="text" name="shopping_banner_mobile_link[]" id="shopping_banner_mobile_link_2">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="common_row_box ceiling">
+                          <div class="row_subject">배너 3</div>
+                        </div>
+                        <div class="common_row_box sibling">
+                          <div class="row_subject">
+                            <div class="label_box">
+                              <label for="title_3">등록명</label>
+                            </div>
+                          </div>
+                          <div class="row_content stretch">
+                            <div class="input_text_box">
+                              <input type="text" name="title[]" id="title_3">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="common_row_box sibling">
+                          <div class="row_subject stretch">PC 이미지</div>
+                          <div class="row_content stretch column pt10 pb10">
+                            <div class="top_box">
+                              <div class="input_file_box">
+                                <a href="#">
+                                  <span>쇼핑메인배너 이미지로 이미지 등록 시 이름이 칸보다 길 등록 시 이름이 칸보다 길 경우에는 이렇게 등록 시 이름이 칸보다 길 경우에는 이렇게 등록 시 이름이 칸보다 길 경우에는 이렇게 경우에는 이렇게 점점점을 이용하여 이것처럼 말줄임표가 됩니다...png</span>
+                                </a>
+                                <label for="file_shopping_banner_pc_3" class="input_file_label">파일첨부</label>
+                                <input type="file" name="file_shopping_banner_pc[]" id="file_shopping_banner_pc_3" class="hide">
+                              </div>
+                              <div class="input_file_guide_box">
+                                ⓘ 권장 이미지 사이즈: 가로 0000px * 세로 0000px로 리사이징 됩니다.
+                                <br>
+                                - 등록 파일: 1M 이하 / jpg, jpeg, png
+                              </div>
+                            </div>
+                            <div class="bottom_box">
+                              <div class="label_box">
+                                <label for="shopping_banner_pc_link_3">링크</label>
+                              </div>
+                              <div class="input_text_box">
+                                <input type="text" name="shopping_banner_pc_link[]" id="shopping_banner_pc_link_3">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="common_row_box sibling">
+                          <div class="row_subject stretch">Mobile 이미지</div>
+                          <div class="row_content stretch column pt10 pb10">
+                            <div class="top_box">
+                              <div class="input_file_box">
+                                <a href="#"><span>쇼핑메인배너 이미지로 이미지 등록 시 이름이 칸보다 길 등록 시 이름이 칸보다 길 경우에는 이렇게 등록 시 이름이 칸보다 길 경우에는 이렇게 등록 시 이름이 칸보다 길 경우에는 이렇게 경우에는 이렇게 점점점을 이용하여 이것처럼 말줄임표가 됩니다...png</span></a>
+                                <label for="file_shopping_banner_mobile_3" class="input_file_label">파일첨부</label>
+                                <input type="file" name="file_shopping_banner_mobile[]" id="file_shopping_banner_mobile_3" class="hide">
+                              </div>
+                              <div class="input_file_guide_box">
+                                ⓘ 권장 이미지 사이즈: 가로 0000px * 세로 0000px로 리사이징 됩니다.
+                                <br>
+                                - 등록 파일: 1M 이하 / jpg, jpeg, png
+                              </div>
+                            </div>
+                            <div class="bottom_box">
+                              <div class="label_box">
+                                <label for="shopping_banner_mobile_link_3">링크</label>
+                              </div>
+                              <div class="input_text_box">
+                                <input type="text" name="shopping_banner_mobile_link[]" id="shopping_banner_mobile_link_3">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="common_row_box ceiling">
+                          <div class="row_subject">배너 4</div>
+                        </div>
+                        <div class="common_row_box sibling">
+                          <div class="row_subject">
+                            <div class="label_box">
+                              <label for="title_4">등록명</label>
+                            </div>
+                          </div>
+                          <div class="row_content stretch">
+                            <div class="input_text_box">
+                              <input type="text" name="title[]" id="title_4">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="common_row_box sibling">
+                          <div class="row_subject stretch">PC 이미지</div>
+                          <div class="row_content stretch column pt10 pb10">
+                            <div class="top_box">
+                              <div class="input_file_box">
+                                <a href="#">
+                                  <span>쇼핑메인배너 이미지로 이미지 등록 시 이름이 칸보다 길 등록 시 이름이 칸보다 길 경우에는 이렇게 등록 시 이름이 칸보다 길 경우에는 이렇게 등록 시 이름이 칸보다 길 경우에는 이렇게 경우에는 이렇게 점점점을 이용하여 이것처럼 말줄임표가 됩니다...png</span>
+                                </a>
+                                <label for="file_shopping_banner_pc_4" class="input_file_label">파일첨부</label>
+                                <input type="file" name="file_shopping_banner_pc[]" id="file_shopping_banner_pc_4" class="hide">
+                              </div>
+                              <div class="input_file_guide_box">
+                                ⓘ 권장 이미지 사이즈: 가로 0000px * 세로 0000px로 리사이징 됩니다.
+                                <br>
+                                - 등록 파일: 1M 이하 / jpg, jpeg, png
+                              </div>
+                            </div>
+                            <div class="bottom_box">
+                              <div class="label_box">
+                                <label for="shopping_banner_pc_link_4">링크</label>
+                              </div>
+                              <div class="input_text_box">
+                                <input type="text" name="shopping_banner_pc_link[]" id="shopping_banner_pc_link_4">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="common_row_box sibling">
+                          <div class="row_subject stretch">Mobile 이미지</div>
+                          <div class="row_content stretch column pt10 pb10">
+                            <div class="top_box">
+                              <div class="input_file_box">
+                                <a href="#"><span>쇼핑메인배너 이미지로 이미지 등록 시 이름이 칸보다 길 등록 시 이름이 칸보다 길 경우에는 이렇게 등록 시 이름이 칸보다 길 경우에는 이렇게 등록 시 이름이 칸보다 길 경우에는 이렇게 경우에는 이렇게 점점점을 이용하여 이것처럼 말줄임표가 됩니다...png</span></a>
+                                <label for="file_shopping_banner_mobile_4" class="input_file_label">파일첨부</label>
+                                <input type="file" name="file_shopping_banner_mobile[]" id="file_shopping_banner_mobile_4" class="hide">
+                              </div>
+                              <div class="input_file_guide_box">
+                                ⓘ 권장 이미지 사이즈: 가로 0000px * 세로 0000px로 리사이징 됩니다.
+                                <br>
+                                - 등록 파일: 1M 이하 / jpg, jpeg, png
+                              </div>
+                            </div>
+                            <div class="bottom_box">
+                              <div class="label_box">
+                                <label for="shopping_banner_mobile_link_4">링크</label>
+                              </div>
+                              <div class="input_text_box">
+                                <input type="text" name="shopping_banner_mobile_link[]" id="shopping_banner_mobile_link_4">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="common_row_box ceiling">
+                          <div class="row_subject">배너 5</div>
+                        </div>
+                        <div class="common_row_box sibling">
+                          <div class="row_subject">
+                            <div class="label_box">
+                              <label for="title_5">등록명</label>
+                            </div>
+                          </div>
+                          <div class="row_content stretch">
+                            <div class="input_text_box">
+                              <input type="text" name="title[]" id="title_5">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="common_row_box sibling">
+                          <div class="row_subject stretch">PC 이미지</div>
+                          <div class="row_content stretch column pt10 pb10">
+                            <div class="top_box">
+                              <div class="input_file_box">
+                                <a href="#">
+                                  <span>쇼핑메인배너 이미지로 이미지 등록 시 이름이 칸보다 길 등록 시 이름이 칸보다 길 경우에는 이렇게 등록 시 이름이 칸보다 길 경우에는 이렇게 등록 시 이름이 칸보다 길 경우에는 이렇게 경우에는 이렇게 점점점을 이용하여 이것처럼 말줄임표가 됩니다...png</span>
+                                </a>
+                                <label for="file_shopping_banner_pc_5" class="input_file_label">파일첨부</label>
+                                <input type="file" name="file_shopping_banner_pc[]" id="file_shopping_banner_pc_5" class="hide">
+                              </div>
+                              <div class="input_file_guide_box">
+                                ⓘ 권장 이미지 사이즈: 가로 0000px * 세로 0000px로 리사이징 됩니다.
+                                <br>
+                                - 등록 파일: 1M 이하 / jpg, jpeg, png
+                              </div>
+                            </div>
+                            <div class="bottom_box">
+                              <div class="label_box">
+                                <label for="shopping_banner_pc_link_5">링크</label>
+                              </div>
+                              <div class="input_text_box">
+                                <input type="text" name="shopping_banner_pc_link[]" id="shopping_banner_pc_link_5">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="common_row_box sibling">
+                          <div class="row_subject stretch">Mobile 이미지</div>
+                          <div class="row_content stretch column pt10 pb10">
+                            <div class="top_box">
+                              <div class="input_file_box">
+                                <a href="#"><span>쇼핑메인배너 이미지로 이미지 등록 시 이름이 칸보다 길 등록 시 이름이 칸보다 길 경우에는 이렇게 등록 시 이름이 칸보다 길 경우에는 이렇게 등록 시 이름이 칸보다 길 경우에는 이렇게 경우에는 이렇게 점점점을 이용하여 이것처럼 말줄임표가 됩니다...png</span></a>
+                                <label for="file_shopping_banner_mobile_5" class="input_file_label">파일첨부</label>
+                                <input type="file" name="file_shopping_banner_mobile[]" id="file_shopping_banner_mobile_5" class="hide">
+                              </div>
+                              <div class="input_file_guide_box">
+                                ⓘ 권장 이미지 사이즈: 가로 0000px * 세로 0000px로 리사이징 됩니다.
+                                <br>
+                                - 등록 파일: 1M 이하 / jpg, jpeg, png
+                              </div>
+                            </div>
+                            <div class="bottom_box">
+                              <div class="label_box">
+                                <label for="shopping_banner_mobile_link_5">링크</label>
+                              </div>
+                              <div class="input_text_box">
+                                <input type="text" name="shopping_banner_mobile_link[]" id="shopping_banner_mobile_link_5">
                               </div>
                             </div>
                           </div>
@@ -168,28 +475,15 @@
                 </div>
 
                 <div class="common_list_control_wrapper">
-                  <div class="input_submit_box type1">
-                    <input type="submit" value="삭제">
+                  <a href="#" class="link type1">취소</a>
+                  <div class="input_submit_box">
+                    <input type="submit" value="저장">
                   </div>
-                  <button class="btn type0 btn_list_save">저장</button>
-                  <a href="#" class="link type0 link_article_register">등록</a>
                 </div>
 
               </form>
 
             </section>
-
-            <div class="list_pagination_wrap">
-              <div class="list_pagination_box">
-                <a href="#" class="list_pre"></a>
-                <a href="#" class="list_page active">1</a>
-                <a href="#" class="list_page">2</a>
-                <a href="#" class="list_page">3</a>
-                <a href="#" class="list_page">4</a>
-                <a href="#" class="list_page">5</a>
-                <a href="#" class="list_next"></a>
-              </div>	
-            </div>
 
           </div>
         </main>

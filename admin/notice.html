@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>배너관리 | 메인</title>
+  <title>공지 관리 | 공지</title>
   <link rel="stylesheet" href="./resource/css/root.css">
 </head>
 <body>
@@ -66,10 +66,10 @@
       <div class="content_wrapper">
         
         <aside class="main_aside">
-          <h2 class="subject">메인</h2>
+          <h2 class="subject">공지</h2>
           <ul class="category_list">
             <li class="active">
-              <a href="#">배너관리</a>
+              <a href="#">공지 관리</a>
             </li>
           </ul>
         </aside>
@@ -79,38 +79,16 @@
           <div class="main_body_inner_wrapper">
 
             <header class="main_body_inner_header">
-              <h3 class="subject">배너관리</h3>
+              <h3 class="subject">공지 관리</h3>
               <ul class="indicator">
-                <li>메인</li>
-                <li>배너관리</li>
+                <li>공지</li>
+                <li>공지 관리</li>
               </ul>
             </header>
 
             <section class="outer_content_top">
 
-              <form id="form_banner_is_exposure" action="#" method="post"> <!-- 메인 - 배너 노출 여부 체크 폼  -->
-
-                <div class="common_row_box single">
-                  <div class="row_subject">배너 노출 여부</div>
-                  <div class="row_content">
-                    <div class="input_radio_box">
-                      <input type="radio" name="banner_is_exposure" id="banner_is_exposure_yes" checked>
-                      <label for="banner_is_exposure_yes">노출</label>
-                    </div>
-                    <div class="input_radio_box">
-                      <input type="radio" name="banner_is_exposure" id="banner_is_exposure_no">
-                      <label for="banner_is_exposure_no">노출 안 함</label>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="input_submit_box type1">
-                  <input type="submit" value="저장">
-                </div>
-
-              </form>
-
-              <form id="form_banner_list_search" action="#" method="get"> <!-- 메인 - 배너관리 목록 검색 폼  -->
+              <form id="form_notice_list_search" action="#" method="get"> <!-- 공지 - 공지 관리 목록 검색 폼  -->
 
                 <div class="common_row_box single">
                   <div class="row_subject">검색어</div>
@@ -136,7 +114,7 @@
 
             <section class="outer_content_bottom">
 
-              <form id="form_banner_list_manage" action="#" method="post" > <!-- 메인 - 배너관리 목록 관리 폼  -->
+              <form id="form_notice_list_manage" action="#" method="post" > <!-- 공지 - 공지관리 목록 관리 폼  -->
 
                 <div class="common_list_wrap type0">
 
@@ -147,8 +125,8 @@
                     <span>No</span>
                     <span>제목</span>
                     <span>등록일</span>
-                    <span>노출 여부</span>
-                    <span>노출 순서</span>
+                    <span>메인 노출 여부</span>
+                    <span>메인 노출 순서</span>
                   </div>
 
                   <div class="common_list_table_content_wrapper">
@@ -157,15 +135,15 @@
                         <div class="input_checkBox_box">
                           <input type="checkbox" name="checkBox_list_select[]">
                         </div>
-                        <span>10</span>
+                        <span>101</span>
                         <span>
                           <a href="#">
                             <strong>
-                              <em>바버101 키비주얼 배너바버101 키비주얼 배너바버101 키비주얼 배너바버101 키비주얼 배너바버101 키비주얼 배너바버101 키비주얼 배너</em>
+                              <em>바버101 오픈 소개글바버101 오픈 소개글바버101 오픈 소개글바버101 오픈 소개글바버101 오픈 소개글바버101 오픈 소개글바버101 오픈 소개글</em>
                             </strong>
                           </a>
                         </span>
-                        <span>2022/08/17</span>
+                        <span>2023/09/16</span>
                         <div class="selectBox_box">
                           <select name="select_is_exposure[]">
                             <option value="yes" selected>노출</option>
@@ -180,11 +158,30 @@
                         <div class="input_checkBox_box">
                           <input type="checkbox" name="checkBox_list_select[]">
                         </div>
-                        <span>9</span>
+                        <span>100</span>
                         <span>
-                          <a href="#">바버101 키비주얼 배너</a>
+                          <a href="#">바버101 오픈 소개글</a>
                         </span>
-                        <span>2022/08/17</span>
+                        <span>2023/09/16</span>
+                        <div class="selectBox_box">
+                          <select name="select_is_exposure[]">
+                            <option value="yes" selected>노출</option>
+                            <option value="no">노출안함</option>
+                          </select>
+                        </div>
+                        <div class="input_number_box">
+                          <input type="number" name="input_exposure_num[]" min="0" value="0">
+                        </div>
+                      </li>
+                      <li>
+                        <div class="input_checkBox_box">
+                          <input type="checkbox" name="checkBox_list_select[]">
+                        </div>
+                        <span>99</span>
+                        <span>
+                          <a href="#">바버101 오픈 소개글</a>
+                        </span>
+                        <span>2023/09/14</span>
                         <div class="selectBox_box">
                           <select name="select_is_exposure[]">
                             <option value="yes" selected>노출</option>
@@ -199,87 +196,30 @@
                         <div class="input_checkBox_box">
                           <input type="checkbox" name="checkBox_list_select[]">
                         </div>
-                        <span>8</span>
+                        <span>98</span>
                         <span>
-                          <a href="#">바버101 키비주얼 배너</a>
+                          <a href="#">바버101 오픈 소개글</a>
                         </span>
-                        <span>2022/08/17</span>
+                        <span>2023/09/13</span>
                         <div class="selectBox_box">
                           <select name="select_is_exposure[]">
-                            <option value="yes" selected>노출</option>
-                            <option value="no">노출안함</option>
+                            <option value="yes">노출</option>
+                            <option value="no" selected>노출안함</option>
                           </select>
                         </div>
                         <div class="input_number_box">
-                          <input type="number" name="input_exposure_num[]" min="0" value="3">
+                          <input type="number" name="input_exposure_num[]" min="0" value="3" readonly>
                         </div>
                       </li>
                       <li>
                         <div class="input_checkBox_box">
                           <input type="checkbox" name="checkBox_list_select[]">
                         </div>
-                        <span>7</span>
+                        <span>97</span>
                         <span>
-                          <a href="#">바버101 키비주얼 배너</a>
+                          <a href="#">바버101 오픈 소개글</a>
                         </span>
-                        <span>2022/08/17</span>
-                        <div class="selectBox_box">
-                          <select name="select_is_exposure[]">
-                            <option value="yes" selected>노출</option>
-                            <option value="no">노출안함</option>
-                          </select>
-                        </div>
-                        <div class="input_number_box">
-                          <input type="number" name="input_exposure_num[]" min="0" value="4">
-                        </div>
-                      </li>
-                      <li>
-                        <div class="input_checkBox_box">
-                          <input type="checkbox" name="checkBox_list_select[]">
-                        </div>
-                        <span>6</span>
-                        <span>
-                          <a href="#">바버101 키비주얼 배너</a>
-                        </span>
-                        <span>2022/08/17</span>
-                        <div class="selectBox_box">
-                          <select name="select_is_exposure[]">
-                            <option value="yes" selected>노출</option>
-                            <option value="no">노출안함</option>
-                          </select>
-                        </div>
-                        <div class="input_number_box">
-                          <input type="number" name="input_exposure_num[]" min="0" value="0">
-                        </div>
-                      </li>
-                      <li>
-                        <div class="input_checkBox_box">
-                          <input type="checkbox" name="checkBox_list_select[]">
-                        </div>
-                        <span>5</span>
-                        <span>
-                          <a href="#">바버101 키비주얼 배너</a>
-                        </span>
-                        <span>2022/08/10</span>
-                        <div class="selectBox_box">
-                          <select name="select_is_exposure[]">
-                            <option value="yes" selected>노출</option>
-                            <option value="no">노출안함</option>
-                          </select>
-                        </div>
-                        <div class="input_number_box">
-                          <input type="number" name="input_exposure_num[]" min="0" value="0">
-                        </div>
-                      </li>
-                      <li>
-                        <div class="input_checkBox_box">
-                          <input type="checkbox" name="checkBox_list_select[]">
-                        </div>
-                        <span>4</span>
-                        <span>
-                          <a href="#">바버101 키비주얼 배너</a>
-                        </span>
-                        <span>2022/08/10</span>
+                        <span>2023/09/11</span>
                         <div class="selectBox_box">
                           <select name="select_is_exposure[]">
                             <option value="yes">노출</option>
@@ -294,11 +234,11 @@
                         <div class="input_checkBox_box">
                           <input type="checkbox" name="checkBox_list_select[]">
                         </div>
-                        <span>3</span>
+                        <span>96</span>
                         <span>
-                          <a href="#">바버101 키비주얼 배너</a>
+                          <a href="#">바버101 오픈 소개글</a>
                         </span>
-                        <span>2022/08/10</span>
+                        <span>2023/09/11</span>
                         <div class="selectBox_box">
                           <select name="select_is_exposure[]">
                             <option value="yes">노출</option>
@@ -313,11 +253,30 @@
                         <div class="input_checkBox_box">
                           <input type="checkbox" name="checkBox_list_select[]">
                         </div>
-                        <span>2</span>
+                        <span>95</span>
                         <span>
-                          <a href="#">바버101 키비주얼 배너</a>
+                          <a href="#">바버101 오픈 소개글</a>
                         </span>
-                        <span>2022/08/10</span>
+                        <span>2023/09/10</span>
+                        <div class="selectBox_box">
+                          <select name="select_is_exposure[]">
+                            <option value="yes">노출</option>
+                            <option value="no" selected>노출안함</option>
+                          </select>
+                        </div>
+                        <div class="input_number_box">
+                          <input type="number" name="input_exposure_num[]" min="0" value="1" readonly>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="input_checkBox_box">
+                          <input type="checkbox" name="checkBox_list_select[]">
+                        </div>
+                        <span>94</span>
+                        <span>
+                          <a href="#">바버101 오픈 소개글</a>
+                        </span>
+                        <span>2023/09/09</span>
                         <div class="selectBox_box">
                           <select name="select_is_exposure[]">
                             <option value="yes">노출</option>
@@ -332,11 +291,30 @@
                         <div class="input_checkBox_box">
                           <input type="checkbox" name="checkBox_list_select[]">
                         </div>
-                        <span>1</span>
+                        <span>93</span>
                         <span>
-                          <a href="#">바버101 키비주얼 배너</a>
+                          <a href="#">바버101 오픈 소개글</a>
                         </span>
-                        <span>2022/08/10</span>
+                        <span>2023/09/08</span>
+                        <div class="selectBox_box">
+                          <select name="select_is_exposure[]">
+                            <option value="yes">노출</option>
+                            <option value="no" selected>노출안함</option>
+                          </select>
+                        </div>
+                        <div class="input_number_box">
+                          <input type="number" name="input_exposure_num[]" min="0" value="1" readonly>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="input_checkBox_box">
+                          <input type="checkbox" name="checkBox_list_select[]">
+                        </div>
+                        <span>92</span>
+                        <span>
+                          <a href="#">바버101 오픈 소개글</a>
+                        </span>
+                        <span>2023/09/06</span>
                         <div class="selectBox_box">
                           <select name="select_is_exposure[]">
                             <option value="yes">노출</option>
