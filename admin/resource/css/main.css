@@ -48,6 +48,27 @@
 #form_user_list_search > .common_row_box .row_content > .input_search_box { flex-grow: 1; }
 #form_user_list_search .input_submit_box { align-self: flex-end; margin-top: 2rem; }
 
+/* ================== 회원관리 - 회원정보 상세 ================== */
+#form_user_detail_manage { display: flex; flex-direction: column; }
+#form_user_detail_manage > .common_row_box .row_content.column { gap: 0.8rem; }
+#form_user_detail_manage > .common_row_box .row_content > .top_box { display: flex; gap: 1.9rem; }
+#form_user_detail_manage > .common_row_box .row_content > .bottom_box { align-self: flex-start; }
+#form_user_detail_manage > .common_row_box .row_content > .input_text_box > input { padding-left: 1rem; padding-right: 1rem; }
+#form_user_detail_manage > .common_row_box.twins .row_content { min-width: 34.1rem; }
+#form_user_detail_manage > .common_row_box.twins .row_content.stretch > .input_text_box { flex-grow: 1; }
+#form_user_detail_manage > .common_row_box:nth-of-type(4) .row_content { gap: 5rem; }
+#form_user_detail_manage > .common_row_box:nth-of-type(4) .row_content > .btn { margin-left: auto; }
+#form_user_detail_manage > .common_row_box:nth-of-type(5) .row_content { gap: 0.8rem; }
+#form_user_detail_manage > .common_row_box:nth-of-type(18) .row_content { padding-right: 1.8rem; }
+#form_user_detail_manage > .common_row_box:nth-of-type(18) .row_content > button { margin-left: auto; }
+#form_user_detail_manage > .common_row_box:nth-of-type(19) .row_content { padding-right: 1.8rem; }
+#form_user_detail_manage > .common_row_box:nth-of-type(19) .row_content > button { margin-left: auto; }
+#form_user_detail_manage > .common_row_box:nth-of-type(20) .row_content { gap: 5rem; }
+#form_user_detail_manage > .common_row_box:nth-of-type(20) .row_content { padding-right: 1.8rem; }
+#form_user_detail_manage > .common_row_box:nth-of-type(20) .row_content > button { margin-left: auto; }
+#form_user_detail_manage .common_control_wrapper { align-self: flex-end; margin-top: 2rem; }
+#form_user_detail_manage .common_control_wrapper .input_submit_box > input { width: 12.3rem; }
+
 /* ================== 회원관리 - 바버회원 신청대기 목록 ================== */
 #form_barber_request_list_search { display: flex; flex-direction: column; }
 #form_barber_request_list_search > .common_row_box ~ .common_row_box { margin-top: 2rem; }

@@ -2,6 +2,7 @@
     --color-black: #000000;
     --color-blue0c: #0C43B7;
     --color-gray92: #929292;
+    --color-gray99: #999999;
     --color-graybb: #bbbbbb;
     --color-grayc5: #c5c5c5;
     --color-graye6: #e6e6e6;
@@ -62,6 +63,8 @@ input:autofill:active {
 /* //로고 */
 
 /* 공통 로우 박스 */
+.common_row_box_head_row ~ .common_row_box_head_row { margin-top: 8rem; }
+.common_row_box_head_row > strong { display: block; height: 3.6rem; line-height: 3.6rem; font-size: 1.8rem; font-weight: 500; letter-spacing: -0.018rem; margin-bottom: 1.6rem; }
 .common_row_box { display: flex; align-items: center; border-top: 0.1rem solid var(--color-gray92); border-bottom: 0.1rem solid var(--color-gray92); }
 .common_row_box.ceiling { background-color: var(--color-grayc5); border-top: 0.1rem solid var(--color-black); }
 .common_row_box.single { border-top: 0.1rem solid var(--color-black); }
@@ -73,6 +76,7 @@ input:autofill:active {
 .common_row_box .row_content.stretch { flex-grow: 1; padding-right: 1.8rem; } 
 .common_row_box .row_content.column { flex-direction: column; } 
 .common_row_box .row_content.column > .top_box { width: 100%; } 
+.common_row_box .row_content .text_data { font-size: 1.4rem; letter-spacing: -0.014rem; }
 /* //공통 로우 박스 */
 
 /* 공통 리스트 - type0 */
@@ -107,14 +111,28 @@ input:autofill:active {
 .common_list_wrap.type1 .common_list_table_head_row > strong { display: block; height: 3.6rem; line-height: 3.6rem; font-size: 1.8rem; font-weight: 500; letter-spacing: -0.018rem; }
 /* //공통 리스트 - type1 */
 
+/* 공통 컨트롤 박스 */
+.common_control_wrapper { display: flex; align-items: center; gap: 1.6rem; }
+/* //공통 컨트롤 박스 */
+
 /* 인풋 - 라벨 */
 .label_box > label { font-size: 1.4rem; font-weight: 500; color: var(--color-black); letter-spacing: -0.014rem; }
 /* //인풋 - 라벨 */
+
+/* 인풋 - 가이드 박스 (공통) */
+.input_guide_box { font-family: 'Noto Sans KR'; font-size: 1rem; letter-spacing: -0.05rem; }
+/* //인풋 - 가이드 박스 (공통) */
 
 /* 인풋 - 텍스트 */
 .input_text_box { position: relative; width: 10rem; height: 3.8rem; }
 .input_text_box > input { width: 100%; height: 100%; padding: 0.9rem 1.8rem; border: 0.1rem solid var(--color-black); font-size: 1.4rem; letter-spacing: -0.014rem; }
 /* //인풋 - 텍스트 */
+
+/* 인풋 - 패스워드 */
+.input_password_box { position: relative; width: 28rem; height: 3.8rem; }
+.input_password_box > input { width: 100%; height: 100%; padding: 0.9rem 1rem; border: 0.1rem solid var(--color-black); font-size: 1.4rem; letter-spacing: -0.014rem; }
+.input_password_box > input::placeholder { font-size: 1.4rem; color: var(--color-gray99); letter-spacing: -0.014rem; }
+/* //인풋 - 패스워드 */
 
 /* 셀렉트 박스 */
 .selectBox_box { position: relative; width: 16.7rem; height: 3.8rem; }
@@ -155,14 +173,21 @@ input:autofill:active {
 .input_file_box + .input_file_guide_box { line-height: 2rem; font-size: 1rem; letter-spacing: -0.01rem; }
 /* //인풋 - 파일 */
 
-/* 버튼 - type0 */
-.btn.type0 { width: 12.3rem; height: 3.8rem ; line-height: 3.8rem; background-color: var(--color-white); border: 0.1rem solid var(--color-black); font-size: 1.3rem; font-weight: 500; color: var(--color-black); letter-spacing: -0.013rem; }
-/* //버튼 - type0 */
+/* 텍스트에어리어 */
+textarea { width: 100%; height: 7.2rem; padding: 0.9rem 1.8rem; border: 0.1rem solid var(--color-black); }
+/* //텍스트에어리어 */
 
-/* 링크 - type0 */
+/* 버튼 컬렉션 */
+.btn.type0 { width: 12.3rem; height: 3.8rem ; line-height: 3.8rem; background-color: var(--color-white); border: 0.1rem solid var(--color-black); font-size: 1.3rem; font-weight: 500; color: var(--color-black); letter-spacing: -0.013rem; }
+.btn.type1 { width: 8.8rem; height: 3.2rem ; line-height: 3.2rem; background-color: var(--color-white); border: 0.1rem solid var(--color-black); font-size: 1.3rem; font-weight: 500; color: var(--color-black); letter-spacing: -0.013rem; }
+/* //버튼 컬렉션 */
+
+/* 링크 컬렉션 */
 .link.type0 { display: block; width: 12.3rem; height: 3.8rem ; line-height: 3.8rem; background-color: var(--color-black); font-size: 1.3rem; font-weight: 500; color: var(--color-white); letter-spacing: -0.013rem; text-align: center; }
 .link.type1 { display: block; width: 12.3rem; height: 3.8rem ; line-height: 3.8rem; background-color: var(--color-white); border: 0.1rem solid var(--color-black); font-size: 1.3rem; font-weight: 500; color: var(--color-black); letter-spacing: -0.013rem; text-align: center; }
-/* //링크 - type0 */
+.link.type2 { font-size: 1.3rem; color: var(--color-blue0c); letter-spacing: -0.013rem; text-decoration: underline; }
+.link.type2 + .btn_remove { width: 1.2rem; height: 1.2rem; background: url('../images/icons/remove_icon.png') center / 100% no-repeat; }
+/* //링크 컬렉션 */
 
 /* 페이지네이션 넘버 */
 .list_pagination_wrap { margin-top: 4rem; }
