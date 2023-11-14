@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>바버회원 신청대기 상세 | 회원관리</title>
+  <title>커뮤니티 공지 상세 관리 | 커뮤니티</title>
   <link rel="stylesheet" href="./resource/css/root.css">
 </head>
 <body>
@@ -66,16 +66,13 @@
       <div class="content_wrapper">
         
         <aside class="main_aside">
-          <h2 class="subject">회원관리</h2>
+          <h2 class="subject">커뮤니티</h2>
           <ul class="category_list">
             <li>
-              <a href="#">회원정보</a>
+              <a href="#">커뮤니티 글 관리</a>
             </li>
             <li class="active">
-              <a href="#">바버회원 신청대기</a>
-            </li>
-            <li>
-              <a href="#">사업자회원 신청대기</a>
+              <a href="#">커뮤니티 공지 관리</a>
             </li>
           </ul>
         </aside>
@@ -85,78 +82,62 @@
           <div class="main_body_inner_wrapper">
 
             <header class="main_body_inner_header">
-              <h3 class="subject">바버회원 신청대기</h3>
+              <h3 class="subject">커뮤니티 공지 관리</h3>
               <ul class="indicator">
-                <li>회원관리</li>
-                <li>바버회원 신청대기</li>
+                <li>커뮤니티</li>
+                <li>커뮤니티 공지 관리</li>
               </ul>
             </header>
 
             <section class="outer_content_top">
 
-              <form id="form_barber_request_detail_manage" action="#" method="post"> <!-- 회원관리 - 바버회원 신청대기 상세 관리 폼  -->
+              <form id="form_community_notice_detail_manage" action="#" method="post"> <!-- 공지 - 커뮤니티 공지 상세 관리 폼  -->
 
                 <div class="common_row_box_head_row">
-                  <strong>신청자 정보</strong>
+                  <strong>기본 정보</strong>
+                  <div class="right_box">
+                    <b class="mark_essential">*</b>
+                    <span>필수 입력</span>
+                  </div>
                 </div>
 
-                <div class="common_row_box single twins">
-                  <div class="row_subject">아이디</div>
-                  <div class="row_content">
-                    <span class="text_data">asdf1234@naver.com</span>
+                <div class="common_row_box single">
+                  <div class="row_subject">등록일</div>
+                  <div class="row_content stretch background">
+                    <span class="text_data">2023/09/10 16:05</span>
                   </div>
-                  <div class="row_subject">닉네임</div>
+                </div>
+
+                <div class="common_row_box sibling">
+                  <div class="row_subject">
+                    <div class="label_box">
+                      <label for="title">제목</label>
+                      <b class="mark_essential">*</b>
+                    </div>
+                  </div>
                   <div class="row_content stretch">
-                    <span class="text_data">바버바버</span>
+                    <div class="input_text_box">
+                      <input type="text" name="title" id="title">
+                    </div>
                   </div>
                 </div>
 
                 <div class="common_row_box sibling">
-                  <div class="row_subject">현재등급</div>
-                  <div class="row_content">
-                    <span class="text_data">일반회원</span>
+                  <div class="row_subject stretch">
+                    <div class="label_box">
+                      <label for="description">내용</label>
+                      <b class="mark_essential">*</b>
+                    </div>
                   </div>
-                </div>
-
-                <div class="common_row_box_head_row">
-                  <strong>입력 정보</strong>
-                </div>
-
-                <div class="common_row_box single twins">
-                  <div class="row_subject">자격번호</div>
-                  <div class="row_content">
-                    <span class="text_data">12345678901P</span>
-                  </div>
-                  <div class="row_subject">자격종목</div>
-                  <div class="row_content stretch">
-                    <span class="text_data">미용사(일반)</span>
-                  </div>
-                </div>
-
-                <div class="common_row_box sibling">
-                  <div class="row_subject">성명</div>
-                  <div class="row_content">
-                    <span class="text_data">김바버</span>
-                  </div>
-                </div>
-
-                <div class="common_row_box sibling">
-                  <div class="row_subject">자격증</div>
-                  <div class="row_content">
-                    <a href="#" class="link type2">김바버미용사자격증.jpg</a>
+                  <div class="row_content stretch column pt10 pb10">
+                    <textarea name="description" id="description">에디터</textarea>
                   </div>
                 </div>
 
                 <div class="common_control_wrapper">
-                  <div class="left_box">
-                    <button class="btn type2 repeat_test">중복검사</button>
-                  </div>
-                  <div class="right_box">
-                    <div class="input_submit_box type1">
-                      <input type="submit" value="삭제">
-                    </div>
-                    <button class="btn type0">보류</button>
-                    <button class="btn type3">승인</button>
+                  <a href="#" class="link type1">취소</a>
+                  <div class="input_submit_box">
+                    <input type="submit" value="저장">
                   </div>
                 </div>
 
