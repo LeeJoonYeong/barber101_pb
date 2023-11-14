@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>커뮤니티 글 상세 관리 | 커뮤니티</title>
+  <title>정보 글 상세 관리 | 정보</title>
   <link rel="stylesheet" href="./resource/css/root.css">
 </head>
 <body>
@@ -66,13 +66,13 @@
       <div class="content_wrapper">
         
         <aside class="main_aside">
-          <h2 class="subject">커뮤니티</h2>
+          <h2 class="subject">정보</h2>
           <ul class="category_list">
             <li class="active">
-              <a href="#">커뮤니티 글 관리</a>
+              <a href="#">정보 글 관리</a>
             </li>
             <li>
-              <a href="#">커뮤니티 공지 관리</a>
+              <a href="#">정보 공지 관리</a>
             </li>
           </ul>
         </aside>
@@ -82,16 +82,16 @@
           <div class="main_body_inner_wrapper">
 
             <header class="main_body_inner_header">
-              <h3 class="subject">커뮤니티 글 관리</h3>
+              <h3 class="subject">정보 글 관리</h3>
               <ul class="indicator">
-                <li>커뮤니티</li>
-                <li>커뮤니티 글 관리</li>
+                <li>정보</li>
+                <li>정보 글 관리</li>
               </ul>
             </header>
 
             <section class="outer_content_top">
 
-              <form id="form_community_user_detail_manage" action="#" method="post"> <!-- 커뮤니티 - 글 (유저) 상세 관리 폼  -->
+              <form id="form_information_user_detail_manage" action="#" method="post"> <!-- 정보 - 글 (유저) 상세 관리 폼  -->
 
                 <div class="common_row_box_head_row">
                   <strong>게시글</strong>
@@ -100,7 +100,7 @@
                 <div class="common_row_box single twins">
                   <div class="row_subject">카테고리</div>
                   <div class="row_content">
-                    <span class="text_data">커뮤니티 > 고민</span>
+                    <span class="text_data">정보</span>
                   </div>
                   <div class="row_subject">인기여부</div>
                   <div class="row_content">
@@ -111,7 +111,7 @@
                 <div class="common_row_box sibling twins">
                   <div class="row_subject">작성자(아이디)</div>
                   <div class="row_content">
-                    <span class="text_data">azsxdd12341</span>
+                    <span class="text_data">azsxdd1234</span>
                   </div>
                   <div class="row_subject">아이피</div>
                   <div class="row_content">
@@ -209,7 +209,6 @@
                     <div class="input_submit_box type1">
                       <input type="submit" value="삭제">
                     </div>
-                    <button class="btn type2">카테고리 수정</button>
                     <button class="btn type3">목록</button>
                   </div>
                 </div>
@@ -218,36 +217,10 @@
 
             </section>
 
-            
-
           </div>
-
         </main>
 
       </div>
-
-      <div class="popup" style="display: none;">
-        <div class="popup_inner">
-          <header class="popup_header">
-            <strong class="title">카테고리 수정</strong>
-            <button class="btn_remove"></button>
-          </header>
-          <form action="#" method="post" id="form_community_category_change">
-            <div class="selectBox_box">
-              <select id="community_category_type" name="community_category_type" class="community_category_type">
-                <option value="free" selected>자유</option>
-                <option value="qna">QnA</option>
-                <option value="review">상품후기</option>
-                <option value="promotion">가게 홍보</option>
-              </select>
-            </div>
-            <div class="input_submit_box">
-              <input type="submit" value="저장">
-            </div>
-          </form>
-        </div>
-      </div>
-
     </div>
   </div>
 </body>
