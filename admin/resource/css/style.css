@@ -132,6 +132,8 @@ input:autofill:active {
 /* 인풋 - 텍스트 */
 .input_text_box { position: relative; width: 10rem; height: 3.8rem; }
 .input_text_box > input { width: 100%; height: 100%; padding: 0.9rem 1.8rem; border: 0.1rem solid var(--color-black); font-size: 1.4rem; letter-spacing: -0.014rem; }
+.input_text_box > input[data-text="limit"] + .text_limit { font-size: 1rem; color: var(--color-gray92); font-weight: 400; letter-spacing: -0.01rem; }
+.input_text_box > input[data-text="limit"] + .text_limit > i { color: var(--color-black); }
 /* //인풋 - 텍스트 */
 
 /* 인풋 - 패스워드 */

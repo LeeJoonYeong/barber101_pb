@@ -72,7 +72,7 @@
 #form_user_detail_manage > .common_row_box .row_content > .bottom_box { align-self: flex-start; }
 #form_user_detail_manage > .common_row_box .row_content > .input_text_box > input { padding-left: 1rem; padding-right: 1rem; }
 #form_user_detail_manage > .common_row_box.twins .row_content { min-width: 34.1rem; }
-#form_user_detail_manage > .common_row_box.twins .row_content.stretch > .input_text_box { flex-grow: 1; }
+#form_user_detail_manage > .common_row_box.twins .row_content.stretch > .input_text_box { display: flex; align-items: center; gap: 1rem; flex-grow: 1; }
 #form_user_detail_manage > .common_row_box:nth-of-type(4) .row_content { gap: 5rem; }
 #form_user_detail_manage > .common_row_box:nth-of-type(4) .row_content > .btn { margin-left: auto; }
 #form_user_detail_manage > .common_row_box:nth-of-type(5) .row_content { gap: 0.8rem; }
