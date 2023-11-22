@@ -67,6 +67,10 @@
 
 /* ================== 회원관리 - 회원정보 상세 ================== */
 #form_user_detail_manage { display: flex; flex-direction: column; }
+#form_user_detail_manage > .common_row_box_head_row { display: flex; justify-content: space-between; align-items: center; }
+#form_user_detail_manage > .common_row_box_head_row > .right_box { display: flex; align-items: center; }
+#form_user_detail_manage > .common_row_box_head_row > .right_box > span { font-size: 1.2rem; }
+#form_user_detail_manage > .common_row_box_head_row > .right_box > .mark_essential { position: relative; right: 0.2rem; }
 #form_user_detail_manage > .common_row_box .row_content.column { gap: 0.8rem; }
 #form_user_detail_manage > .common_row_box .row_content > .top_box { display: flex; gap: 1.9rem; }
 #form_user_detail_manage > .common_row_box .row_content > .bottom_box { align-self: flex-start; }
